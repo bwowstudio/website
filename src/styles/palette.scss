@@ -1,0 +1,65 @@
+/*-------------------.
+|   Primary Colors   |
+'-------------------*/
+$primary-red: #ec0000;
+$primary-dark: #000;
+$primary-white: white;
+$primary-background-gray: #F8F8F8;
+$primary-gray-light: #F2F2F2;
+
+/*-------------------.
+|   Brand Colors   |
+'-------------------*/
+$sx: #462167;
+$becas: #1BB3BC;
+
+/*---------------------.
+|   Secondary Colors   |
+'---------------------*/
+$sx-secondary: #FB6769;
+$becas-secondary: #B8539F;
+
+/*-----------.
+|   Shades   |
+'-----------*/
+$shades-white: #FFFFFF;
+$shades-light-gray-light: #F8F8F8; // Este es el fondo general.
+$shades-middle-gray-middle: #E2E4E4;
+$shades-middle-gray-dark: rgb(188, 189, 189);
+$shades-dark-gray-dark: #6F7779;
+
+/*------------------.
+|   Status Colors   |
+'------------------*/
+$error-red: #C80019;
+$warning-orange: #FFA726;
+$success-green: #66BB6A;
+
+/*-----------.
+|   Others   |
+'-----------*/
+$select-active: #1bb3bc;
+$subtitle-color: #333333;
+
+/*-----------------------.
+|   Media Queries Size   |
+'-----------------------*/
+//Large
+$desktop-large: "only screen and (min-width: 1440px)";
+$desktop-large-content-width: 1366px;
+//------------------------
+
+//Desktop
+$desktop: "only screen and (max-width: 1440px) and (min-width: 1048px)";
+$desktop-content-width: 1024px;
+//------------------------
+
+//Tablet
+$tablet: "only screen and (max-width: 1048px) and (min-width: 768px)";
+$tablet-content-width: 664px;
+//------------------------
+
+//Mobile
+$mobile: "only screen and (max-width: 768px)";
+$mobile-content-width: 320px;
+//------------------------
