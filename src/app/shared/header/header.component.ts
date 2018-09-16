@@ -9,8 +9,8 @@ import { LanguageService } from '../services/language.service';
 })
 export class HeaderComponent implements OnInit {
   constructor(
-    private translateService: TranslateService,
-    private languageService: LanguageService
+    public translateService: TranslateService,
+    public languageService: LanguageService
   ) {}
   ngOnInit() {
     this.translateService.use(this.languageService.language);

@@ -9,8 +9,8 @@ import { LanguageService } from '../../shared/services/language.service';
 })
 export class HomeComponent implements OnInit {
   constructor(
-    private translateService: TranslateService,
-    private languageService: LanguageService
+    public translateService: TranslateService,
+    public languageService: LanguageService
   ) {}
 
   ngOnInit() {
