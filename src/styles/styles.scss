@@ -1,10 +1,10 @@
 @font-face {
-    font-family: kastelov;
+    font-family: AxiRegular;
     src: url("/assets/fonts/axiforma/regular.otf") format("opentype");
 }
 
 body {
-    font-family: 'kastelov', serif;
+    font-family: 'AxiRegular', serif;
 }
 .input-reset-styles {
   border: none;
@@ -14,4 +14,7 @@ body {
   -moz-box-shadow: none;
   box-shadow: none;
   outline: none;
+}
+a {
+    text-decoration: none;
 }

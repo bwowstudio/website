@@ -1,0 +1,39 @@
+@import '../../../styles/palette.scss';
+@import '../../../styles/variables.scss';
+.copie-container {
+    color: $primary-color;
+    padding: $tablet-padding-top 0 0;
+    .copie-left {
+        padding-left: $tablet-padding-container;
+        .copie-h2 {
+            color: $secondary-color;
+            font-size: $tablet-font-size-h2;
+            font-weight: $tablet-font-weight-h2;
+        }
+        .copie-h3 {
+            font-size: $tablet-font-size-h3;
+            .copie-br {}
+        }
+        .copie-h4 {
+            font-size: $tablet-font-size-h4;
+            margin-top: $tablet-margin-top-h4;
+        }
+        .copie-a {
+            display: block;
+            margin-top: $tablet-margin-top-a;
+            color: $secondary-color;
+            font-size: $tablet-font-size-a;
+            img{
+                width: 28px;
+                height: 9px;
+                vertical-align: middle;
+            }
+        }
+    }
+    .copie-right {
+        img {
+            width: 293px;
+            height: 322px;
+        }
+    }
+}
