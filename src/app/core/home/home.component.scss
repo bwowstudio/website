@@ -1,0 +1,25 @@
+.home-container {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .home-o-logo {
+        width: 200px;
+    }
+    h2 {
+        width: 655px;
+        height: 176px;
+        font-family: Axiforma;
+        font-size: 48px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.44;
+        letter-spacing: 0.7px;
+        text-align: center;
+        color: #ffffff;
+    }
+}
