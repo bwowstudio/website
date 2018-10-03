@@ -1,0 +1,28 @@
+@import '../../../styles/palette.scss';
+@import '../../../styles/variables.scss';
+
+.number{
+    height: 70px;
+    margin-left: $margin-left-number;
+}
+.menu-controls-container{
+    width: 40px;
+    height: 70px;
+    display: flex;
+    .menu-controls {
+        background-color: $secondary-color;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .menu-line{
+            height: 1px;
+            width: 90%;
+            background-color: $background-color-line-button;
+            border-style: none;
+            margin: 0;
+        }
+        img{
+            cursor: pointer;
+        }
+    }
+}

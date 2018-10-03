@@ -2,9 +2,11 @@
     font-family: AxiRegular;
     src: url("/assets/fonts/axiforma/regular.otf") format("opentype");
 }
+html, body { height: 100%; width: 100%; margin: 0; }
 
 body {
     font-family: 'AxiRegular', serif;
+    
 }
 .input-reset-styles {
   border: none;

@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { IndexComponent } from './index/index.component';
 import { CopieRoutingModule } from './copie-routing.module';
 import { SharedModule } from '../shared/shared.module';
+import { ControlsComponent } from './controls/controls.component';
 
 @NgModule({
   imports: [
@@ -11,7 +12,8 @@ import { SharedModule } from '../shared/shared.module';
     SharedModule
   ],
   declarations: [
-    IndexComponent
+    IndexComponent,
+    ControlsComponent
   ]
 })
 export class CopieModule { }

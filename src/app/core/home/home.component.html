@@ -1,6 +1,68 @@
-<div class="home-container">
-    <img src="assets/images/oLogo.svg" class="home-o-logo">
-    <h2>Just designers 
-        making design.</h2>
-    <img src="assets/images/whiteRedLogo.svg" class="home-white-logo">
+<div class="home-container" [ngStyle]="{'background-position-y': backgroundPosition}">
+    <div class="first-row">
+        <div class="cell-1"></div>
+        <div class="cell-2">
+            <img src="assets/images/logoWhite.svg">
+        </div>
+        <div class="cell-3">
+            <h3>¿Qué hacemos?</h3>
+        </div>
+        <div class="cell-4"></div>
+        <div class="cell-5">
+            <h3>Bwowers</h3>
+        </div>
+        <div class="cell-6"></div>
+        <div class="cell-7">
+            <h3>¿Hablamos?</h3>
+        </div>
+        <div class="cell-8">
+            <h3>|</h3>
+        </div>
+        <div class="cell-9">
+            <h3>EN</h3>
+            <h3>ES</h3>
+        </div>
+        <div class="cell-10"></div>
+    </div>
+    <div class="second-row">
+        <div class="cell-1"></div>
+        <div class="cell-2"></div>
+        <div class="cell-3"></div>
+        <div class="cell-4"></div>
+        <div class="cell-5"></div>
+        <div class="cell-6"></div>
+        <div class="cell-7"></div>
+        <div class="cell-8"></div>
+        <div class="cell-9"></div>
+        <div class="cell-10"></div>
+    </div>
+    <div class="third-row">
+        <div class="cell-1"></div>
+        <div class="cell-2">
+            <h2>Just designers making design</h2>
+        </div>
+        <div class="cell-3"></div>
+        <div class="cell-4"></div>
+        <div class="cell-5"></div>
+        <div class="cell-6"></div>
+        <div class="cell-7"></div>
+        <div class="cell-8"></div>
+        <div class="cell-9"></div>
+        <div class="cell-10"></div>
+    </div>
+    <div class="fourth-row">
+        <div class="cell-1"></div>
+        <div class="cell-2"></div>
+        <div class="cell-3">
+            <img src="assets/images/arrowDown.svg" [ngStyle]="{'display': displayArrow}" (click)="nextPage()">
+            <img src="{{ovalRoute}}" (mouseenter)="mouseEnter()" (mouseleave)="mouseLeave()" (click)="nextPage()">
+        </div>
+        <div class="cell-4"></div>
+        <div class="cell-5"></div>
+        <div class="cell-6"></div>
+        <div class="cell-7"></div>
+        <div class="cell-8"></div>
+        <div class="cell-9"></div>
+        <div class="cell-10"></div>
+    </div>
 </div>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="13px" viewBox="0 0 20 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>dehaze - material</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="03-Home_responsive" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iPhone-8" transform="translate(-339.000000, -27.000000)" fill="#0F0506">
+            <path d="M339,27 L359,27 L359,29.0192308 L339,29.0192308 L339,27 Z M339,32.0240385 L359,32.0240385 L359,34.0432692 L339,34.0432692 L339,32.0240385 Z M339,37.0480769 L359,37.0480769 L359,39.0192308 L339,39.0192308 L339,37.0480769 Z" id="dehaze---material"></path>
+        </g>
+    </g>
+</svg>
