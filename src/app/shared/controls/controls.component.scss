@@ -1,9 +1,10 @@
 @import '../../../styles/palette.scss';
 @import '../../../styles/variables.scss';
 @import '../../../styles/fonts.scss';
+
 .number {
   height: 70px;
-  margin-left: 22px;
+  margin-left: $controls-resolution-less-than-768-number-margin-left;
   font-size: 84px;
   font-family: $font-family-heavy;
   color: #FC2154;
@@ -33,13 +34,13 @@
 
 @media only screen and (min-width: 768px) {
   .number {
-    margin-left: 40px;
+    margin-left: $controls-resolution-768-number-margin-left;
   }
 }
 
 @media only screen and (min-width: 1024px) {
   .number {
-    margin-left: 41px;
+    margin-left: $controls-resolution-1024-number-margin-left;
     font-size: 120px;
     letter-spacing: 1.7px;
   }
@@ -53,9 +54,15 @@
   }
 }
 
+@media only screen and (min-width: 1280px) {
+  .number {
+    margin-left: $controls-resolution-1280-number-margin-left;
+  }
+}
+
 @media only screen and (min-width: 1440px) {
   .number {
-    margin-left: 34px;
+    margin-left: $controls-resolution-1440-number-margin-left;
     height: 98px;
   }
 }

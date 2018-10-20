@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { LanguageService } from 'src/app/services/language.service';
 
-// TODO: ver los márgenes unos estan con padding y otros con margin;
-
+// TODO: ver los margenes de los input que no están puestos.
 @Component({
   selector: 'app-fixed-input-desktop',
   templateUrl: './fixed-input-desktop.component.html',
