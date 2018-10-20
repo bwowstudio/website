@@ -15,7 +15,9 @@
     },
     "FOOTER": {
         "text": "Te contactamos",
-        "send": "Enviar"
+        "send": "Enviar",
+        "placeholder": "Nombre",
+        "placeholder2": "Número o Correo"
     }
 
 }

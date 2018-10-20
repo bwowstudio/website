@@ -10,6 +10,8 @@ import { LanguageService } from 'src/app/services/language.service';
   styleUrls: ['./fixed-input-desktop.component.scss']
 })
 export class FixedInputDesktopComponent implements OnInit {
+  placeholder: string;
+  placeholder2: string;
   constructor(
     public translateService: TranslateService,
     public languageService: LanguageService,
@@ -19,5 +21,12 @@ export class FixedInputDesktopComponent implements OnInit {
       this.translateService.use(e);
     });
   }
-  ngOnInit() {}
+  ngOnInit() {
+    this.translateService.get('FOOTER.placeholder').subscribe((res: string) => {
+      this.placeholder = res;
+    });
+    this.translateService.get('FOOTER.placeholder2').subscribe((res: string) => {
+      this.placeholder2 = res;
+    });
+  }
 }

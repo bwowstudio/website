@@ -1,0 +1,108 @@
+.fixed-input-container {
+  width: 100%;
+  height: 68px;
+  margin: auto;
+  .fixed-input-container {
+    width: calc(100% - 32px);
+    height: 100%;
+    background: #FFFFFF;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.10);
+    padding: 0 16px;
+    display: flex;
+    box-sizing: border-box;
+    .container-center {
+      display: flex;
+      align-items: center;
+      .left-input {
+        box-sizing: border-box;
+        width: 139px;
+        height: 38px;
+        background: rgba(106, 43, 58, 0.02);
+        box-shadow: inset 0 0 0 1px rgba(33, 34, 64, 0.06);
+        border-radius: 8px;
+        margin-right: 12px;
+        font-size: 14px;
+        letter-spacing: 0.26px;
+        line-height: 14px;
+        padding-left: 10px;
+      }
+      ::placeholder{
+        font-size: 14px;
+        color: #AEA3A4;
+        letter-spacing: 0.26px;
+        line-height: 14px;
+      }
+      .right-input{
+        display: none;
+        box-sizing: border-box;
+        width: 139px;
+        height: 38px;
+        background: rgba(106, 43, 58, 0.02);
+        box-shadow: inset 0 0 0 1px rgba(33, 34, 64, 0.06);
+        border-radius: 8px;
+        font-size: 14px;
+        letter-spacing: 0.26px;
+        line-height: 14px;
+        padding-left: 10px;
+      }
+    }
+    .container-right {
+      display: flex;
+      align-items: center;
+      button {
+        width: 105px;
+        height: 38px;
+        background: #0F0506;
+        border-radius: 8px;
+        border: none;
+        font-size: 14px;
+        color: #FFFFFF;
+        letter-spacing: 0.26px;
+        text-align: center;
+        line-height: 38px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 375px) {
+  .fixed-input-container {
+    .fixed-input-container {
+      .container-center {
+        .left-input {
+          width: 154px;
+          margin-right: 16px;
+        }
+      }
+      .container-right {
+        button {
+          width: 141px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .fixed-input-container {
+    .fixed-input-container {
+      width: calc(100% - 36px*2);
+      .container-center {
+        .left-input {
+          width: 150px;
+          margin-right: 22px;
+        }
+        .right-input{
+          width: 164px;
+          display: block;
+          margin-right: 22px;
+        }
+      }
+      .container-right {
+        button {
+          width: 138px;
+        }
+      }
+    }
+  }
+}

@@ -8,7 +8,7 @@ import { LanguageService } from 'src/app/services/language.service';
   styleUrls: ['./header-mobile.component.scss']
 })
 export class HeaderMobileComponent implements OnInit {
-  isMenuHidden =  false;
+  isMenuHidden =  true;
   constructor(
     public translateService: TranslateService,
     public languageService: LanguageService,
