@@ -39,6 +39,21 @@
         "h4Text5":"Conectamos la idea con el producto final, orientando soluciones a un usuario potencial y testando cada fase de desarrollo de producto.",
         "aText5":"Ver soluciones"
     },
+    "CONTACT": {
+        "header": "Ahora, dinos algo sobre tí.",
+        "content": "Cuéntanos sobre tu proyecto, qué cosas puedes aportar al estudio o si simplemente quieres que charlemos sobre algo que tienes en mente. ",
+        "button-text": "Contactar",
+        "placeholder1": "Nombre*",
+        "placeholder2": "Apellido*",
+        "placeholder3": "Empresa",
+        "placeholder4": "Cargo",
+        "placeholder5": "Email*",
+        "placeholder6": "Móvil*",
+        "placeholder7": "País*",
+        "placeholder8": "Mensaje"
+
+
+    }, 
     "FOOTER": {
         "text": "Te contactamos",
         "send": "Enviar",

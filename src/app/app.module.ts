@@ -21,6 +21,7 @@ import { FixedInputMobileComponent } from './shared/fixed-input/fixed-input-mobi
 import { FixedInputDesktopComponent } from './shared/fixed-input/fixed-input-desktop/fixed-input-desktop.component';
 import { ControlsComponent } from './shared/controls/controls.component';
 import { HomeComponent } from './components/home/home.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/translations/', '.json');
@@ -41,6 +42,7 @@ export function createTranslateLoader(http: HttpClient) {
     FixedInputDesktopComponent,
     ControlsComponent,
     HomeComponent,
+    ContactComponent,
 
   ],
   imports: [
