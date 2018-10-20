@@ -2,6 +2,11 @@
 @import '../../../../styles/mixins.scss';
 @import '../../../../styles/variables.scss';
 @import '../../../../styles/fonts.scss';
+
+$header-resolution-1024-padding: 1280px;
+$header-resolution-1280-padding: 56px;
+$header-resolution-1440-padding: 56px;
+
 .header-desktop-container {
   width: 1024px;
   height: 100%;
