@@ -1,17 +1,42 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+
 import { AppComponent } from './app.component';
-import { AppRoutingModule } from './/app-routing.module';
-import { SharedModule } from './shared/shared.module';
-import { HTTP_INTERCEPTORS, HttpClient, HttpClientModule } from '@angular/common/http';
-import { CoreModule } from './core/core.module';
-import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
-import { HttpLoaderFactory } from './app.translate.factory';
-import { APP_CONFIG, AppConfig } from './config/app.config';
+import { AppRoutingModule } from './app-routing.module';
+import { LandingPageComponent } from './components/landing-page/landing-page.component';
+import { FontsComponent } from './components/fonts/fonts.component';
+import { LanguageService } from './services/language.service';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+
+import { HeaderComponent } from './shared/header/header.component';
+import { HeaderMobileComponent } from './shared/header/header-mobile/header-mobile.component';
+import { HeaderDesktopComponent } from './shared/header/header-desktop/header-desktop.component';
+import { LandingPageMobileComponent } from './components/landing-page/landing-page-mobile/landing-page-mobile.component';
+import { LandingPageDesktopComponent } from './components/landing-page/landing-page-desktop/landing-page-desktop.component';
+import { FixedInputComponent } from './shared/fixed-input/fixed-input.component';
+import { FixedInputMobileComponent } from './shared/fixed-input/fixed-input-mobile/fixed-input-mobile.component';
+import { FixedInputDesktopComponent } from './shared/fixed-input/fixed-input-desktop/fixed-input-desktop.component';
+
+export function createTranslateLoader(http: HttpClient) {
+  return new TranslateHttpLoader(http, './assets/translations/', '.json');
+}
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LandingPageComponent,
+    FontsComponent,
+    LandingPageMobileComponent,
+    LandingPageDesktopComponent,
+    HeaderComponent,
+    HeaderMobileComponent,
+    HeaderDesktopComponent,
+    FixedInputComponent,
+    FixedInputMobileComponent,
+    FixedInputDesktopComponent
   ],
   imports: [
     BrowserModule,
@@ -20,15 +45,13 @@ import { APP_CONFIG, AppConfig } from './config/app.config';
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
-        useFactory: HttpLoaderFactory,
+        useFactory: (createTranslateLoader),
         deps: [HttpClient]
       }
-    }),
-    SharedModule.forRoot(),
-    CoreModule,
+    })
   ],
   providers: [
-    { provide: APP_CONFIG, useValue: AppConfig }
+    LanguageService,
   ],
   bootstrap: [AppComponent]
 })

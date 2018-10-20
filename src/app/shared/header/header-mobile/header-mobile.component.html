@@ -1,0 +1,30 @@
+<div class="header-desktop-container">
+  <div class="container-left">
+    <img src="assets/images/logoBlack.svg">
+  </div>
+  <div class="container-right">
+    <div class="right-languages">
+      <div class="left-span">EN</div>
+      <div class="right-span">ES</div>
+    </div>
+    <div class="burger">
+      <img src="assets/images/burger.svg" (click)="menuHandler($event)">
+    </div>
+  </div>
+  <div class="menu" *ngIf="!isMenuHidden">
+    <div class="menu-left" (click)="menuHandler($event)"></div>
+    <div class="menu-right">
+      <img src="assets/images/closeIcon.svg" (click)="menuHandler($event)">
+      <p class="anchor"> <span class="dot">・</span>{{ 'HEADER.anchor1' | translate }}</p>
+      <p class="secondary-text">{{ 'HEADER.secondary.secondary1' | translate }}</p>
+      <p class="secondary-text">{{ 'HEADER.secondary.secondary2' | translate }}</p>
+      <p class="secondary-text">{{ 'HEADER.secondary.secondary3' | translate }}</p>
+      <p class="secondary-text">{{ 'HEADER.secondary.secondary4' | translate }}</p>
+      <p class="secondary-text">{{ 'HEADER.secondary.secondary5' | translate }}</p>
+
+      <p class="anchor">{{ 'HEADER.anchor2' | translate }}</p>
+      <p class="anchor">{{ 'HEADER.anchor3' | translate }}</p>
+      <p class="copyright">2018 Copyright</p>
+    </div>
+  </div>
+</div>

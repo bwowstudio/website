@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { LanguageService } from './services/language.service';
+import { LanguageService } from 'src/app/services/language.service';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: 'app-header-mobile',
+  templateUrl: './header-mobile.component.html',
+  styleUrls: ['./header-mobile.component.scss']
 })
-export class AppComponent implements OnInit {
-  param = { value: 'world' };
+export class HeaderMobileComponent implements OnInit {
+  isMenuHidden =  false;
   constructor(
     public translateService: TranslateService,
     public languageService: LanguageService,
@@ -18,9 +18,11 @@ export class AppComponent implements OnInit {
       this.translateService.use(e);
     });
   }
-  ngOnInit() {
-    this.translateService.get('HELLO', { value: 'world' }).subscribe((res: string) => {
-      console.log(res);
-    });
+  menuHandler() {
+    this.isMenuHidden = !this.isMenuHidden;
   }
+  ngOnInit() {
+  }
+
 }
+

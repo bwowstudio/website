@@ -1,14 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { LanguageService } from './services/language.service';
-
+import { LanguageService } from 'src/app/services/language.service';
+// TODO: incluir los link a las páginas cuando estén listas;
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: 'app-header-desktop',
+  templateUrl: './header-desktop.component.html',
+  styleUrls: ['./header-desktop.component.scss']
 })
-export class AppComponent implements OnInit {
-  param = { value: 'world' };
+export class HeaderDesktopComponent implements OnInit {
   constructor(
     public translateService: TranslateService,
     public languageService: LanguageService,
@@ -18,9 +17,6 @@ export class AppComponent implements OnInit {
       this.translateService.use(e);
     });
   }
-  ngOnInit() {
-    this.translateService.get('HELLO', { value: 'world' }).subscribe((res: string) => {
-      console.log(res);
-    });
-  }
+  ngOnInit() {}
 }
+

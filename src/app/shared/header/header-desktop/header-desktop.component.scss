@@ -1,0 +1,98 @@
+@import '../../../../styles/palette.scss';
+@import '../../../../styles/mixins.scss';
+@import '../../../../styles/variables.scss';
+@import '../../../../styles/fonts.scss';
+.header-desktop-container {
+  width: 1024px;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  padding: 45px 56px 135px;
+  @include no-select;
+  .container-left {
+    width: 20%;
+    height: 100%;
+  }
+  .container-right {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .right-anchors {
+      display: flex;
+      height: 100%;
+      .anchor1,
+      .anchor2,
+      .anchor3 {
+        margin-left: 36px;
+        text-align: right;
+        font-size: 18px;
+        color: #4A4A4A;
+        letter-spacing: 0.33px;
+        line-height: 32px;
+      }
+      .anchor1 {
+        width: 195px;
+      }
+      .anchor2 {
+        width: 110px;
+      }
+      .anchor3 {
+        width: 120px;
+      }
+      a:hover {
+        font-family: $font-family-bold;
+        cursor: pointer;
+      }
+    }
+    .right-divider {
+      width: 1px;
+      height: 17px;
+      background-color: #FD90A9;
+      margin-left: 45px;
+    }
+    .right-languages {
+      width: 85px;
+      height: 100%;
+      display: flex;
+      justify-content: flex-end;
+      .left-span {
+        width: 70%;
+        text-align: right;
+        font-size: 18px;
+        color: #4A4A4A;
+        letter-spacing: 0.33px;
+      }
+      .right-span {
+        width: 30%;
+        text-align: right;
+        font-size: 18px;
+        color: #4A4A4A;
+        letter-spacing: 0.33px;
+      }
+      .left-span:hover {
+        font-family: $font-family-bold;
+        cursor: pointer;
+      }
+      .right-span:hover {
+        font-family: $font-family-bold;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .header-desktop-container {
+    width: 1280px;
+    padding: 45px 80px 135px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .header-desktop-container {
+    width: 1440px;
+    margin: auto;
+  }
+}

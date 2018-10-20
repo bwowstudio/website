@@ -1,10 +1,21 @@
 {
-    "HOME": {
-        "HELLO": "Hola Manuel!"
-    },
+    "HELLO": "hola {{value}}",
     "HEADER": {
-        "menu1": "¿Qué hacemos?",
-        "menu2": "Sobre nosotros",
-        "menu3": "Contacto"
+        "anchor1": "¿Qué hacemos?",
+        "anchor2": "Bwower",
+        "anchor3": "Contacto",
+        "secondary": {
+            "secondary1": "Diseño de producto digital",
+            "secondary2": "Branding",
+            "secondary3": "Business Design",
+            "secondary4": "Design System",
+            "secondary5": "Design Teams"
+
+        }
+    },
+    "FOOTER": {
+        "text": "Te contactamos",
+        "send": "Enviar"
     }
+
 }

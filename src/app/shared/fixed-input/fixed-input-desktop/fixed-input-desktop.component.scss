@@ -1,0 +1,119 @@
+.fixed-input-container {
+  width: 100%;
+  height: 88px;
+  .fixed-input-container {
+    width: calc(1024px - 56px*2);
+    height: 88px;
+    margin: 0 56px 0;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.10);
+    display: flex;
+    .container-left {
+      width: 271px;
+      height: 100%;
+      font-size: 24px;
+      color: #0F0506;
+      letter-spacing: 0.44px;
+      line-height: 32px;
+      display: flex;
+      align-items: center;
+      padding-left: 32px;
+    }
+    .container-center {
+      width: 406px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      input {
+        width: 192px;
+        height: 50px;
+        background: rgba(106, 43, 58, 0.02);
+        box-shadow: inset 0 0 0 1px rgba(33, 34, 64, 0.06);
+        border-radius: 8px;
+      }
+      .left-input {
+        margin-right: 22px;
+      }
+    }
+    .container-right {
+      width: 221px;
+      display: flex;
+      justify-content: right;
+      align-items: center;
+      margin-left: 32px;
+      height: 100%;
+      button {
+        background-color: #0F0506;
+        border-radius: 8px;
+        width: 171px;
+        height: 50px;
+        border: none;
+        font-size: 18px;
+        color: #FFFFFF;
+        letter-spacing: 0.33px;
+        text-align: center;
+        line-height: 32px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .fixed-input-container {
+    .fixed-input-container {
+      width: calc(1280px - 80px*2);
+      margin: 0 80px 0;
+      .container-left {
+        width: 393px;
+      }
+      .container-center {
+        width: 480px;
+        input {
+          width: 222px;
+        }
+        .left-input {
+          margin-right: 36px;
+        }
+      }
+      .container-right {
+        width: 272px;
+        margin-left: 0px;
+        button {
+          width: 202px;
+        }
+      }
+    }
+  }
+}
+
+$fixed-input-container-width: calc(1440px - 80px*2);
+@media only screen and (min-width: 1440px) {
+  .fixed-input-container {
+    width: 1440px;
+    margin: auto;
+    position: relative;
+    .fixed-input-container {
+      width: $fixed-input-container-width;
+      .container-left {
+        width: 416px;
+      }
+      .container-center {
+        width: 604px;
+        input {
+          width: 282px;
+        }
+        .left-input {
+          margin-right: 40px;
+        }
+      }
+      .container-right {
+        width: 294px;
+        margin-left: 32px;
+        margin-right: 32px;
+        button {
+          width: 230px;
+        }
+      }
+    }
+  }
+}

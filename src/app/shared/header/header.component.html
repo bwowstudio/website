@@ -1,0 +1,6 @@
+<div *ngIf="!resolutionService.getIsMobileResolution()">
+  <app-header-desktop></app-header-desktop>
+</div>
+<div *ngIf="resolutionService.getIsMobileResolution()">
+  <app-header-mobile></app-header-mobile>
+</div>

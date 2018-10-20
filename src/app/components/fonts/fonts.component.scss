@@ -1,0 +1,36 @@
+@import '../../../styles/fonts';
+
+div{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.regular {
+  font-family: $font-family-regular;
+}
+.thin {
+  font-family: $font-family-thin;
+}
+.extraBold {
+  font-family: $font-family-bold;
+}
+.heavy {
+  font-family: $font-family-heavy;
+}
+.medium{
+  font-family: $font-family-medium;
+}
+.fonts-container{
+  box-sizing: border-box;
+  width: 100%;
+}
+
+@media only screen and (min-width: 1440px) {
+  .fonts-container {
+    max-width: 1440px;
+    margin: auto;
+    position: relative;
+  }
+}

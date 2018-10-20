@@ -1,0 +1,6 @@
+<div *ngIf="!resolutionService.getIsMobileResolution()">
+  <app-fixed-input-desktop></app-fixed-input-desktop>
+</div>
+<div *ngIf="resolutionService.getIsMobileResolution()">
+  <app-fixed-input-mobile></app-fixed-input-mobile>
+</div>
