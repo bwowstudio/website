@@ -120,31 +120,6 @@
       }
       .menu-right {
         width: 70%;
-        padding: 46.5px 45.5px 0;
-        box-shadow: -2px 0 20px 0 rgba(0, 0, 0, 0.1);
-        background-color: #ffffff;
-        .anchor {
-          margin-top: 34px;
-          position: relative;
-          .dot {
-            position: absolute;
-            left: -38px;
-            top: -5px;
-            font-size: 28px;
-          }
-        }
-        .secondary-text {
-          font-family: $font-family-thin;
-          margin-top: 20px;
-          padding-left: 41px;
-          font-size: 14px;
-          line-height: 2.29;
-          letter-spacing: 0.3px;
-          color: #0f0506;
-        }
-        img {
-          cursor: pointer;
-        }
         .copyright {
           display: block;
           position: absolute;
