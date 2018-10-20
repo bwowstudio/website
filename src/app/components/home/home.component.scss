@@ -49,7 +49,6 @@
     margin-top: 30px;
   }
   .home-container {
-    padding-left: 80px;
     .text-container {
       h3 {
         font-size: 40px;
@@ -72,7 +71,7 @@
 
 @media only screen and (min-width: 600px) {
   .controls-container {
-    margin-top: 120px;
+    margin-top: 60px;
   }
   .home-container {
     .text-container {
@@ -104,6 +103,7 @@
   .home-container {
     display: flex;
     justify-content: flex-end;
+    padding-left: 80px;
     .text-container {
       width: 100%;
       h3 {
