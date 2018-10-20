@@ -8,13 +8,13 @@
       <div class="right-span">ES</div>
     </div>
     <div class="burger">
-      <img src="assets/images/burger.svg" (click)="menuHandler($event)">
+      <img src="assets/images/burger.svg" (click)="menuHandler()">
     </div>
   </div>
   <div class="menu" *ngIf="!isMenuHidden">
-    <div class="menu-left" (click)="menuHandler($event)"></div>
+    <div class="menu-left" (click)="menuHandler()"></div>
     <div class="menu-right">
-      <img src="assets/images/closeIcon.svg" (click)="menuHandler($event)">
+      <img src="assets/images/closeIcon.svg" (click)="menuHandler()">
       <p class="anchor"> <span class="dot">・</span>{{ 'HEADER.anchor1' | translate }}</p>
       <p class="secondary-text">{{ 'HEADER.secondary.secondary1' | translate }}</p>
       <p class="secondary-text">{{ 'HEADER.secondary.secondary2' | translate }}</p>
