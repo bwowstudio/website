@@ -19,6 +19,8 @@ import { LandingPageDesktopComponent } from './components/landing-page/landing-p
 import { FixedInputComponent } from './shared/fixed-input/fixed-input.component';
 import { FixedInputMobileComponent } from './shared/fixed-input/fixed-input-mobile/fixed-input-mobile.component';
 import { FixedInputDesktopComponent } from './shared/fixed-input/fixed-input-desktop/fixed-input-desktop.component';
+import { ControlsComponent } from './shared/controls/controls.component';
+import { HomeComponent } from './components/home/home.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/translations/', '.json');
@@ -36,7 +38,10 @@ export function createTranslateLoader(http: HttpClient) {
     HeaderDesktopComponent,
     FixedInputComponent,
     FixedInputMobileComponent,
-    FixedInputDesktopComponent
+    FixedInputDesktopComponent,
+    ControlsComponent,
+    HomeComponent,
+
   ],
   imports: [
     BrowserModule,

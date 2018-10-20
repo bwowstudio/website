@@ -1,0 +1,16 @@
+<app-header></app-header>
+<div class="controls-container">
+  <app-controls (page)="setText($event)"></app-controls>
+</div>
+<div class="home-container">
+  <div class="text-container">
+    <h3>{{ home.h3TextFirstLine }} <br> {{ home.h3TextSecondLine }}</h3>
+    <h4>{{ home.h4Text }}</h4>
+    <a>{{ home.aText }} <img src="assets/images/arrow.svg"></a>
+    <br>
+  </div>
+  <img class="homeImg" src="assets/images/homeImg.svg">
+</div>
+<div class="fixed-input-container">
+  <app-fixed-input></app-fixed-input>
+</div>

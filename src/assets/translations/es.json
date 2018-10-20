@@ -13,6 +13,32 @@
 
         }
     },
+    "HOME": {
+        "h3Text1FirstLine":"Diseño de producto",
+        "h3Text1SecondLine":"digital",
+        "h4Text1":"Conectamos la idea con el producto final, orientando soluciones a un usuario potencial y testando cada fase de desarrollo de producto.",
+        "aText1":"Ver soluciones",
+
+        "h3Text2FirstLine":"Diseño de producto2",
+        "h3Text2SecondLine":"digital",
+        "h4Text2":"Conectamos la idea con el producto final, orientando soluciones a un usuario potencial y testando cada fase de desarrollo de producto.",
+        "aText2":"Ver soluciones",
+
+        "h3Text3FirstLine":"Diseño de producto3",
+        "h3Text3SecondLine":"digital",
+        "h4Text3":"Conectamos la idea con el producto final, orientando soluciones a un usuario potencial y testando cada fase de desarrollo de producto.",
+        "aText3":"Ver soluciones",
+        
+        "h3Text4FirstLine":"Diseño de producto4",
+        "h3Text4SecondLine":"digital",
+        "h4Text4":"Conectamos la idea con el producto final, orientando soluciones a un usuario potencial y testando cada fase de desarrollo de producto.",
+        "aText4":"Ver soluciones",
+
+        "h3Text5FirstLine":"Diseño de producto5",
+        "h3Text5SecondLine":"digital",
+        "h4Text5":"Conectamos la idea con el producto final, orientando soluciones a un usuario potencial y testando cada fase de desarrollo de producto.",
+        "aText5":"Ver soluciones"
+    },
     "FOOTER": {
         "text": "Te contactamos",
         "send": "Enviar",

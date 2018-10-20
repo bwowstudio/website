@@ -8,7 +8,7 @@
   box-sizing: border-box;
   display: flex;
   align-items: center;
-  padding: 45px 56px 135px;
+  padding: 45px 56px 100px;
   @include no-select;
   .container-left {
     width: 20%;
@@ -87,12 +87,13 @@
 @media only screen and (min-width: 1280px) {
   .header-desktop-container {
     width: 1280px;
-    padding: 45px 80px 135px;
+    padding: 45px 80px 100px;
   }
 }
 @media only screen and (min-width: 1440px) {
   .header-desktop-container {
     width: 1440px;
     margin: auto;
+    padding: 45px 56px 135px;
   }
 }
