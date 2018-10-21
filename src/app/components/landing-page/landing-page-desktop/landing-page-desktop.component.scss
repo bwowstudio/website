@@ -1,8 +1,15 @@
 @import '../../../../styles/mixins.scss';
 @import '../../../../styles/fonts.scss';
-
+@import '../../../../styles/variables.scss';
 div {
   @include div;
+}
+h3 {
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.3px;
+  color: #ffffff;
+  cursor: pointer;
 }
 .home-container {
   display: flex;
@@ -50,13 +57,6 @@ div {
       border-right: 1px dashed #ffffff;
       display: flex;
       align-items: flex-end;
-      h3 {
-        font-size: 16px;
-        font-weight: bold;
-        letter-spacing: 0.3px;
-        color: #ffffff;
-        cursor: pointer;
-      }
     }
     .cell-1 {
       width: 6%;
@@ -121,6 +121,40 @@ div {
         margin-top: 20px;
         cursor: pointer;
       }
+      .oval{
+        width: 122px;
+      }
     }
+  }
+}
+
+@media only screen and (min-width: $resolution-1280-width) {
+  .home-container {
+    .fourth-row {
+      .cell-3 {
+        .oval{
+          width: 150px;
+        }
+      }
+    }
+  }
+  h3 {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: $resolution-1440-width) {
+  .home-container {
+    width: $resolution-1440-width;
+    margin: auto;
+    .fourth-row {
+      .cell-3 {
+        .oval{
+          width: 169px;
+        }
+      }
+    }
+  }
+  h3 {
+    font-size: 18px;
   }
 }
