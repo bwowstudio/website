@@ -18,7 +18,7 @@ export class LandingPageDesktopComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    setTimeout(() => this.nextPage(), 10000);
+    setTimeout(() => this.nextPage('/home'), 10000);
   }
   mouseEnter() {
     this.ovalRoute = 'assets/images/ovalWhite.svg';
@@ -28,7 +28,7 @@ export class LandingPageDesktopComponent implements OnInit {
     this.ovalRoute = 'assets/images/oval.svg';
     this.displayArrow = 'block';
   }
-  nextPage() {
+  nextPage(page) {
     if (this.transitionIsOn) {
       return;
     }
@@ -39,6 +39,6 @@ export class LandingPageDesktopComponent implements OnInit {
       const positionY = Number(this.backgroundPosition.split('vh')[0]);
       this.backgroundPosition = `${positionY - 2}vh`;
     }, 1000 / 120);
-    setTimeout(() => this.router.navigate(['/home']), 500);
+    setTimeout(() => this.router.navigate([page]), 500);
   }
 }
