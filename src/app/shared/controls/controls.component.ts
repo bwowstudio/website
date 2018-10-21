@@ -12,7 +12,9 @@ export class ControlsComponent implements OnInit {
 
   ngOnInit() {
     const number = localStorage.getItem('bwowPage');
-    if (number) {
+    if (!Number(number)) {
+      return;
+    } else if (number) {
       this.number = Number(number);
     }
   }

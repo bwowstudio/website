@@ -44,10 +44,12 @@ export class HomeComponent implements OnInit {
   }
   ngOnInit() {
     const number = localStorage.getItem('bwowPage');
-    if (number) {
-      this.setText(Number(number));
-    } else {
+    const page = Number(number);
+    if (!page) {
       this.setText(this.page);
+      return;
+    } else if (number) {
+      this.setText(page);
     }
   }
 }
