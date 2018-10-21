@@ -217,6 +217,7 @@ $bwowers-resolution-1440-padding-left-right: 56px;
       }
       .arrowRight{
         margin-left: 25px;
+        margin-right: 0;
       }
     }
   }
@@ -245,6 +246,33 @@ $bwowers-resolution-1440-padding-left-right: 56px;
   .bwowers-container {
     .container-first-slide {
       padding: 0 $bwowers-resolution-1024-padding-left-right 106px;
+    }
+    .container-fifth-slide{
+      .logos-container{
+        margin-top: 70px;
+        display: flex;
+        justify-content: center;
+        box-sizing: border-box;
+        height: 64px;
+        width: 100%;
+        img{
+          width: 190px;
+          margin-right: 30px;
+        }
+        .cabifyLogo {
+          margin-right: 0;
+          position: relative;
+          top: 4px;
+        }
+        .arrowLeft{
+          width: 15px;
+          margin-right: 20px;
+        }
+        .arrowRight{
+          width: 15px;
+          margin-left: 20px;
+        }
+      }
     }
   }
 }
