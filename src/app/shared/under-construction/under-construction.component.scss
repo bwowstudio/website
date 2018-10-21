@@ -1,0 +1,17 @@
+@import '../../../styles/palette.scss';
+@import '../../../styles/mixins.scss';
+@import '../../../styles/variables.scss';
+@import '../../../styles/fonts.scss';
+
+.under-construction-container {
+  padding: 40px;
+  text-align: center;
+  box-sizing: border-box;
+  h2{
+    font-family: $font-family-bold;
+    font-size: 32px;
+    line-height: 1.25;
+    letter-spacing: 0.5px;
+    color: #0f0506;
+  }
+}

@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
     h3TextFirstLine: '',
     h3TextSecondLine: '',
     h4Text: '',
-    aText: ''
+    aTextMobile: ''
   };
   constructor(
     public translateService: TranslateService,
@@ -32,13 +32,13 @@ export class HomeComponent implements OnInit {
         this.translateService.get(`HOME.h3Text${page}FirstLine`),
         this.translateService.get(`HOME.h3Text${page}SecondLine`),
         this.translateService.get(`HOME.h4Text${page}`),
-        this.translateService.get(`HOME.aText${page}`),
+        this.translateService.get(`HOME.aTextMobile`),
       ]).subscribe(results => {
         this.home = {
           h3TextFirstLine: results[0],
           h3TextSecondLine: results[1],
           h4Text: results[2],
-          aText: results[3]
+          aTextMobile: results[3]
         };
     });
   }

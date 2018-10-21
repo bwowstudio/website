@@ -7,28 +7,59 @@ $resolution-1024-width: 1024px;
 $resolution-1280-width: 1280px;
 $resolution-1440-width: 1440px;
 
-$fixed-input-container-1024-margin-left-right: 80px;
-$fixed-input-container-1280-margin-left-right: 80px;
-$fixed-input-container-1440-margin-left-right: 56px;
+$input-width-percentage: 100%;
 
-$fixed-input-container-1024-padding-left-right: 32px;
+$fixed-input-1024-margin-left-right: 80px;
+$fixed-input-1280-margin-left-right: 80px;
+$fixed-input-1440-margin-left-right: 56px;
+
+$fixed-input-1024-inner-padding-left-right: 20px;
+$fixed-input-1280-inner-padding-left-right: 38px;
+$fixed-input-1440-inner-padding-left-right: 38px;
+
+$fixed-input-1024-central-inputs-margin: 22px;
+$fixed-input-1280-central-inputs-margin: 22px;
+$fixed-input-1440-central-inputs-margin: 22px;
+
+$fixed-input-1024-right-button-margin: 30px;
+$fixed-input-1280-right-button-margin: 30px;
+$fixed-input-1440-right-button-margin: 30px;
+
+$fixed-input-1024-font-size-1: 22px;
+$fixed-input-1024-font-size-2: $fixed-input-1024-font-size-1*0.75;
+$fixed-input-1280-font-size-1: 22px;
+$fixed-input-1280-font-size-2: $fixed-input-1280-font-size-1*0.75;
+$fixed-input-1440-font-size-1: 22px;
+$fixed-input-1440-font-size-2: $fixed-input-1440-font-size-1*0.75;
+
+$fixed-input-1024-button-width: $resolution-1024-width*0.167;
+$fixed-input-1280-button-width: $resolution-1280-width*0.167;
+$fixed-input-1440-button-width: $resolution-1440-width*0.167;
+
+$fixed-input-1024-input1-width: $resolution-1024-width*0.1875;
+$fixed-input-1280-input1-width: $resolution-1280-width*0.1875;
+$fixed-input-1440-input1-width: $resolution-1440-width*0.1875;
+
+$fixed-input-1024-input2-width: $resolution-1024-width*0.18;
+$fixed-input-1280-input2-width: $resolution-1280-width*0.18;
+$fixed-input-1440-input2-width: $resolution-1440-width*0.18;
 
 .fixed-input-container {
-  width: $resolution-1024-width;
+  width: $input-width-percentage;
   height: 88px;
   .fixed-input-container {
-    width: calc(#{$resolution-1024-width} - #{$fixed-input-container-1024-margin-left-right*2});
+    width: $input-width-percentage;
+    padding: 0 0; 
     height: 88px;
-    margin: 0 $fixed-input-container-1024-margin-left-right 0;
-    padding: 0 $fixed-input-container-1024-padding-left-right;
     background-color: #FFFFFF;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.10);
     display: flex;
+    justify-content: space-between;
     box-sizing: border-box;
-
     .container-left {
       height: 100%;
-      font-size: 24px;
+      width: 40%;
+      font-size: $fixed-input-1024-font-size-1;
       color: #0F0506;
       letter-spacing: 0.44px;
       line-height: 32px;
@@ -41,24 +72,27 @@ $fixed-input-container-1024-padding-left-right: 32px;
       display: flex;
       align-items: center;
       input {
-        width: 192px;
+        padding-left: 10px;
+        box-sizing: border-box;
+        width: $fixed-input-1024-input2-width;
         height: 50px;
         background: rgba(106, 43, 58, 0.02);
         box-shadow: inset 0 0 0 1px rgba(33, 34, 64, 0.06);
         border-radius: 8px;
-        font-size: 18px;
+        font-size: $fixed-input-1024-font-size-2;
         letter-spacing: 0.33px;
         line-height: 18px;
       }
       .left-input {
-
+        width: $fixed-input-1024-input1-width;
       }
       ::placeholder {
-        font-size: 18px;
+        font-size: $fixed-input-1024-font-size-2;
         color: #AEA3A4;
         letter-spacing: 0.33px;
         line-height: 18px;
-        padding: 10px;
+        padding-left: 10px;
+        box-sizing: border-box;
       }
     }
     .container-right {
@@ -69,10 +103,10 @@ $fixed-input-container-1024-padding-left-right: 32px;
       button {
         background-color: #0F0506;
         border-radius: 8px;
-        width: 171px;
+        width: $fixed-input-1024-button-width;
         height: 50px;
         border: none;
-        font-size: 18px;
+        font-size: $fixed-input-1024-font-size-2;
         color: #FFFFFF;
         letter-spacing: 0.33px;
         line-height: 32px;
@@ -82,52 +116,84 @@ $fixed-input-container-1024-padding-left-right: 32px;
     }
   }
 }
-
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: $resolution-1024-width) {
   .fixed-input-container {
-    width: $resolution-1280-width;
     .fixed-input-container {
-      width: calc(#{$resolution-1280-width} - #{$fixed-input-container-1280-margin-left-right*2});
-      margin: 0 $fixed-input-container-1280-margin-left-right 0;
-      justify-content: space-between;
+      width: calc(#{$input-width-percentage} - #{$fixed-input-1024-margin-left-right*2});
+      margin: 0 $fixed-input-1024-margin-left-right 0;
+      padding: 0 $fixed-input-1024-inner-padding-left-right 0;
       .container-left {
       }
       .container-center {
         input {
-          width: 222px;
+          width: $fixed-input-1024-input2-width;
         }
         .left-input {
+          width: $fixed-input-1024-input1-width;
+          margin-right: $fixed-input-1024-central-inputs-margin;
         }
       }
       .container-right {
         button {
-          width: 202px;
+          margin-left: $fixed-input-1024-right-button-margin;
+          width: $fixed-input-1024-button-width;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: $resolution-1280-width) {
+  .fixed-input-container {
+    .fixed-input-container {
+      width: calc(#{$input-width-percentage} - #{$fixed-input-1280-margin-left-right*2});
+      margin: 0 $fixed-input-1280-margin-left-right 0;
+      padding: 0 $fixed-input-1280-inner-padding-left-right 0;
+      .container-left {
+      }
+      .container-center {
+        input {
+          width: $fixed-input-1280-input2-width;
+
+        }
+        .left-input {
+          width: $fixed-input-1280-input1-width;
+          margin-right: $fixed-input-1280-central-inputs-margin;
+        }
+      }
+      .container-right {
+        button {
+          margin-left: $fixed-input-1280-right-button-margin;
+          width: $fixed-input-1280-button-width;
         }
       }
     }
   }
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: $resolution-1440-width) {
   .fixed-input-container {
     width: $resolution-1440-width;
     margin: auto;
     position: relative;
     .fixed-input-container {
-      width: calc(#{$resolution-1440-width} - #{$fixed-input-container-1440-margin-left-right*2});
-      margin: 0 $fixed-input-container-1440-margin-left-right 0;
+      width: calc(#{$resolution-1440-width} - #{$fixed-input-1440-margin-left-right*2});
+      margin: 0 $fixed-input-1440-margin-left-right 0;
+      padding: 0 $fixed-input-1440-inner-padding-left-right 0;
       .container-left {
       }
       .container-center {
         input {
-          width: 282px;
+          width: $fixed-input-1440-input2-width;
         }
         .left-input {
+          width: $fixed-input-1440-input1-width;
+          margin-right: $fixed-input-1440-central-inputs-margin;
         }
       }
       .container-right {
         button {
-          width: 230px;
+          margin-left: $fixed-input-1440-right-button-margin;
+          width: $fixed-input-1440-button-width;
         }
       }
     }

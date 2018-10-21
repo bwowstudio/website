@@ -59,6 +59,7 @@
     height: 100vh;
     display: flex;
     overflow: hidden;
+    z-index: 2;
     .menu-left {
       width: 0%;
       height: 100%;
@@ -133,3 +134,4 @@
     }
   }
 }
+

@@ -11,7 +11,7 @@ export class HeaderMobileComponent implements OnInit {
   isMenuHidden =  true;
   constructor(
     public translateService: TranslateService,
-    public languageService: LanguageService,
+    public languageService: LanguageService
   ) {
     this.translateService.use(this.languageService.language);
     this.languageService.langUpdated.subscribe(e => {

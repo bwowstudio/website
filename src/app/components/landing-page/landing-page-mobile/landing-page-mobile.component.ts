@@ -17,7 +17,8 @@ export class LandingPageMobileComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    setTimeout(() => this.nextPage(), 10000);
+    // setTimeout(() => this.nextPage(), 10000);
+    this.router.navigate(['/home']);
   }
   mouseEnter() {
     this.ovalRoute = 'assets/images/ovalWhite.svg';

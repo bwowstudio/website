@@ -1,3 +1,32 @@
+
+@import '../../../../styles/palette.scss';
+@import '../../../../styles/mixins.scss';
+@import '../../../../styles/variables.scss';
+@import '../../../../styles/fonts.scss';
+
+$fixed-input-320-button-width: $resolution-320-width*0.32;
+$fixed-input-360-button-width: $resolution-360-width*0.35;
+$fixed-input-375-button-width: $resolution-375-width*0.375;
+$fixed-input-411-button-width: $resolution-411-width*0.375;
+
+$fixed-input-600-button-width: $resolution-600-width*0.21;
+$fixed-input-768-button-width: $resolution-768-width*0.21;
+
+$fixed-input-320-input-width: $resolution-320-width*0.44;
+$fixed-input-360-input-width: $resolution-360-width*0.44;
+$fixed-input-375-input-width: $resolution-375-width*0.44;
+$fixed-input-411-input-width: $resolution-411-width*0.44;
+
+$fixed-input-600-input-width: $resolution-600-width*0.273;
+$fixed-input-768-input-width: $resolution-768-width*0.30;
+
+$fixed-input-320-left-input-margin-right: $resolution-320-width*0.0375;
+$fixed-input-360-left-input-margin-right: $resolution-360-width*0.0375;
+$fixed-input-375-left-input-margin-right: $resolution-375-width*0.0375;
+$fixed-input-411-left-input-margin-right: $resolution-411-width*0.0375;
+
+$fixed-input-600-left-input-margin-right: $resolution-600-width*0.0375;
+$fixed-input-768-left-input-margin-right: $resolution-768-width*0.025;
 .fixed-input-container {
   width: 100%;
   height: 68px;
@@ -65,9 +94,59 @@
   }
 }
 
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: $resolution-320-width) {
   .fixed-input-container {
     .fixed-input-container {
+      .container-center {
+        .left-input {
+          width: $fixed-input-320-input-width;
+          margin-right: $fixed-input-320-left-input-margin-right;
+        }
+        .right-input{
+          width: $fixed-input-320-input-width;
+        }
+      }
+      .container-right {
+        button {
+          width: $fixed-input-320-button-width;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: $resolution-360-width) {
+  .fixed-input-container {
+    .fixed-input-container {
+      .container-center {
+        .left-input {
+          width: $fixed-input-360-input-width;
+          margin-right: $fixed-input-360-left-input-margin-right;
+        }
+        .right-input{
+          width: $fixed-input-360-input-width;
+        }
+      }
+      .container-right {
+        button {
+          width: $fixed-input-360-button-width;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: $resolution-375-width) {
+  .fixed-input-container {
+    .fixed-input-container {
+      .container-center {
+        .left-input {
+          width: $fixed-input-375-input-width;
+          margin-right: $fixed-input-375-left-input-margin-right;
+
+        }
+        .right-input{
+          width: $fixed-input-375-input-width;
+        }
+      }
       .container-center {
         .left-input {
           width: 154px;
@@ -76,31 +155,77 @@
       }
       .container-right {
         button {
-          width: 141px;
+          width: $fixed-input-375-button-width;
         }
       }
     }
   }
 }
+@media only screen and (min-width: $resolution-411-width) {
+  .fixed-input-container {
+    .fixed-input-container {
+      .container-center {
+        .left-input {
+          width: $fixed-input-411-input-width;
+          margin-right: $fixed-input-411-left-input-margin-right;
 
-@media only screen and (min-width: 600px) {
+        }
+        .right-input{
+          width: $fixed-input-411-input-width;
+        }
+      }
+      .container-right {
+        button {
+          width: $fixed-input-411-button-width;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: $resolution-600-width) {
   .fixed-input-container {
     .fixed-input-container {
       width: calc(100% - 36px*2);
       .container-center {
         .left-input {
-          width: 150px;
           margin-right: 22px;
+          width: $fixed-input-600-input-width;
+          margin-right: $fixed-input-600-left-input-margin-right;
+
         }
         .right-input{
-          width: 164px;
+          width: $fixed-input-600-input-width;
           display: block;
           margin-right: 22px;
         }
       }
       .container-right {
         button {
-          width: 138px;
+          width: $fixed-input-600-button-width
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: $resolution-768-width) {
+  .fixed-input-container {
+    .fixed-input-container {
+      .container-center {
+        .left-input {
+          margin-right: 22px;
+          width: $fixed-input-768-input-width;
+          margin-right: $fixed-input-768-left-input-margin-right;
+
+        }
+        .right-input{
+          width: $fixed-input-768-input-width;
+          display: block;
+          margin-right: 22px;
+        }
+      }
+      .container-right {
+        button {
+          width: $fixed-input-768-button-width
         }
       }
     }

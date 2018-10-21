@@ -1,80 +1,112 @@
 {
-    "HELLO": "hola {{value}}",
-    "HEADER": {
-        "anchor1": "¿Qué hacemos?",
-        "anchor2": "Bwower",
-        "anchor3": "¿Hablamos?",
-        "secondary": {
-            "secondary1": "Diseño de producto digital",
-            "secondary2": "Branding",
-            "secondary3": "Business Design",
-            "secondary4": "Design System",
-            "secondary5": "Design Teams"
-
-        }
-    },
-    "HOME": {
-        "h3Text1FirstLine":"Diseño de producto",
-        "h3Text1SecondLine":"digital",
-        "h4Text1":"Conectamos la idea con el producto final, orientando soluciones a un usuario potencial y testando cada fase de desarrollo de producto.",
-        "aText1":"Ver soluciones",
-
-        "h3Text2FirstLine":"Diseño de producto2",
-        "h3Text2SecondLine":"digital",
-        "h4Text2":"Conectamos la idea con el producto final, orientando soluciones a un usuario potencial y testando cada fase de desarrollo de producto.",
-        "aText2":"Ver soluciones",
-
-        "h3Text3FirstLine":"Diseño de producto3",
-        "h3Text3SecondLine":"digital",
-        "h4Text3":"Conectamos la idea con el producto final, orientando soluciones a un usuario potencial y testando cada fase de desarrollo de producto.",
-        "aText3":"Ver soluciones",
-        
-        "h3Text4FirstLine":"Diseño de producto4",
-        "h3Text4SecondLine":"digital",
-        "h4Text4":"Conectamos la idea con el producto final, orientando soluciones a un usuario potencial y testando cada fase de desarrollo de producto.",
-        "aText4":"Ver soluciones",
-
-        "h3Text5FirstLine":"Diseño de producto5",
-        "h3Text5SecondLine":"digital",
-        "h4Text5":"Conectamos la idea con el producto final, orientando soluciones a un usuario potencial y testando cada fase de desarrollo de producto.",
-        "aText5":"Ver soluciones"
-    },
-    "CONTACT": {
-        "header": "Ahora, dinos algo sobre tí.",
-        "content": "Cuéntanos sobre tu proyecto, qué cosas puedes aportar al estudio o si simplemente quieres que charlemos sobre algo que tienes en mente. ",
-        "button-text": "Contactar",
-        "placeholder1": "Nombre*",
-        "placeholder2": "Apellido*",
-        "placeholder3": "Empresa",
-        "placeholder4": "Cargo",
-        "placeholder5": "Email*",
-        "placeholder6": "Móvil*",
-        "placeholder7": "País*",
-        "placeholder8": "Mensaje"
-
-
-    }, 
-    "FOOTER": {
-        "text": "Te contactamos",
-        "send": "Enviar",
-        "placeholder": "Nombre",
-        "placeholder2": "Número o Correo",
-        "anchor2": "Te contamos más cosas en",
-        "leftContainer": {
-            "anchorItem1":"Diseño de producto digital",
-            "anchorItem2":"Branding",
-            "anchorItem3":"Business design",
-            "anchorItem4":"Design systems",
-            "anchorItem5":"Design teams"
-        },
-        "centerContainer": {
-            "anchorItem1":"Medium",
-            "anchorItem2":"Linkedin",
-            "anchorItem3":"Behance",
-            "anchorItem4":"Twitter",
-            "anchorItem5":"Instagram",
-            "anchorItem6":"Spotify"
-        }
+  "HELLO": "hola {{value}}",
+  "HEADER": {
+    "anchor1": "¿Qué hacemos?",
+    "anchor2": "Bwower",
+    "anchor3": "¿Hablamos?",
+    "secondary": {
+      "secondary1": "Diseño de producto digital",
+      "secondary2": "Branding",
+      "secondary3": "Business Design",
+      "secondary4": "Design System",
+      "secondary5": "Design Teams"
     }
+  },
+  "HOME": {
+    "h3Text1FirstLine": "Diseño de",
+    "h3Text1SecondLine": "producto digital",
+    "h4Text1": "Conectamos la idea con el producto final, orientando soluciones a un usuario potencial y testando cada fase de desarrollo de producto.",
+    "aText1": "Crea soluciones para tus usuarios",
 
+    "h3Text2FirstLine": "Branding",
+    "h3Text2SecondLine": "",
+    "h4Text2": "Te ayudamos a construir tu marca a través del valor que le imprimimos. Comunica quién quieres ser y cómo quieres que te perciban.",
+    "aText2": "Empieza a construir quién eres",
+
+    "h3Text3FirstLine": "Business Design",
+    "h3Text3SecondLine": "",
+    "h4Text3": "Conectamos los objetivos de negocio con las necesidades de tus usuarios, creando productos donde ambos puedan crecer.",
+    "aText3": "Haz crecer tu idea de negocio",
+
+    "h3Text4FirstLine": "Design Systems",
+    "h3Text4SecondLine": "",
+    "h4Text4": "Creamos estructura en las decisiones de diseño para que tu producto pueda escalar de forma orgánica.",
+    "aText4": "Evoluciona tu diseño con tu producto",
+
+    "h3Text5FirstLine": "Coaching de",
+    "h3Text5SecondLine": "equipos diseño",
+    "h4Text5": "Sistematizamos y estructuramos los workflows para que los procesos fluyan. Resolvemos problemas a través de metodologías ágiles.",
+    "aText5": "Optimiza e integra metodologías en tu equipo de diseño",
+
+    "aTextMobile": "Ver soluciones"
+
+
+  },
+  "CONTACT": {
+    "header": "Ahora, dinos algo sobre tí.",
+    "content": "Cuéntanos sobre tu proyecto, qué cosas puedes aportar al estudio o si simplemente quieres que charlemos sobre algo que tienes en mente. ",
+    "button-text": "Contactar",
+    "placeholder1": "Nombre*",
+    "placeholder2": "Apellido*",
+    "placeholder3": "Empresa",
+    "placeholder4": "Cargo",
+    "placeholder5": "Email*",
+    "placeholder6": "Móvil*",
+    "placeholder7": "País*",
+    "placeholder8": "Mensaje"
+  },
+  "FOOTER": {
+    "text": "Te contactamos",
+    "send": "Enviar",
+    "placeholder": "Nombre",
+    "placeholder2": "Número o Correo",
+    "anchor2": "Te contamos más cosas en",
+    "leftContainer": {
+      "anchorItem1": "Diseño de producto digital",
+      "anchorItem2": "Branding",
+      "anchorItem3": "Business design",
+      "anchorItem4": "Design systems",
+      "anchorItem5": "Design teams"
+    },
+    "centerContainer": {
+      "anchorItem1": "Medium",
+      "anchorItem2": "Linkedin",
+      "anchorItem3": "Behance",
+      "anchorItem4": "Twitter",
+      "anchorItem5": "Instagram",
+      "anchorItem6": "Spotify"
+    }
+  },
+  "BWOWERS": {
+    "firstSlide": {
+      "header": "Bwowers",
+      "text": "Cada proyecto, cliente y miembro del equipo son una pieza de lo que somos. Forma parte de nuestra cultura y crece con nosotros. "
+    },
+    "title": {
+      "header": "Somos",
+      "text": "Un equipo."
+    },
+    "secondSlide": {
+      "title": "Fabio Korsos",
+      "subtitle": "Co Founder & Product Designer",
+      "text": "Analítico y calmado. Es la parte didáctica del estudio, cuando habla siempre hay algo que aprender, no en vano es el actual Lead Teacher de Diseño de Producto Digital en Ironhack. Cuando no trabaja sólo piensa en hacer surf."
+    },
+    "thirdSlide": {
+      "title": "Lía Vega",
+      "subtitle": "Co Founder & Product Designer",
+      "text": "Con la cabeza siempre en ebullición. Lo suyo es la parte creativa y marcar estructura. Ilustradora desde que aún no andaba, lleva más de 10 años trabajando como visual designer. Si no la encontramos en el estudio sabemos que estará mirando por su telescopio."
+    },
+    "fourthSlide": {
+      "title": "Santi Becerra",
+      "subtitle": "Product Designer",
+      "text": "La energía del equipo. Siempre llegando un poco más allá, nunca se deja una pregunta por hacer.  Emprendedor desde muy joven, ya ha montado y evolucionado su propia startup. Cuando no está en Bwow repartiendo buen rollo está viajando o con el skate por Madrid."
+    },
+    "fifthSlide": {
+      "header": "Ya son Bwowers",
+      "text": "Estos son los productos que forman parte de lo que somos y en los que hemos aportado a lo largo de nuestra vida como diseñadores."
+    },
+    "sixthSlide": {
+      "button": "Ver proyectos"
+    }
+  }
 }

@@ -71,7 +71,7 @@
 
 @media only screen and (min-width: 600px) {
   .controls-container {
-    margin-top: 60px;
+    margin-top: 30px;
   }
   .home-container {
     .text-container {
@@ -92,6 +92,14 @@
       display: block;
       width: 255px;
       height: 258px;
+    }
+  }
+}
+@media only screen and (min-width: 768px) {
+  .home-container {
+    .homeImg {
+      width: 420px;
+      height: 420px;
     }
   }
 }

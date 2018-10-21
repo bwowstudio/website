@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 export class ResolutionService {
   private isMobileResolution: boolean;
   constructor() {
-    if (window.innerWidth < 768) {
+    if (window.innerWidth < 1024) {
       this.isMobileResolution = true;
     } else {
       this.isMobileResolution = false;

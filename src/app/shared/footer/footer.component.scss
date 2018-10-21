@@ -18,6 +18,7 @@ $footer-resolution-1440-padding-left-right: 56px;
   font-family: $font-family-bold;
   box-sizing: border-box;
   .footer-container-top{
+    @include no-select;
     width: 100%;
     display: flex;
     .container-left{

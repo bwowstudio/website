@@ -3,12 +3,27 @@
 @import '../../../../styles/variables.scss';
 @import '../../../../styles/fonts.scss';
 
+$header-resolution-less-than-1024-padding-left-right: 56px;
+$header-resolution-1024-padding-left-right: 80px;
+$header-resolution-1280-padding-left-right: 80px;
+$header-resolution-1440-padding-left-right: 56px;
+
+$header-resolution-less-than-1024-padding-top: 45px;
+$header-resolution-1024-padding-top: 45px;
+$header-resolution-1280-padding-top: 45px;
+$header-resolution-1440-padding-top: 45px;
+
+$header-resolution-less-than-1024-padding-bottom: 100px;
+$header-resolution-1024-padding-bottom: 70px;
+$header-resolution-1280-padding-bottom: 70px;
+$header-resolution-1440-padding-bottom: 135px;
+
 .header-desktop-container {
-  width: 1024px;
+  width: 100%;
   height: 100%;
-  box-sizing: border-box;
   display: flex;
   align-items: center;
+  box-sizing: border-box;
   padding: $header-resolution-less-than-1024-padding-top $header-resolution-less-than-1024-padding-left-right $header-resolution-less-than-1024-padding-bottom;
   @include no-select;
   .container-left {
@@ -89,13 +104,11 @@
 }
 @media only screen and (min-width: 1024px) {
   .header-desktop-container {
-    width: $resolution-1024-width;
     padding: $header-resolution-1024-padding-top $header-resolution-1024-padding-left-right $header-resolution-1024-padding-bottom;
   }
 }
 @media only screen and (min-width: 1280px) {
   .header-desktop-container {
-    width: $resolution-1280-width;
     padding: $header-resolution-1280-padding-top $header-resolution-1280-padding-left-right $header-resolution-1280-padding-bottom;
   }
 }

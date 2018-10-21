@@ -18,9 +18,11 @@ export class AppComponent implements OnInit {
       this.translateService.use(e);
     });
   }
+  onActivate() {
+    window.scroll(0, 0);
+  }
   ngOnInit() {
     this.translateService.get('HELLO', { value: 'world' }).subscribe((res: string) => {
-      console.log(res);
     });
   }
 }

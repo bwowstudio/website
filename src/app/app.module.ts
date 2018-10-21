@@ -23,6 +23,8 @@ import { ControlsComponent } from './shared/controls/controls.component';
 import { HomeComponent } from './components/home/home.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { BwowersComponent } from './components/bwowers/bwowers.component';
+import { UnderConstructionComponent } from './shared/under-construction/under-construction.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/translations/', '.json');
@@ -45,6 +47,8 @@ export function createTranslateLoader(http: HttpClient) {
     HomeComponent,
     ContactComponent,
     FooterComponent,
+    BwowersComponent,
+    UnderConstructionComponent,
 
   ],
   imports: [
