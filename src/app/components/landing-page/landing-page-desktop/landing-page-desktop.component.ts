@@ -28,7 +28,7 @@ export class LandingPageDesktopComponent implements OnInit {
     this.ovalRoute = 'assets/images/oval.svg';
     this.displayArrow = 'block';
   }
-  nextPage(page) {
+  nextPage(page = '/home') {
     if (this.transitionIsOn) {
       return;
     }
