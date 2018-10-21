@@ -21,6 +21,10 @@
     flex-direction: column;
     align-items: center;
     cursor: pointer;
+    img {
+      width: 40px;
+      height: 35px;
+    }
     .menu-line {
       height: 1px;
       width: 90%;
@@ -30,13 +34,24 @@
     }
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: $resolution-360-width) {
+  .menu-controls-container {
+    .menu-controls {
+      img {
+        width: 40px;
+        height: 35px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $resolution-768-width) {
   .number {
     margin-left: $controls-resolution-768-number-margin-left;
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: $resolution-1024-width) {
   .number {
     margin-left: $controls-resolution-1024-number-margin-left;
     font-size: 120px;
@@ -47,18 +62,19 @@
     .menu-controls {
       img {
         width: 56px;
+        height: 49px;
       }
     }
   }
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: $resolution-1280-width) {
   .number {
     margin-left: $controls-resolution-1280-number-margin-left;
   }
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: $resolution-1440-width) {
   .number {
     margin-left: $controls-resolution-1440-number-margin-left;
     height: 98px;
