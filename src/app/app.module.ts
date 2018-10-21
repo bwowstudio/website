@@ -22,6 +22,7 @@ import { FixedInputDesktopComponent } from './shared/fixed-input/fixed-input-des
 import { ControlsComponent } from './shared/controls/controls.component';
 import { HomeComponent } from './components/home/home.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { FooterComponent } from './shared/footer/footer.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/translations/', '.json');
@@ -43,6 +44,7 @@ export function createTranslateLoader(http: HttpClient) {
     ControlsComponent,
     HomeComponent,
     ContactComponent,
+    FooterComponent,
 
   ],
   imports: [

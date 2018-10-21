@@ -3,7 +3,7 @@
     "HEADER": {
         "anchor1": "¿Qué hacemos?",
         "anchor2": "Bwower",
-        "anchor3": "Contacto",
+        "anchor3": "¿Hablamos?",
         "secondary": {
             "secondary1": "Diseño de producto digital",
             "secondary2": "Branding",
@@ -58,7 +58,23 @@
         "text": "Te contactamos",
         "send": "Enviar",
         "placeholder": "Nombre",
-        "placeholder2": "Número o Correo"
+        "placeholder2": "Número o Correo",
+        "anchor2": "Te contamos más cosas en",
+        "leftContainer": {
+            "anchorItem1":"Diseño de producto digital",
+            "anchorItem2":"Branding",
+            "anchorItem3":"Business design",
+            "anchorItem4":"Design systems",
+            "anchorItem5":"Design teams"
+        },
+        "centerContainer": {
+            "anchorItem1":"Medium",
+            "anchorItem2":"Linkedin",
+            "anchorItem3":"Behance",
+            "anchorItem4":"Twitter",
+            "anchorItem5":"Instagram",
+            "anchorItem6":"Spotify"
+        }
     }
 
 }

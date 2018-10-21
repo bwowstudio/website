@@ -1,4 +1,13 @@
 @import '../../../styles/fonts.scss';
+@import '../../../styles/mixins.scss';
+@import '../../../styles/palette.scss';
+@import '../../../styles/variables.scss';
+@import '../../../styles/fonts.scss';
+
+$header-resolution-less-than-1024-padding-left-right: 56px;
+$contact-resolution-1024-padding-left-right: 80px;
+$contact-resolution-1280-padding-left-right: 80px;
+$contact-resolution-1440-padding-left-right: 56px;
 
 .contact-container {
   width: 100%;
@@ -110,5 +119,36 @@
         }
       }
     }
+  }
+}
+
+@media only screen and (min-width: $resolution-1024-width) {
+  .contact-container {
+    width: 100%;
+    display: flex;
+    padding: 100px $contact-resolution-1024-padding-left-right 80px;
+    .container-left {
+      .content {
+        width: 400px;
+      }
+    }
+  }
+}
+@media only screen and (min-width: $resolution-1280-width) {
+  .contact-container {
+    width: 100%;
+    display: flex;
+    padding: 100px $contact-resolution-1280-padding-left-right 80px;
+    .container-left {
+      .content {
+        width: auto;
+      }
+    }
+  }
+}
+@media only screen and (min-width: $resolution-1440-width) {
+  .contact-container {
+    @include center-hight-resolutions;
+    padding: 100px $contact-resolution-1440-padding-left-right 80px;
   }
 }

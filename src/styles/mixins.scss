@@ -26,3 +26,7 @@
   box-shadow: none;
   outline: none;
 }
+@mixin center-hight-resolutions {
+  width: $resolution-1440-width;
+  margin: auto;
+}
