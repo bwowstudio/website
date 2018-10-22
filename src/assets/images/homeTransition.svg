@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="1280px" height="1344px" viewBox="0 0 1280 1344" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
-    <title>Group</title>
+<svg width="1290px" height="2514px" viewBox="0 0 1290 2514" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Combined Shape</title>
     <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="01-Cover" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Desktop" transform="translate(0.000000, -4.000000)" fill="#FFFFFF">
-            <g id="Group" transform="translate(-294.000000, 0.000000)">
-                <path d="M1582.47722,769 C1379.76091,665.275374 1161.57906,612.694177 933.965324,612.694177 C706.420939,612.694177 488.239094,665.275374 285.522777,769 L0,224.907853 C291.833822,75.6539352 606.068387,0 933.965324,0 C1261.93161,0 1576.16618,75.6539352 1868,224.907853 L1582.47722,769 Z" id="bg-section-copy" transform="translate(934.000000, 384.500000) scale(1, -1) translate(-934.000000, -384.500000) "></path>
-                <rect id="Rectangle" x="0" y="525" width="1868" height="844"></rect>
-            </g>
-        </g>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M1290,0.773415657 L1290,2514 L-2.27373675e-13,2514 L0,0.773417129 C201.733317,103.323935 418.721407,155.305823 644.965324,155.305823 C871.278197,155.305823 1088.26669,103.323935 1290,0.773415657 Z" id="Combined-Shape" fill="#FFFFFF"></path>
     </g>
 </svg>

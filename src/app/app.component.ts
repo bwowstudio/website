@@ -21,6 +21,9 @@ export class AppComponent implements OnInit {
   onActivate() {
     window.scroll(0, 0);
   }
+  onResize() {
+    window.location.reload();
+  }
   ngOnInit() {
     this.translateService.get('HELLO', { value: 'world' }).subscribe((res: string) => {
     });

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { LanguageService } from 'src/app/services/language.service';
 import { forkJoin } from 'rxjs';
+import { ResolutionService } from 'src/app/services/resolution.service';
 
 @Component({
   selector: 'app-home',
@@ -17,6 +18,7 @@ export class HomeComponent implements OnInit {
     aTextMobile: ''
   };
   constructor(
+    public resolutionService: ResolutionService,
     public translateService: TranslateService,
     public languageService: LanguageService,
   ) {
@@ -32,7 +34,9 @@ export class HomeComponent implements OnInit {
         this.translateService.get(`HOME.h3Text${page}FirstLine`),
         this.translateService.get(`HOME.h3Text${page}SecondLine`),
         this.translateService.get(`HOME.h4Text${page}`),
-        this.translateService.get(`HOME.aTextMobile`),
+        this.resolutionService.getIsMobileResolution() ?
+          this.translateService.get(`HOME.aTextMobile`) :
+          this.translateService.get(`HOME.aText${page}`),
       ]).subscribe(results => {
         this.home = {
           h3TextFirstLine: results[0],
