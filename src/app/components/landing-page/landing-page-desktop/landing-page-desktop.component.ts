@@ -19,7 +19,7 @@ export class LandingPageDesktopComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    // setTimeout(() => this.nextPage('/home'), 10000);
+    setTimeout(() => this.nextPage('/home'), 10000);
   }
   mouseEnter() {
     this.displayArrow = 'none';
