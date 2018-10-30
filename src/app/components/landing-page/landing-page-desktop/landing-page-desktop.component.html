@@ -1,68 +1,69 @@
 <div class="home-container" [ngStyle]="{'background-position-y': backgroundPosition}">
-  <div class="first-row">
-    <div class="cell-1"></div>
-    <div class="cell-2">
-      <img src="assets/images/logoWhite.svg">
+  <div class="first-row text" [ngStyle]="{'border': displayNet}">
+    <div class="cell-1" [ngStyle]="{'border': displayNet}"></div>
+    <div class="cell-2" [ngStyle]="{'border': displayNet}">
+      <img class="text" src="assets/images/logoWhite.svg">
     </div>
-    <div class="cell-3">
+    <div class="cell-3" [ngStyle]="{'border': displayNet}">
       <h3 (click)="nextPage('/what-we-do')">¿Qué hacemos?</h3>
     </div>
-    <div class="cell-4"></div>
-    <div class="cell-5">
+    <div class="cell-4" [ngStyle]="{'border': displayNet}"></div>
+    <div class="cell-5" [ngStyle]="{'border': displayNet}">
       <h3 (click)="nextPage('/bwowers')">Bwowers</h3>
     </div>
-    <div class="cell-6"></div>
-    <div class="cell-7">
+    <div class="cell-6" [ngStyle]="{'border': displayNet}"></div>
+    <div class="cell-7" [ngStyle]="{'border': displayNet}">
       <h3 (click)="nextPage('/contact')">¿Hablamos?</h3>
     </div>
-    <div class="cell-8">
+    <div class="cell-8" [ngStyle]="{'border': displayNet}">
       <h3>|</h3>
     </div>
-    <div class="cell-9">
-      <h3>EN</h3>
+    <div class="cell-9" [ngStyle]="{'border': displayNet}">
+      <h3 class="text">EN</h3>
       <h3>ES</h3>
     </div>
     <div class="cell-10"></div>
   </div>
-  <div class="second-row">
-    <div class="cell-1"></div>
-    <div class="cell-2"></div>
-    <div class="cell-3"></div>
-    <div class="cell-4"></div>
-    <div class="cell-5"></div>
-    <div class="cell-6"></div>
-    <div class="cell-7"></div>
-    <div class="cell-8"></div>
-    <div class="cell-9"></div>
-    <div class="cell-10"></div>
+  <div class="second-row text" [ngStyle]="{'border': displayNet}">
+    <div class="cell-1" [ngStyle]="{'border': displayNet}"></div>
+    <div class="cell-2" [ngStyle]="{'border': displayNet}"></div>
+    <div class="cell-3" [ngStyle]="{'border': displayNet}"></div>
+    <div class="cell-4" [ngStyle]="{'border': displayNet}"></div>
+    <div class="cell-5" [ngStyle]="{'border': displayNet}"></div>
+    <div class="cell-6" [ngStyle]="{'border': displayNet}"></div>
+    <div class="cell-7" [ngStyle]="{'border': displayNet}"></div>
+    <div class="cell-8" [ngStyle]="{'border': displayNet}"></div>
+    <div class="cell-9" [ngStyle]="{'border': displayNet}"></div>
+    <div class="cell-10" [ngStyle]="{'border': displayNet}"></div>
   </div>
-  <div class="third-row">
-    <div class="cell-1"></div>
-    <div class="cell-2">
+  <div class="third-row text" [ngStyle]="{'border': displayNet}">
+    <div class="cell-1" [ngStyle]="{'border': displayNet}"></div>
+    <div class="cell-2" [ngStyle]="{'border': displayNet}">
       <h2>Just designers making design</h2>
     </div>
-    <div class="cell-3"></div>
-    <div class="cell-4"></div>
-    <div class="cell-5"></div>
-    <div class="cell-6"></div>
-    <div class="cell-7"></div>
-    <div class="cell-8"></div>
-    <div class="cell-9"></div>
-    <div class="cell-10"></div>
+    <div class="cell-3" [ngStyle]="{'border': displayNet}"></div>
+    <div class="cell-4" [ngStyle]="{'border': displayNet}"></div>
+    <div class="cell-5" [ngStyle]="{'border': displayNet}"></div>
+    <div class="cell-6" [ngStyle]="{'border': displayNet}"></div>
+    <div class="cell-7" [ngStyle]="{'border': displayNet}"></div>
+    <div class="cell-8" [ngStyle]="{'border': displayNet}"></div>
+    <div class="cell-9" [ngStyle]="{'border': displayNet}"></div>
+    <div class="cell-10" [ngStyle]="{'border': displayNet}"></div>
   </div>
-  <div class="fourth-row">
-    <div class="cell-1"></div>
-    <div class="cell-2"></div>
-    <div class="cell-3">
-      <img src="assets/images/arrowDown.svg" (click)="nextPage('/home')" [ngStyle]="{'display': displayArrow}">
-      <img class="oval" src="{{ovalRoute}}" [ngStyle]="{'display': displayOval}" (mouseenter)="mouseEnter()" (mouseleave)="mouseLeave()" (click)="nextPage()">
+  <div class="fourth-row text">
+    <div class="cell-1" [ngStyle]="{'border': displayNet}"></div>
+    <div class="cell-2" [ngStyle]="{'border': displayNet}"></div>
+    <div class="cell-3" [ngStyle]="{'border': displayNet}">
+      <img class="text" src="assets/images/arrowDown.svg" [ngStyle]="{'display': displayArrow}" (click)="nextPage()">
+      <img class="oval text" src="assets/images/oval.svg" [ngStyle]="{'display': displayOval}" (mouseenter)="mouseEnter()" (mouseleave)="mouseLeave()">
+      <img class="oval text" src="assets/images/ovalWhite.svg" [ngStyle]="{'display': displayOvalWhite}" (mouseenter)="mouseEnter()" (mouseleave)="mouseLeave()" (click)="nextPage()">
     </div>
-    <div class="cell-4"></div>
-    <div class="cell-5"></div>
-    <div class="cell-6"></div>
-    <div class="cell-7"></div>
-    <div class="cell-8"></div>
-    <div class="cell-9"></div>
+    <div class="cell-4" [ngStyle]="{'border': displayNet}"></div>
+    <div class="cell-5" [ngStyle]="{'border': displayNet}"></div>
+    <div class="cell-6" [ngStyle]="{'border': displayNet}"></div>
+    <div class="cell-7" [ngStyle]="{'border': displayNet}"></div>
+    <div class="cell-8" [ngStyle]="{'border': displayNet}"></div>
+    <div class="cell-9" [ngStyle]="{'border': displayNet}"></div>
     <div class="cell-10"></div>
   </div>
 </div>

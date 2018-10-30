@@ -47,7 +47,7 @@ $header-resolution-1440-padding-bottom: 135px;
       .anchor3 {
         margin-left: 36px;
         text-align: right;
-        font-size: 18px;
+        font-size: $header-font-size;
         color: #4A4A4A;
         letter-spacing: 0.33px;
         line-height: 32px;
@@ -80,16 +80,17 @@ $header-resolution-1440-padding-bottom: 135px;
       .left-span {
         width: 70%;
         text-align: right;
-        font-size: 18px;
+        font-size: $header-font-size;
         color: #4A4A4A;
         letter-spacing: 0.33px;
       }
       .right-span {
         width: 30%;
         text-align: right;
-        font-size: 18px;
+        font-size: $header-font-size;
         color: #4A4A4A;
         letter-spacing: 0.33px;
+        margin-left: 14px;
       }
       .left-span:hover {
         font-family: $font-family-bold;
