@@ -8,15 +8,30 @@ import { LanguageService } from 'src/app/services/language.service';
   styleUrls: ['./header-desktop.component.scss']
 })
 export class HeaderDesktopComponent implements OnInit {
+  langEs = true;
+  langEn = false;
   constructor(
     public translateService: TranslateService,
     public languageService: LanguageService,
   ) {
-    this.translateService.use(this.languageService.language);
+    this.setLanguage(this.languageService.language);
     this.languageService.langUpdated.subscribe(e => {
-      this.translateService.use(e);
+      this.setLanguage(this.languageService.language);
     });
   }
   ngOnInit() {}
+  setLanguage(language) {
+    this.translateService.use(language);
+    switch (language) {
+      case 'es':
+        this.langEs = true;
+        this.langEn = false;
+      break;
+      case 'en':
+        this.langEs = false;
+        this.langEn = true;
+      break;
+    }
+  }
 }
 
