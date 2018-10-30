@@ -121,7 +121,10 @@ $contact-resolution-1440-padding-left-right: 56px;
     }
   }
 }
-
+.footer-container{
+  width: 100%;
+  background-color: black;
+}
 @media only screen and (min-width: $resolution-1024-width) {
   .contact-container {
     width: 100%;

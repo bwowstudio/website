@@ -64,7 +64,7 @@ h3 {
       align-items: flex-end;
     }
     .cell-1 {
-      width: 80px;
+      flex: 1;
     }
     .cell-2 {
       width: 40%;
@@ -74,7 +74,7 @@ h3 {
 
     }
     .cell-4, .cell-6, .cell-8 {
-      flex: 1
+      flex: 1;
     }
     .cell-5 {
       width: 80px;
@@ -86,7 +86,7 @@ h3 {
       width: 52px;
     }
     .cell-10 {
-      width: 80px;
+      flex: 1;
       border: none;
     }
   }
@@ -117,19 +117,22 @@ h3 {
       justify-content: flex-end;
       align-items: center;
       img {
-        margin-top: 20px;
+        position: absolute;
+        bottom: 70px;
         cursor: pointer;
       }
       .oval{
         width: 136px;
+        position: absolute;
+        bottom: 0;
       }
     }
   }
 }
 @media only screen and (min-width: $resolution-1440-width) {
   .home-container {
-    width: $resolution-1440-width;
-    margin: auto;
+    // width: $resolution-1440-width;
+    // margin: auto;
   }
 }
 

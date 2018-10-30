@@ -241,6 +241,10 @@ $bwowers-resolution-1440-padding-left-right: 56px;
     }
   }
 }
+.footer-container{
+  width: 100%;
+  background-color: black; 
+}
 
 @media only screen and (min-width: $resolution-1024-width) {
   .bwowers-container {
@@ -287,9 +291,11 @@ $bwowers-resolution-1440-padding-left-right: 56px;
 
 @media only screen and (min-width: $resolution-1440-width) {
   .bwowers-container {
-    @include center-hight-resolutions;
     .container-first-slide {
       padding: 0 $bwowers-resolution-1440-padding-left-right 106px;
+    }
+    .container-first-slide, .container-second-slide, .container-second-slide, .container-third-slide, .container-fourth-slide {
+      @include center-hight-resolutions; 
     }
   }
 }

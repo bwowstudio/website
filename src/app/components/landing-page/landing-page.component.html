@@ -1,4 +1,4 @@
-<div *ngIf="!resolutionService.getIsMobileResolution()">
+<div *ngIf="!resolutionService.getIsMobileResolution()" class="landing-page-desktop-container">
   <app-landing-page-desktop></app-landing-page-desktop>
 </div>
 <div *ngIf="resolutionService.getIsMobileResolution()">
