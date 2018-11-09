@@ -1,8 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { LanguageService } from 'src/app/services/language.service';
 import { ResolutionService } from 'src/app/services/resolution.service';
 import { Router } from '@angular/router';
+import { ScrollEvent } from 'ngx-scroll-event';
+
 
 @Component({
   selector: 'app-bwowers',
@@ -10,6 +12,15 @@ import { Router } from '@angular/router';
   styleUrls: ['./bwowers.component.scss']
 })
 export class BwowersComponent implements OnInit {
+  isHideFixedInput = false;
+  public handleScroll(event: ScrollEvent) {
+    if (document.body.scrollHeight - window.scrollY < 1467) {
+      this.isHideFixedInput = true;
+    }
+    if (document.body.scrollHeight - window.scrollY > 1467) {
+      this.isHideFixedInput = false;
+    }
+  }
   constructor(
     public translateService: TranslateService,
     public languageService: LanguageService,

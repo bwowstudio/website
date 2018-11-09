@@ -8,7 +8,17 @@ $bwowers-resolution-less-than-1024-padding-left-right: 56px;
 $bwowers-resolution-1024-padding-left-right: 80px;
 $bwowers-resolution-1280-padding-left-right: 80px;
 $bwowers-resolution-1440-padding-left-right: 56px;
+$bwowers-text-font-size: 18px;
 
+h3 {
+  font-size: $bwowers-text-font-size;
+  font-family: $font-family-thin;
+}
+p {
+  font-size: $bwowers-text-font-size;
+  font-family: $font-family-regular;
+
+}
 .bwowers-container {
   width: 100%;
   color: #0f0506;
@@ -16,8 +26,12 @@ $bwowers-resolution-1440-padding-left-right: 56px;
     display: flex;
     box-sizing: border-box;
     padding: 0 $bwowers-resolution-1024-padding-left-right 106px;
+    height: calc(100vh - 147px);
     .first-slide-left {
       width: 50%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
       h2 {
         font-family: $font-family-bold;
         font-size: 54px;
@@ -25,7 +39,6 @@ $bwowers-resolution-1440-padding-left-right: 56px;
       }
       h3 {
         margin-top: 32px;
-        font-size: 18px;
         line-height: 1.6;
         letter-spacing: 0.4px;
       }
@@ -37,7 +50,8 @@ $bwowers-resolution-1440-padding-left-right: 56px;
   }
   .fixed-input-container {
     width: 100%;
-    margin-bottom: 70px;
+    bottom: 20px;
+    position: fixed;
   }
   .container-title {
     h2 {
@@ -47,7 +61,6 @@ $bwowers-resolution-1440-padding-left-right: 56px;
       text-align: center;
     }
     h3 {
-      font-size: 20px;
       line-height: 1.6;
       letter-spacing: 0.4px;
       text-align: center;
@@ -84,7 +97,6 @@ $bwowers-resolution-1440-padding-left-right: 56px;
         }
         h3, p {
           margin-top: 10px;
-          font-size: 20px;
           line-height: 1.6;
           letter-spacing: 0.4px;
         }
@@ -119,7 +131,6 @@ $bwowers-resolution-1440-padding-left-right: 56px;
         }
         h3, p {
           margin-top: 10px;
-          font-size: 20px;
           line-height: 1.6;
           letter-spacing: 0.4px;
         }
@@ -164,7 +175,6 @@ $bwowers-resolution-1440-padding-left-right: 56px;
         }
         h3, p {
           margin-top: 10px;
-          font-size: 20px;
           line-height: 1.6;
           letter-spacing: 0.4px;
         }
@@ -192,7 +202,6 @@ $bwowers-resolution-1440-padding-left-right: 56px;
     }
     h3{
       width: 720px;
-      font-size: 20px;
       line-height: 1.6;
       letter-spacing: 0.4px;
       margin: 32px auto 0;

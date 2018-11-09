@@ -23,8 +23,8 @@ h3 {
   font-family: $font-family-bold;
   .first-row {
     width: 100%;
-    height: 13%;
     border-bottom: dashed 1px #878282;
+    height: 71px;
   }
   .second-row {
     width: 100%;
@@ -68,6 +68,10 @@ h3 {
     }
     .cell-2 {
       width: 40%;
+      .logoWhite{
+        width: 176px;
+        height: 26px;
+      }
     }
     .cell-3 {
       width: 136px;

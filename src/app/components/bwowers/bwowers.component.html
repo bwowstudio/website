@@ -1,5 +1,5 @@
 <app-header></app-header>
-<div class="bwowers-container">
+<div class="bwowers-container" detect-scroll (onScroll)="handleScroll($event)">
   <div class="container-first-slide">
     <div class="first-slide-left">
       <h2>{{ 'BWOWERS.firstSlide.header' | translate }}</h2>
@@ -9,7 +9,7 @@
       <img src="assets/images/bwowersFirstSlideImg.svg">
     </div>
   </div>
-  <div class="fixed-input-container">
+  <div class="fixed-input-container" [hidden]="isHideFixedInput">
     <app-fixed-input></app-fixed-input>
   </div>
   <div class="container-title">

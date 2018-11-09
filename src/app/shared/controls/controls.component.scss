@@ -26,10 +26,8 @@
       height: 35px;
     }
     .menu-line {
-      height: 1px;
-      width: 90%;
-      background-color: $background-color-line-button;
-      border-style: none;
+      width: 85%;
+      border: 1px solid $background-color-line-button;
       margin: 0;
     }
   }

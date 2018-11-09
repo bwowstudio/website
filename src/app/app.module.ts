@@ -25,6 +25,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { BwowersComponent } from './components/bwowers/bwowers.component';
 import { UnderConstructionComponent } from './shared/under-construction/under-construction.component';
+import { ScrollEventModule } from 'ngx-scroll-event';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/translations/', '.json');
@@ -55,6 +56,7 @@ export function createTranslateLoader(http: HttpClient) {
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    ScrollEventModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
