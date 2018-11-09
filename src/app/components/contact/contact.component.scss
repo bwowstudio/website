@@ -135,6 +135,15 @@ $contact-resolution-1440-padding-left-right: 56px;
         width: 400px;
       }
     }
+    .container-right {
+      form{
+        .input-first-row, .input-second-row, .input-fourth-row {
+          input {
+            width: calc(224px - 16px);
+          }
+        }
+      }
+    }
   }
 }
 @media only screen and (min-width: $resolution-1280-width) {
