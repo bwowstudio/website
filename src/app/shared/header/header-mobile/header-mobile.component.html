@@ -4,8 +4,8 @@
   </div>
   <div class="container-right">
     <div class="right-languages">
-      <div class="left-span">EN</div>
-      <div class="right-span">ES</div>
+      <div class="left-span" [ngClass]="{'active': langEn}">EN</div>
+      <div class="right-span" [ngClass]="{'active': langEs}">ES</div>
     </div>
     <div class="burger">
       <img src="assets/images/burger.svg" (click)="menuHandler()">

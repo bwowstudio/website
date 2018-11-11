@@ -43,6 +43,10 @@
         color: #0F0506;
         letter-spacing: 0.33px;
       }
+      .active {
+        font-family: $font-family-bold;
+        cursor: pointer;
+      }
     }
     .burger {
       top: 0;
