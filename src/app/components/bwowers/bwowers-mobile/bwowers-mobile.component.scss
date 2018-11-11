@@ -234,3 +234,12 @@ p {
     }
   }
 }
+
+@media only screen and (min-width: $resolution-360-width) {
+  .bwowers-container {
+    .container-third-slide{
+      background-position-x: 0px;
+    }
+  }
+  
+}
