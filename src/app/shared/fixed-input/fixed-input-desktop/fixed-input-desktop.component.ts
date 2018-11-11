@@ -18,9 +18,13 @@ export class FixedInputDesktopComponent implements OnInit {
     this.translateService.use(this.languageService.language);
     this.languageService.langUpdated.subscribe(e => {
       this.translateService.use(e);
+      this.setLanguage();
     });
   }
   ngOnInit() {
+    this.setLanguage();
+  }
+  setLanguage() {
     this.translateService.get('FOOTER.placeholder').subscribe((res: string) => {
       this.placeholder = res;
     });
