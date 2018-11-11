@@ -88,6 +88,7 @@ $header-resolution-1440-padding-bottom: 135px;
               text-align: left;
               margin-top: 10px;
               cursor: pointer;
+              font-family: $font-family-regular;
             }
             .secondary-text:hover {
               font-family: $font-family-bold;
@@ -103,6 +104,10 @@ $header-resolution-1440-padding-bottom: 135px;
         width: 120px;
       }
       a:hover {
+        font-family: $font-family-bold;
+        cursor: pointer;
+      }
+      .active {
         font-family: $font-family-bold;
         cursor: pointer;
       }

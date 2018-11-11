@@ -4,8 +4,8 @@
   </div>
   <div class="container-right">
     <div class="right-anchors">
-      <div class="anchor1" routerLink="/what-we-do" (mouseenter)="mouseEnter()" (mouseleave)="mouseLeave()">
-        <a>{{ 'HEADER.anchor1' | translate }}</a>
+      <div [ngClass]="{'anchor1': true, 'active': pageActive.home}" class="anchor1" routerLink="/what-we-do" (mouseenter)="mouseEnter()" (mouseleave)="mouseLeave()">
+        <a >{{ 'HEADER.anchor1' | translate }}</a>
         <div class="dropdownContainer">
           <div class="anchor1Triangle" [hidden]="dropdownHide"></div>
           <div class="anchor1Dropdown" [hidden]="dropdownHide">
@@ -17,8 +17,8 @@
           </div>
         </div>
       </div>
-      <div class="anchor2" routerLink="/bwowers"><a>{{ 'HEADER.anchor2' | translate }}</a></div>
-      <div class="anchor3" routerLink="/contact"><a>{{ 'HEADER.anchor3' | translate }}</a></div>
+      <div [ngClass]="{'anchor2': true, 'active': pageActive.bwowers}" routerLink="/bwowers"><a>{{ 'HEADER.anchor2' | translate }}</a></div>
+      <div [ngClass]="{'anchor3': true, 'active': pageActive.contact}" routerLink="/contact"><a>{{ 'HEADER.anchor3' | translate }}</a></div>
     </div>
     <div class="right-divider"></div>
     <div class="right-languages">
