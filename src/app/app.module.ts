@@ -30,6 +30,8 @@ import { FooterDesktopComponent } from './shared/footer/footer-desktop/footer-de
 import { FooterMobileComponent } from './shared/footer/footer-mobile/footer-mobile.component';
 import { BwowersMobileComponent } from './components/bwowers/bwowers-mobile/bwowers-mobile.component';
 import { BwowersDesktopComponent } from './components/bwowers/bwowers-desktop/bwowers-desktop.component';
+import { ContactDesktopComponent } from './components/contact/contact-desktop/contact-desktop.component';
+import { ContactMobileComponent } from './components/contact/contact-mobile/contact-mobile.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/translations/', '.json');
@@ -58,6 +60,8 @@ export function createTranslateLoader(http: HttpClient) {
     FooterMobileComponent,
     BwowersMobileComponent,
     BwowersDesktopComponent,
+    ContactDesktopComponent,
+    ContactMobileComponent,
 
   ],
   imports: [

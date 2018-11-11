@@ -1,0 +1,175 @@
+@import '../../../../styles/fonts.scss';
+@import '../../../../styles/mixins.scss';
+@import '../../../../styles/palette.scss';
+@import '../../../../styles/variables.scss';
+@import '../../../../styles/fonts.scss';
+
+$header-resolution-less-than-1024-padding-left-right: 56px;
+$contact-resolution-1024-padding-left-right: 80px;
+$contact-resolution-1280-padding-left-right: 80px;
+$contact-resolution-1440-padding-left-right: 56px;
+
+.contact-container {
+  width: 100%;
+  display: flex;
+  padding: 100px 155px 80px 80px;
+  box-sizing: border-box;
+  .container-left {
+    width: 50%;
+    h2 {
+      padding-top: 50px;
+      width: 495px;
+      font-family: $font-family-bold;
+      font-size: 54px;
+      color: #0F0506;
+      letter-spacing: 0.76px;
+      line-height: 64px;
+    }
+    .content {
+      margin-top: 27px;
+      font-family: $font-family-thin;
+      font-size: 20px;
+      color: #0F0506;
+      letter-spacing: 0.37px;
+      line-height: 32px;
+    }
+    .mobile {
+      margin-top: 43px;
+      font-family: $font-family-thin;
+      font-size: 20px;
+      color: #0F0506;
+      letter-spacing: 0.37px;
+      line-height: 32px;
+    }
+    .email {
+      margin-top: 10px;
+      font-family: $font-family-thin;
+      font-size: 20px;
+      color: #0F0506;
+      letter-spacing: 0.37px;
+      line-height: 32px;
+    }
+  }
+  .container-right {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    form{
+      width: 464px;
+      button {
+        margin-top: 32px;
+        width: 100%;
+        height: 48px;
+        background-color: #0F0506;
+        border-radius: 3px;
+        color: #fff;
+      }
+      ::placeholder{
+        font-family: $font-family-thin;
+        font-size: 16px;
+        color: #0F0506;
+        letter-spacing: 0.29px;
+        line-height: 32px;
+      }
+      .input-first-row, .input-second-row, .input-fourth-row {
+        margin-top: 24px;
+        display: flex;
+        justify-content: space-between;
+        input {
+          width: 224px;
+          height: 40px;
+          background: rgba(106, 43, 58, 0.02);
+          box-shadow: inset 0 0 0 1px rgba(33, 34, 64, 0.06);
+          border-radius: 4px;
+          padding-left: 10px;
+          box-sizing: border-box;
+        }
+      }
+      .input-third-row{
+        margin-top: 24px;
+        input{
+          width: 100%;
+          height: 40px;
+          background: rgba(106, 43, 58, 0.02);
+          box-shadow: inset 0 0 0 1px rgba(33, 34, 64, 0.06);
+          border-radius: 4px;
+          padding-left: 10px;
+          box-sizing: border-box;
+        }
+      }
+      .input-fifth-row{
+        margin-top: 24px;
+        textarea{
+          width: 100%;
+          height: 96px;
+          background: rgba(106, 43, 58, 0.02);
+          box-shadow: inset 0 0 0 1px rgba(33, 34, 64, 0.06);
+          line-height: 32px;
+          border-radius: 4px;
+          padding-left: 10px;
+          box-sizing: border-box;
+          resize: none;
+        }
+        ::placeholder{
+          font-family: $font-family-thin;
+          font-size: 16px;
+          color: #0F0506;
+          letter-spacing: 0.29px;
+          line-height: 32px;
+        }
+      }
+    }
+  }
+}
+.footer-container{
+  width: 100%;
+  background-color: black;
+}
+@media only screen and (min-width: $resolution-1024-width) {
+  .contact-container {
+    width: 100%;
+    display: flex;
+    padding: 0 $contact-resolution-1024-padding-left-right 80px;
+    .container-left {
+      .content {
+        width: 400px;
+      }
+    }
+    .container-right {
+      form{
+        .input-first-row, .input-second-row, .input-fourth-row {
+          input {
+            width: calc(224px - 16px);
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: $resolution-1280-width) {
+  .contact-container {
+    width: 100%;
+    display: flex;
+    padding: 0 $contact-resolution-1280-padding-left-right 80px;
+    .container-left {
+      .content {
+        width: auto;
+      }
+    }
+    .container-right {
+      form{
+        .input-first-row, .input-second-row, .input-fourth-row {
+          input {
+            width: 224px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: $resolution-1440-width) {
+  .contact-container {
+    @include center-hight-resolutions;
+    padding: 100px $contact-resolution-1440-padding-left-right 80px;
+  }
+}
