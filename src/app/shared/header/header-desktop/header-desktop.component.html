@@ -1,6 +1,7 @@
-<div class="header-desktop-container">
+<div class="header-desktop-container" [ngClass]="{'secondaryPage': isSecondary}">
   <div class="container-left">
-    <img src="assets/images/logoBlack.svg" routerLink="/">
+    <img *ngIf="!isSecondary" src="assets/images/logoBlack.svg" routerLink="/">
+    <img *ngIf="isSecondary" src="assets/images/logoWhite.svg" routerLink="/">
   </div>
   <div class="container-right">
     <div class="right-anchors">
@@ -9,11 +10,11 @@
         <div class="dropdownContainer">
           <div class="anchor1Triangle" [hidden]="dropdownHide"></div>
           <div class="anchor1Dropdown" [hidden]="dropdownHide">
-              <p class="secondary-text">{{ 'HEADER.secondary.secondary1' | translate }}</p>
-              <p class="secondary-text">{{ 'HEADER.secondary.secondary2' | translate }}</p>
-              <p class="secondary-text">{{ 'HEADER.secondary.secondary3' | translate }}</p>
-              <p class="secondary-text">{{ 'HEADER.secondary.secondary4' | translate }}</p>
-              <p class="secondary-text">{{ 'HEADER.secondary.secondary5' | translate }}</p>
+              <p [ngClass]="{'secondary-text': true, 'active': pageActive.digitalProduct}" routerLink="/digital-product">{{ 'HEADER.secondary.secondary1' | translate }}</p>
+              <p [ngClass]="{'secondary-text': true, 'active': pageActive.branding}" routerLink="/branding">{{ 'HEADER.secondary.secondary2' | translate }}</p>
+              <p [ngClass]="{'secondary-text': true, 'active': pageActive.businessDesign}" routerLink="/business-design">{{ 'HEADER.secondary.secondary3' | translate }}</p>
+              <p [ngClass]="{'secondary-text': true, 'active': pageActive.designSystem}" routerLink="/design-system">{{ 'HEADER.secondary.secondary4' | translate }}</p>
+              <p [ngClass]="{'secondary-text': true, 'active': pageActive.designTeams}" routerLink="/design-teams">{{ 'HEADER.secondary.secondary5' | translate }}</p>
           </div>
         </div>
       </div>

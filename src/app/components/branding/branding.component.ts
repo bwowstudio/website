@@ -1,21 +1,21 @@
 import { Component, OnInit } from '@angular/core';
-import { ScrollEvent } from 'ngx-scroll-event';
-import { TranslateService } from '@ngx-translate/core';
 import { LanguageService } from 'src/app/services/language.service';
+import { TranslateService } from '@ngx-translate/core';
+import { ScrollEvent } from 'ngx-scroll-event';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-bwowers-desktop',
-  templateUrl: './bwowers-desktop.component.html',
-  styleUrls: ['./bwowers-desktop.component.scss']
+  selector: 'app-branding',
+  templateUrl: './branding.component.html',
+  styleUrls: ['./branding.component.scss']
 })
-export class BwowersDesktopComponent implements OnInit {
+export class BrandingComponent implements OnInit {
   isHideFixedInput = false;
   public handleScroll(event: ScrollEvent) {
-    if (document.body.scrollHeight - window.scrollY < 1467) {
+    if (document.body.scrollHeight - window.scrollY < 1133) {
       this.isHideFixedInput = true;
     }
-    if (document.body.scrollHeight - window.scrollY > 1467) {
+    if (document.body.scrollHeight - window.scrollY > 1133) {
       this.isHideFixedInput = false;
     }
   }

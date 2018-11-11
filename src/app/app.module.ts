@@ -32,6 +32,11 @@ import { BwowersMobileComponent } from './components/bwowers/bwowers-mobile/bwow
 import { BwowersDesktopComponent } from './components/bwowers/bwowers-desktop/bwowers-desktop.component';
 import { ContactDesktopComponent } from './components/contact/contact-desktop/contact-desktop.component';
 import { ContactMobileComponent } from './components/contact/contact-mobile/contact-mobile.component';
+import { ProductComponent } from './components/product/product.component';
+import { BrandingComponent } from './components/branding/branding.component';
+import { BusinessComponent } from './components/business/business.component';
+import { SystemComponent } from './components/system/system.component';
+import { TeamsComponent } from './components/teams/teams.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/translations/', '.json');
@@ -62,6 +67,11 @@ export function createTranslateLoader(http: HttpClient) {
     BwowersDesktopComponent,
     ContactDesktopComponent,
     ContactMobileComponent,
+    ProductComponent,
+    BrandingComponent,
+    BusinessComponent,
+    SystemComponent,
+    TeamsComponent,
 
   ],
   imports: [

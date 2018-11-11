@@ -108,5 +108,95 @@
     "sixthSlide": {
       "button": "Ver proyectos"
     }
+  },
+  "BUSINESS": {
+    "firstSlide": {
+      "h2": "Business Design",
+      "h3": "Conectamos los objetivos de negocio con las necesidades de tus usuarios, creando productos donde ambos puedan crecer. "
+    },
+    "secondSlide": {
+      "h2": "Decide",
+      "h3": "Que tus decisiones de negocio se plasmen en el diseño de tu producto. Logra tus objetivos a través de soluciones de diseño que se adapten a ellos. "
+    },
+    "thirdSlide": {
+      "h2": "Planifica",
+      "h3": "Creamos modelos de negocio con un sentido claro para tus usuarios, que cumplan una necesidad concreta. Evalúa de una forma empírica la función de tu producto."
+    },
+    "fourthSlide": {
+      "h2": "Anticipa",
+      "h3": "Establecemos una estrategia a largo plazo, con la que puedas tener una panorámica de la vida de tu producto a nivel de diseño. "
+    }
+  },
+  "BRANDING": {
+    "firstSlide": {
+      "h2": "Branding",
+      "h3": "Te ayudamos a construir tu marca generando valor. Comunica quién quieres ser y aporta consistencia en cada punto de impacto de tu producto."
+    },
+    "secondSlide": {
+      "h2": "Aporta valor",
+      "h3": "Te acompañamos a descubrir qué valor aporta tu marca, qué lugar ocupa en el mundo y hacia dónde debe crecer.  A través de este proceso lograremos mayor presencia y engagement."
+    },
+    "thirdSlide": {
+      "h2": "Unifica",
+      "h3": "Creamos marcas consistentes que abarquen desde la toma de decisiones, la dirección que toma tu producto, la organización de tu equipo de trabajo y como tus usuarios perciben lo que eres."
+    },
+    "fourthSlide": {
+      "h2": "Sé reconocible",
+      "h3": "Construímos marcas versátiles y al mismo tiempo identificables. Que cada parte del sitema visual que lo componga hable de tu producto."
+    }
+  },
+  "SYSTEM": {
+    "firstSlide": {
+      "h2": "Design Systems",
+      "h3": "Creamos estructura en las decisiones de diseño para que tu producto pueda escalar de forma orgánica."
+    },
+    "secondSlide": {
+      "h2": "Sistematiza",
+      "h3": "Creamos componentes que puedan reutilizarse en varias partes del producto creando una interfaz consistente y sólida capaz de desarrollarse orgánicamente."
+    },
+    "thirdSlide": {
+      "h2": "Crece",
+      "h3": "Guiándonos por la estrategia de negocio, elaboramos un sistema que permita hacer evolucionar tu producto sin trabas y con todas las casuísticas comtempladas de antemano."
+    },
+    "fourthSlide": {
+      "h2": "Sincroniza",
+      "h3": "Mantén a tu equipo de producto alineado, trazamos las reglas que se seguirán, eliminando dudas de diseño y facilitando el flujo de trabajo."
+    }
+  },
+  "PRODUCT": {
+    "firstSlide": {
+      "h2": "Diseño de producto digital",
+      "h3": "Conectamos la idea con el producto final, orientando soluciones a un usuario potencial y testando cada fase de desarrollo de producto."
+    },
+    "secondSlide": {
+      "h2": "Evalúa",
+      "h3": "Tanto si tu producto digital está ya en el mercado como si aún está en una fase inicial, medimos mediante el uso de herramientas UX su transcendencia , el impacto que tiene en los usuarios y las oportunidades de mejora y crecimiento."
+    },
+    "thirdSlide": {
+      "h2": "Testea",
+      "h3": "Analizamos las reacciones de los usuarios en la toma de decisiones mientras interactúan con el producto.  Validamos  las mejoras en el diseño y detectamos errores antes de la fase de desarrollo aplicando de Desing Thinking."
+    },
+    "fourthSlide": {
+      "h2": "Evoluciona",
+      "h3": "Crece de forma orgánica y alinea tu producto a las necesidades de tus usuarios. Conecta tus decisiones de negocio con un diseño consistente que pueda escalar a través de las diferentes fases de desarrollo."
+    }
+  },
+  "TEAMS": {
+    "firstSlide": {
+      "h2": "Coaching equipos  de diseño",
+      "h3": "Sistematizamos y estructuramos los workflows para que los procesos fluyan. Resolvemos problemas a través de metodologías ágiles."
+    },
+    "secondSlide": {
+      "h2": "Optimiza",
+      "h3": "Os orientamos en la comunicación entre las distintas verticales y equipos, incorporando herramientas de medición para obtener datos que te ayuden a comprender  y optimizar los flujos de trabajo."
+    },
+    "thirdSlide": {
+      "h2": "Detecta",
+      "h3": "Trabajamos mano a mano con tu equipo para localizar aquellos puntos de fricción y analizar sus posibles soluciones en sesiones donde todos participan y pueden aportar."
+    },
+    "fourthSlide": {
+      "h2": "Organiza",
+      "h3": "Generamos workflows para tus equipos, aplicando metodologías ágiles (LEAN, Sprints). Optimizamos los timings de tus proyectos y generamos procesos más fluídos."
+    }
   }
 }

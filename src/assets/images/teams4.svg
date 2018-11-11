@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="239px" height="152px" viewBox="0 0 239 152" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Illustration</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="69" height="69"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="69" height="69" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <rect id="path-3" x="0" y="83" width="69" height="69"></rect>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="69" height="69" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+        <rect id="path-5" x="85" y="0" width="69" height="69"></rect>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="69" height="69" fill="white">
+            <use xlink:href="#path-5"></use>
+        </mask>
+        <rect id="path-7" x="85" y="83" width="69" height="69"></rect>
+        <mask id="mask-8" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="69" height="69" fill="white">
+            <use xlink:href="#path-7"></use>
+        </mask>
+        <rect id="path-9" x="170" y="0" width="69" height="69"></rect>
+        <mask id="mask-10" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="69" height="69" fill="white">
+            <use xlink:href="#path-9"></use>
+        </mask>
+    </defs>
+    <g id="04-Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Page-0501-Coaching-equipos-de-diseño" transform="translate(-521.000000, -2378.000000)" fill-rule="nonzero">
+            <g id="Section-4" transform="translate(-529.000000, 1989.000000)">
+                <g id="Illustration" transform="translate(1050.000000, 389.000000)">
+                    <use id="Rectangle-2" stroke="#0F0506" mask="url(#mask-2)" stroke-width="2" stroke-dasharray="4,8" xlink:href="#path-1"></use>
+                    <use id="Rectangle-2-Copy-3" stroke="#0F0506" mask="url(#mask-4)" stroke-width="2" stroke-dasharray="4,8" xlink:href="#path-3"></use>
+                    <use id="Rectangle-2-Copy" stroke="#0F0506" mask="url(#mask-6)" stroke-width="2" stroke-dasharray="4,8" xlink:href="#path-5"></use>
+                    <use id="Rectangle-2-Copy-4" stroke="#0F0506" mask="url(#mask-8)" stroke-width="2" stroke-dasharray="4,8" xlink:href="#path-7"></use>
+                    <use id="Rectangle-2-Copy-2" stroke="#0F0506" mask="url(#mask-10)" stroke-width="2" stroke-dasharray="4,8" xlink:href="#path-9"></use>
+                    <path d="M170,83 L239,83 L239,152 L170,152 L170,83 Z" id="Rectangle-2-Copy-5" fill="#0F0506"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

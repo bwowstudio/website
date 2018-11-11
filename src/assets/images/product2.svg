@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="348px" height="135px" viewBox="0 0 348 135" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>ilustration</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="174.5" cy="66.5" r="66.5"></circle>
+    </defs>
+    <g id="04-Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Page-0101-Diseño-Producto-Digital" transform="translate(-466.000000, -767.000000)">
+            <g id="Section-2" transform="translate(267.000000, 768.000000)">
+                <g id="ilustration" transform="translate(199.000000, 0.000000)">
+                    <path d="M0.5,0.25 L347.5,0.25" id="Line-1" stroke="#979797" stroke-linecap="square" stroke-dasharray="4" fill-rule="nonzero"></path>
+                    <path d="M0.5,133.25 L347.5,133.25" id="Line-2" stroke="#979797" stroke-linecap="square" stroke-dasharray="4" fill-rule="nonzero"></path>
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="circle" fill="#0F0506" fill-rule="nonzero" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
