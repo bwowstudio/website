@@ -4,7 +4,19 @@
   </div>
   <div class="container-right">
     <div class="right-anchors">
-      <div class="anchor1" routerLink="/what-we-do"><a>{{ 'HEADER.anchor1' | translate }}</a></div>
+      <div class="anchor1" routerLink="/what-we-do" (mouseenter)="mouseEnter()" (mouseleave)="mouseLeave()">
+        <a>{{ 'HEADER.anchor1' | translate }}</a>
+        <div class="dropdownContainer">
+          <div class="anchor1Triangle" [hidden]="dropdownHide"></div>
+          <div class="anchor1Dropdown" [hidden]="dropdownHide">
+              <p class="secondary-text">{{ 'HEADER.secondary.secondary1' | translate }}</p>
+              <p class="secondary-text">{{ 'HEADER.secondary.secondary2' | translate }}</p>
+              <p class="secondary-text">{{ 'HEADER.secondary.secondary3' | translate }}</p>
+              <p class="secondary-text">{{ 'HEADER.secondary.secondary4' | translate }}</p>
+              <p class="secondary-text">{{ 'HEADER.secondary.secondary5' | translate }}</p>
+          </div>
+        </div>
+      </div>
       <div class="anchor2" routerLink="/bwowers"><a>{{ 'HEADER.anchor2' | translate }}</a></div>
       <div class="anchor3" routerLink="/contact"><a>{{ 'HEADER.anchor3' | translate }}</a></div>
     </div>

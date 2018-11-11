@@ -1,14 +1,17 @@
 @import '../../../styles/palette.scss';
 @import '../../../styles/variables.scss';
 @import '../../../styles/fonts.scss';
-
+$square-size: 25px;
+$first-square-margin-top: 10px;
+$square-big-size: 120px;
+$square-margin-left: 15px;
 .number {
   height: 70px;
   margin-left: $controls-resolution-less-than-768-number-margin-left;
   font-size: 84px;
   font-family: $font-family-heavy;
-  color: #FC2154;
   letter-spacing: 1.19px;
+  color: $secondary-color;
 }
 
 .menu-controls-container {
@@ -32,6 +35,122 @@
     }
   }
 }
+
+.controls-container{
+  width: 200px;
+  position: absolute;
+  display: none;
+}
+.square{
+  width: $square-size;
+  height: $square-size;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  font-size: 24px;
+  font-family: $font-family-heavy;
+  letter-spacing: 0.3px;
+  left: $square-margin-left;
+}
+.one{
+  top: $first-square-margin-top;
+  color: rgba(252, 33, 84, 0.5);
+
+}
+.two{
+  top: $square-size*1+$first-square-margin-top;
+  color: rgba(252, 33, 84, 0.4);
+}
+.three{
+  top: $square-size*2+$first-square-margin-top;
+  color: rgba(252, 33, 84, 0.3);
+
+}
+.four{
+  top: $square-size*3+$first-square-margin-top;
+  color: rgba(252, 33, 84, 0.2);
+
+}
+.five{
+  top: $square-size*4+$first-square-margin-top;
+  color: rgba(252, 33, 84, 0.1);
+}
+.activeOne{
+  animation: activeOne 0.5s steps(59) forwards;
+}
+.activeTwo{
+  animation: activeTwo 0.5s steps(59) forwards;
+}
+.activeThree{
+  animation: activeThree 0.5s steps(59) forwards;
+}
+.activeFour{
+  animation: activeFour 0.5s steps(59) forwards;
+}
+.activeFive{
+  animation: activeFive 0.5s steps(59) forwards;
+}
+.lastActiveOne{
+  animation: lastActiveOne 0.5s steps(59) forwards;
+}
+.lastActiveTwo{
+  animation: lastActiveTwo 0.5s steps(59) forwards;
+}
+.lastActiveThree{
+  animation: lastActiveThree 0.5s steps(59) forwards;
+}
+.lastActiveFour{
+  animation: lastActiveFour 0.5s steps(59) forwards;
+}
+.lastActiveFive{
+  animation: lastActiveFive 0.5s steps(59) forwards;
+}
+
+@keyframes activeOne {
+  from { width: $square-size; height: $square-size; top: $first-square-margin-top; left: $square-margin-left; font-size: 24px;}
+  to { width: $square-big-size; height: $square-big-size; top: -95px; left: 100px; font-size: 120px; color: #FC2154;}
+}
+@keyframes lastActiveOne {
+  from { width: $square-big-size; height: $square-big-size; top: -95px; left: 100px; font-size: 120px; color: #FC2154;}
+  to { width: $square-size; height: $square-size; top: $first-square-margin-top; left: $square-margin-left; font-size: 24px;}
+}
+
+@keyframes activeTwo {
+  from { width: $square-size; height: $square-size; top: $square-size*1+$first-square-margin-top; left: $square-margin-left; font-size: 24px;}
+  to { width: $square-big-size; height: $square-big-size; top: -95px; left: 100px; font-size: 120px; color: #FC2154;}
+}
+@keyframes lastActiveTwo {
+  from { width: $square-big-size; height: $square-big-size; top: -95px; left: 100px; font-size: 120px; color: #FC2154;}
+  to { width: $square-size; height: $square-size; top: $square-size*1+$first-square-margin-top; left: $square-margin-left; font-size: 24px;}
+}
+
+@keyframes activeThree {
+  from { width: $square-size; height: $square-size; top: $square-size*2+$first-square-margin-top; left: $square-margin-left; font-size: 24px;}
+  to { width: $square-big-size; height: $square-big-size; top: -95px; left: 100px; font-size: 120px; color: #FC2154;}
+}
+@keyframes lastActiveThree {
+  from { width: $square-big-size; height: $square-big-size; top: -95px; left: 100px; font-size: 120px; color: #FC2154;}
+  to { width: $square-size; height: $square-size; top: $square-size*2+$first-square-margin-top; left: $square-margin-left; font-size: 24px;}
+}
+
+@keyframes activeFour {
+  from { width: $square-size; height: $square-size; top: $square-size*3+$first-square-margin-top; left: $square-margin-left; font-size: 24px;}
+  to { width: $square-big-size; height: $square-big-size; top: -95px; left: 100px; font-size: 120px; color: #FC2154;}
+}
+@keyframes lastActiveFour {
+  from { width: $square-big-size; height: $square-big-size; top: -95px; left: 100px; font-size: 120px; color: #FC2154;}
+  to { width: $square-size; height: $square-size; top: $square-size*3+$first-square-margin-top; left: $square-margin-left; font-size: 24px;}
+}
+
+@keyframes activeFive {
+  from { width: $square-size; height: $square-size; top: $square-size*4+$first-square-margin-top; left: $square-margin-left; font-size: 24px;}
+  to { width: $square-big-size; height: $square-big-size; top: -95px; left: 100px; font-size: 120px; color: #FC2154;}
+}
+@keyframes lastActiveFive {
+  from { width: $square-big-size; height: $square-big-size; top: -95px; left: 100px; font-size: 120px; color: #FC2154;}
+  to { width: $square-size; height: $square-size; top: $square-size*4+$first-square-margin-top; left: $square-margin-left; font-size: 24px;}
+}
 @media only screen and (min-width: $resolution-360-width) {
   .menu-controls-container {
     .menu-controls {
@@ -54,6 +173,7 @@
     margin-left: $controls-resolution-1024-number-margin-left;
     font-size: 120px;
     letter-spacing: 1.7px;
+    display: none;
   }
   .menu-controls-container {
     height: 98px;
@@ -63,6 +183,9 @@
         height: 49px;
       }
     }
+  }
+  .controls-container{
+    display: block;
   }
 }
 

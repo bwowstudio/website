@@ -10,6 +10,7 @@ import { LanguageService } from 'src/app/services/language.service';
 export class HeaderDesktopComponent implements OnInit {
   langEs = true;
   langEn = false;
+  dropdownHide = true;
   constructor(
     public translateService: TranslateService,
     public languageService: LanguageService,
@@ -20,6 +21,12 @@ export class HeaderDesktopComponent implements OnInit {
     });
   }
   ngOnInit() {}
+  mouseEnter() {
+    this.dropdownHide = false;
+  }
+  mouseLeave() {
+    this.dropdownHide = true;
+  }
   setLanguage(language) {
     this.translateService.use(language);
     switch (language) {

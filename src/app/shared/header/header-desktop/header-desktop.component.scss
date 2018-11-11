@@ -54,6 +54,47 @@ $header-resolution-1440-padding-bottom: 135px;
       }
       .anchor1 {
         width: 195px;
+        position: relative;
+        .dropdownContainer{
+          position: absolute;
+          width: 280px;
+          height: 10px;
+          left: -20px;
+          .anchor1Triangle{
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            left: 135px;
+            background: white;
+            top: 2px;
+            transform: rotate(45deg);
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+          }
+          .anchor1Dropdown{
+            position: absolute;
+            width: 280px;
+            height: 220px;
+            top: 7px;
+            box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+            border-radius: 4px;
+            padding: 0 24px 24px;
+            box-sizing: border-box;
+            .secondary-text{
+              font-size: 16px;
+              font-weight: 300;
+              line-height: 2;
+              letter-spacing: 0.3px;
+              text-align: left;
+              margin-top: 10px;
+              cursor: pointer;
+            }
+            .secondary-text:hover {
+              font-family: $font-family-bold;
+              cursor: pointer;
+            }
+          }
+        }
       }
       .anchor2 {
         width: 110px;

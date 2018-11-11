@@ -6,3 +6,12 @@
     </div>
     <p class="number">0{{number}}</p>
 </div>
+<div class="controls-container">
+    <div [ngClass]="{'square': true, 'one': true, 'activeOne': isActive[0], 'lastActiveOne': lastActive[0]}">01</div>
+    <div [ngClass]="{'square': true, 'two': true, 'activeTwo': isActive[1], 'lastActiveTwo': lastActive[1]}">02</div>
+    <div [ngClass]="{'square': true, 'three': true, 'activeThree': isActive[2], 'lastActiveThree': lastActive[2]}">03</div>
+    <div [ngClass]="{'square': true, 'four': true, 'activeFour': isActive[3], 'lastActiveFour': lastActive[3]}">04</div>
+    <div [ngClass]="{'square': true, 'five': true, 'activeFive': isActive[4], 'lastActiveFive': lastActive[4]}">05</div>
+</div>
+
+
