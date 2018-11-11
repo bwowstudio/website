@@ -19,9 +19,13 @@ export class ContactMobileComponent implements OnInit {
     this.translateService.use(this.languageService.language);
     this.languageService.langUpdated.subscribe(e => {
       this.translateService.use(e);
+      this.setPlaceholders();
     });
   }
   ngOnInit() {
+    this.setPlaceholders();
+  }
+  setPlaceholders() {
     forkJoin([
       this.translateService.get(`CONTACT.placeholder1`),
       this.translateService.get(`CONTACT.placeholder2`),

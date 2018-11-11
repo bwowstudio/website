@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-// TODO: incluir las traducciones en los anchor
 @Component({
   selector: 'app-landing-page-desktop',
   templateUrl: './landing-page-desktop.component.html',

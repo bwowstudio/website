@@ -18,6 +18,7 @@ export class HeaderMobileComponent implements OnInit {
     this.translateService.use(this.languageService.language);
     this.languageService.langUpdated.subscribe(e => {
       this.translateService.use(e);
+      this.setLanguage(e);
     });
   }
   setLanguage(language) {
