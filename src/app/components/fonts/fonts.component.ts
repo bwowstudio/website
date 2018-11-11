@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ResolutionService } from 'src/app/services/resolution.service';
 
 @Component({
   selector: 'app-fonts',
@@ -7,10 +6,17 @@ import { ResolutionService } from 'src/app/services/resolution.service';
   styleUrls: ['./fonts.component.scss']
 })
 export class FontsComponent implements OnInit {
-  constructor(
-    public resolutionService: ResolutionService
-  ) {}
+  isActive = [ false, false, false, false, false];
+  lastActive = [ false, false, false, false, false];
+  constructor() {}
   ngOnInit() {
-    console.log(this.resolutionService.getIsMobileResolution());
+  }
+  setNumber(number) {
+    if (this.isActive[number]) {
+      return;
+    }
+    this.lastActive = this.isActive;
+    this.isActive = [ false, false, false, false, false];
+    this.isActive[number] = true;
   }
 }

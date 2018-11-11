@@ -1,36 +1,142 @@
-@import '../../../styles/fonts';
+@import '../../../styles/fonts.scss';
 
-div{
+.controls-container{
+  width: 100%;
+  height: 200px;
+  position: relative;
+}
+.square{
+  width: 50px;
+  height: 50px;
   display: flex;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
+  color: #FC2154;
+  border: 1px solid #FC2154;
+  border-radius: 2px;
+  margin: 2px;
+  cursor: pointer;
+  position: absolute;
+}
+.spaceSquare {
+  width: 50px;
+  height: 50px;
+}
+.one{
+  top: 0;
+}
+.two{
+  top: 60px;
+}
+.spaceSquare{
+  top: 120px;
+}
+.three{
+  top: 120px;
+}
+.four{
+  top: 180px;
+}
+.five{
+  top: 240px;
+}
+.activeOne{
+  animation: activeOne 0.5s steps(59) forwards;
+}
+.activeTwo{
+  animation: activeTwo 0.5s steps(59) forwards;
+}
+.activeThree{
+  animation: activeThree 0.5s steps(59) forwards;
+}
+.activeFour{
+  animation: activeFour 0.5s steps(59) forwards;
+}
+.activeFive{
+  animation: activeFive 0.5s steps(59) forwards;
+}
+.lastActiveOne{
+  animation: lastActiveOne 0.5s steps(59) forwards;
+}
+.lastActiveTwo{
+  animation: lastActiveTwo 0.5s steps(59) forwards;
+}
+.lastActiveThree{
+  animation: lastActiveThree 0.5s steps(59) forwards;
+}
+.lastActiveFour{
+  animation: lastActiveFour 0.5s steps(59) forwards;
+}
+.lastActiveFive{
+  animation: lastActiveFive 0.5s steps(59) forwards;
 }
 
-.regular {
-  font-family: $font-family-regular;
+@keyframes activeOne {
+  from { width: 50px; height: 50px; top: 0; left: 0;}
+  to { width: 75px; height: 75px; top: 108px; left: 100px;}
 }
-.thin {
-  font-family: $font-family-thin;
-}
-.extraBold {
-  font-family: $font-family-bold;
-}
-.heavy {
-  font-family: $font-family-heavy;
-}
-.medium{
-  font-family: $font-family-medium;
-}
-.fonts-container{
-  box-sizing: border-box;
-  width: 100%;
+@keyframes lastActiveOne {
+  from { width: 75px; height: 75px; top: 108px; left: 100px;}
+  to { width: 50px; height: 50px; top: 0; left: 0;}
 }
 
-@media only screen and (min-width: 1440px) {
-  .fonts-container {
-    max-width: 1440px;
-    margin: auto;
-    position: relative;
-  }
+@keyframes activeTwo {
+  from { width: 50px; height: 50px; top: 60px; left: 0;}
+  to { width: 75px; height: 75px; top: 108px; left: 100px;}
 }
+@keyframes lastActiveTwo {
+  from { width: 75px; height: 75px; top: 108px; left: 100px;}
+  to { width: 50px; height: 50px; top: 60px; left: 0;}
+}
+
+@keyframes activeThree {
+  from { width: 50px; height: 50px; top: 120px; left: 0;}
+  to { width: 75px; height: 75px; top: 108px; left: 100px;}
+}
+@keyframes lastActiveThree {
+  from { width: 75px; height: 75px; top: 108px; left: 100px;}
+  to { width: 50px; height: 50px; top: 120px; left: 0;}
+}
+
+@keyframes activeFour {
+  from { width: 50px; height: 50px; top: 180px; left: 0;}
+  to { width: 75px; height: 75px; top: 108px; left: 100px;}
+}
+@keyframes lastActiveFour {
+  from { width: 75px; height: 75px; top: 108px; left: 100px;}
+  to { width: 50px; height: 50px; top: 180px; left: 0;}
+}
+
+@keyframes activeFive {
+  from { width: 50px; height: 50px; top: 240px; left: 0;}
+  to { width: 75px; height: 75px; top: 108px; left: 100px;}
+}
+@keyframes lastActiveFive {
+  from { width: 75px; height: 75px; top: 108px; left: 100px;}
+  to { width: 50px; height: 50px; top: 240px; left: 0;}
+}
+
+
+
+
+
+
+// @-webkit-keyframes active {
+//   from { width: 50px; height: 50px; top: 0;}
+//     to { width: 75px; height: 75px; top: 108px; left: 100px;}
+//  }
+ 
+// @-moz-keyframes active {
+//   from { width: 50px; height: 50px; }
+//   to { width: 75px; height: 75px; }
+// }
+
+// @-ms-keyframes active {
+//   from { width: 50px; height: 50px; }
+//   to { width: 75px; height: 75px; }
+// }
+
+// @-o-keyframes active {
+//   from { width: 50px; height: 50px; }
+//   to { width: 75px; height: 75px; }
+// }

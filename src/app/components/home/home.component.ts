@@ -11,6 +11,7 @@ import { ResolutionService } from 'src/app/services/resolution.service';
 })
 export class HomeComponent implements OnInit {
   page = 1;
+  imageUrl = `assets/images/homeImg${this.page - 1}.png`;
   home = {
     h3TextFirstLine: '',
     h3TextSecondLine: '',
@@ -30,6 +31,7 @@ export class HomeComponent implements OnInit {
   setText(page) {
     this.page = page;
     localStorage.setItem('bwowPage', `${this.page}`);
+    this.imageUrl = `assets/images/homeImg${this.page - 1}.png`;
     forkJoin([
         this.translateService.get(`HOME.h3Text${page}FirstLine`),
         this.translateService.get(`HOME.h3Text${page}SecondLine`),
