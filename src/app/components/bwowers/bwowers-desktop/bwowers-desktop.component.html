@@ -1,0 +1,72 @@
+<div class="bwowers-container" detect-scroll (onScroll)="handleScroll($event)">
+  <div class="container-first-slide">
+    <div class="first-slide-left">
+      <h2>{{ 'BWOWERS.firstSlide.header' | translate }}</h2>
+      <h3>{{ 'BWOWERS.firstSlide.text' | translate }}</h3>
+    </div>
+    <div class="first-slide-right">
+      <img src="assets/images/bwowersFirstSlideImg.svg">
+    </div>
+  </div>
+  <div class="fixed-input-container" [hidden]="isHideFixedInput">
+    <app-fixed-input></app-fixed-input>
+  </div>
+  <div class="container-title">
+    <h2>{{ 'BWOWERS.title.header' | translate }}</h2>
+    <h3>{{ 'BWOWERS.title.text' | translate }}</h3>
+  </div>
+  <div class="container-second-slide">
+    <div class="second-slide-left">
+      <img src="assets/images/fabio.svg">
+    </div>
+    <div class="second-slide-right">
+      <div class="right-content">
+        <h2>{{ 'BWOWERS.secondSlide.title' | translate }}</h2>
+        <h3>{{ 'BWOWERS.secondSlide.subtitle' | translate }}</h3>
+        <p>{{ 'BWOWERS.secondSlide.text' | translate }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="container-third-slide">
+    <div class="third-slide-left">
+      <div class="left-content">
+        <h2>{{ 'BWOWERS.thirdSlide.title' | translate }}</h2>
+        <h3>{{ 'BWOWERS.thirdSlide.subtitle' | translate }}</h3>
+        <p>{{ 'BWOWERS.thirdSlide.text' | translate }}</p>
+      </div>
+    </div>
+    <div class="third-slide-right">
+      <img src="assets/images/lia.svg">
+    </div>
+  </div>
+  <div class="container-fourth-slide">
+    <div class="fourth-slide-left">
+      <img src="assets/images/papu.svg">
+    </div>
+    <div class="fourth-slide-right">
+      <div class="right-content">
+        <h2>{{ 'BWOWERS.fourthSlide.title' | translate }}</h2>
+        <h3>{{ 'BWOWERS.fourthSlide.subtitle' | translate }}</h3>
+        <p>{{ 'BWOWERS.fourthSlide.text' | translate }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="container-fifth-slide">
+    <h2>{{ 'BWOWERS.fifthSlide.header' | translate }}</h2>
+    <h3>{{ 'BWOWERS.fifthSlide.text' | translate }}</h3>
+    <div class="logos-container">
+      <img class="arrowLeft" src="assets/images/arrowLeft.svg">
+      <img src="assets/images/fintonicLogo.svg">
+      <img src="assets/images/flippitLogo.svg">
+      <img src="assets/images/acompartirLogo.svg">
+      <img class="cabifyLogo" src="assets/images/cabifyLogo.svg">
+      <img class="arrowRight" src="assets/images/arrowRight.svg">
+    </div>
+  </div>
+  <div class="container-sixth-slide">
+    <button>{{ 'BWOWERS.sixthSlide.button' | translate }}</button>
+  </div>
+</div>
+<div class="footer-container">
+  <app-footer></app-footer>
+</div>

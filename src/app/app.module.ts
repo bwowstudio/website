@@ -26,6 +26,10 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { BwowersComponent } from './components/bwowers/bwowers.component';
 import { UnderConstructionComponent } from './shared/under-construction/under-construction.component';
 import { ScrollEventModule } from 'ngx-scroll-event';
+import { FooterDesktopComponent } from './shared/footer/footer-desktop/footer-desktop.component';
+import { FooterMobileComponent } from './shared/footer/footer-mobile/footer-mobile.component';
+import { BwowersMobileComponent } from './components/bwowers/bwowers-mobile/bwowers-mobile.component';
+import { BwowersDesktopComponent } from './components/bwowers/bwowers-desktop/bwowers-desktop.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/translations/', '.json');
@@ -50,6 +54,10 @@ export function createTranslateLoader(http: HttpClient) {
     FooterComponent,
     BwowersComponent,
     UnderConstructionComponent,
+    FooterDesktopComponent,
+    FooterMobileComponent,
+    BwowersMobileComponent,
+    BwowersDesktopComponent,
 
   ],
   imports: [

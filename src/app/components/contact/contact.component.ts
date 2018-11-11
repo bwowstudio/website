@@ -25,7 +25,7 @@ export class ContactComponent implements OnInit {
   }
   ngOnInit() {
     if (this.resolutionService.getIsMobileResolution()) {
-      this.router.navigate(['/404']);
+      // this.router.navigate(['/404']);
     }
     forkJoin([
       this.translateService.get(`CONTACT.placeholder1`),
