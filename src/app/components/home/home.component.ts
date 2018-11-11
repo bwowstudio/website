@@ -26,6 +26,7 @@ export class HomeComponent implements OnInit {
     this.translateService.use(this.languageService.language);
     this.languageService.langUpdated.subscribe(e => {
       this.translateService.use(e);
+      this.setText(this.page);
     });
   }
   setText(page) {

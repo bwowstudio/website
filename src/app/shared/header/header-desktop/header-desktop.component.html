@@ -23,8 +23,8 @@
     </div>
     <div class="right-divider"></div>
     <div class="right-languages">
-      <div class="left-span" [ngClass]="{'active': langEn}">EN</div>
-      <div class="right-span" [ngClass]="{'active': langEs}">ES</div>
+      <div class="left-span" [ngClass]="{'active': langEn}" (click)="languageService.setLanguage('en')">EN</div>
+      <div class="right-span" [ngClass]="{'active': langEs}" (click)="languageService.setLanguage('es')">ES</div>
     </div>
   </div>
 </div>

@@ -1,3 +1,202 @@
 {
-    "HELLO": "hello {{value}}"
-}
+    "HELLO": "hola {{value}}",
+    "HEADER": {
+      "anchor1": "Our work",
+      "anchor2": "About us",
+      "anchor3": "Contact",
+      "secondary": {
+        "secondary1": "Digital Product Design",
+        "secondary2": "Branding",
+        "secondary3": "Business Design",
+        "secondary4": "Design System",
+        "secondary5": "Design Teams"
+      }
+    },
+    "HOME": {
+      "h3Text1FirstLine": "Digital",
+      "h3Text1SecondLine": "product design",
+      "h4Text1": "We connect the idea with the final product, adapting solutions to the target users and testing each phase of the product development.",
+      "aText1": "Create a product for your users",
+  
+      "h3Text2FirstLine": "Branding",
+      "h3Text2SecondLine": "",
+      "h4Text2": "We help you build your brand by giving it an additional value. Communicate who you want to be and how you wish to be perceived.",
+      "aText2": "Start building your identity",
+  
+      "h3Text3FirstLine": "Business Design",
+      "h3Text3SecondLine": "",
+      "h4Text3": "We create products that connect your business goals with user needs and help both grow together.",
+      "aText3": "Develop your business idea",
+  
+      "h3Text4FirstLine": "Design Systems",
+      "h3Text4SecondLine": "",
+      "h4Text4": "We create a structure that facilitates design decision-making within your team and enables your product to scale organically.",
+      "aText4": "Create a design structure",
+  
+      "h3Text5FirstLine": "Mentoring",
+      "h3Text5SecondLine": "",
+      "h4Text5": "We design and improve teamwork processes to optimise workflow within the organisation. We teach you to address potential problems by implementing different agile methodologies.",
+      "aText5": "Optimise and integrate methodologies within your design team",
+  
+      "aTextMobile": "See solutions"
+  
+  
+    },
+    "CONTACT": {
+      "header": "Now tell us something about yourself.",
+      "content": "Tell us about your project, things you can contribute to our studio or simply talk to us about something you have in mind.",
+      "button-text": "Contact",
+      "placeholder1": "Name*",
+      "placeholder2": "Surname*",
+      "placeholder3": "Company",
+      "placeholder4": "Position",
+      "placeholder5": "Email*",
+      "placeholder6": "Mobile Phone*",
+      "placeholder7": "Country*",
+      "placeholder8": "Message"
+    },
+    "FOOTER": {
+      "text": "We contact you",
+      "send": "Send",
+      "placeholder": "Name",
+      "placeholder2": "Phone or Email",
+      "anchor2": "Find out more at",
+      "leftContainer": {
+        "anchorItem1": "Diseño de producto digital",
+        "anchorItem2": "Branding",
+        "anchorItem3": "Business design",
+        "anchorItem4": "Design systems",
+        "anchorItem5": "Design teams"
+      },
+      "centerContainer": {
+        "anchorItem1": "Medium",
+        "anchorItem2": "Linkedin",
+        "anchorItem3": "Behance",
+        "anchorItem4": "Twitter",
+        "anchorItem5": "Instagram",
+        "anchorItem6": "Spotify"
+      }
+    },
+    "BWOWERS": {
+      "firstSlide": {
+        "header": "Bwowers",
+        "text": "Each project, client and team member are a part of who we are and our work culture. It is important to see them grow together with us."
+      },
+      "title": {
+        "header": "We are",
+        "text": "A team."
+      },
+      "secondSlide": {
+        "title": "Fabio Korsos",
+        "subtitle": "Co Founder & Product Designer",
+        "text": "Analytical and calm. Natural-born tutor. When he speaks, there is always something to learn. It comes as no surprise that he is the current Lead Teacher of Digital Product Design at Ironhack. When he´s not working, surfing is his religion."
+      },
+      "thirdSlide": {
+        "title": "Lía Vega",
+        "subtitle": "Co Founder & Product Designer",
+        "text": "With her imagination running wild, she is responsible for the creative direction and framework. An illustrator since she was a tot, she has been working as a visual designer for more than 10 years. If she´s not in the studio, you might find her looking through her telescope."
+      },
+      "fourthSlide": {
+        "title": "Papu Arza",
+        "subtitle": "Senior Developer",
+        "text": "Passionate about creating things, he has been developing digital products and services for more than 7 years. His background in business enables him to determine the best technological approach to each project. If he isn´t in front of the computer, he´s doing sports. That´s it."
+      },
+      "fifthSlide": {
+        "header": "They are Bwowers",
+        "text": "These are the products that are part of our identity and on which we have collaborated as designers."
+      },
+      "sixthSlide": {
+        "button": "Our projects"
+      }
+    },
+    "BUSINESS": {
+      "firstSlide": {
+        "h2": "Business Design",
+        "h3": "We create products that connect your business goals with user needs and help both grow together."
+      },
+      "secondSlide": {
+        "h2": "Decide",
+        "h3": "Your business decisions should be reflected in product design. Achieve your goals with design solutions that adapt to these goals."
+      },
+      "thirdSlide": {
+        "h2": "Plan",
+        "h3": "We create products that clearly show users the purpose your business, producing a mutually beneficial relationship. Evaluate the performance of your product empirically."
+      },
+      "fourthSlide": {
+        "h2": "Anticipate",
+        "h3": "We define a long-term strategy that gives an overview of your product life cycle, at both design and business level."
+      }
+    },
+    "BRANDING": {
+      "firstSlide": {
+        "h2": "Branding",
+        "h3": "We help you build your brand by giving it an additional value. Communicate who you want to be and how you wish to be perceived."
+      },
+      "secondSlide": {
+        "h2": "Add value",
+        "h3": "We help you discover the added value that your brand offers, its positioning and which direction it should take. After this process, it will have greater presence and engagement in the market."
+      },
+      "thirdSlide": {
+        "h2": "Consolidate",
+        "h3": "We create consistent brands and our services include everything from the decision-making process, the direction your product will take, the organization of your team and how customers perceive you."
+      },
+      "fourthSlide": {
+        "h2": "Be recognisable",
+        "h3": "We build brands that are versatile and recognisable at the same time. Each component of your product´s ecosystem should speak strongly about it."
+      }
+    },
+    "SYSTEM": {
+      "firstSlide": {
+        "h2": "Design Systems",
+        "h3": "We create a structure that facilitates design decision-making within your team and enables your product to scale organically."
+      },
+      "secondSlide": {
+        "h2": "Structure",
+        "h3": "We create components that can be reused in various parts of the product, creating a consistent and solid interface, capable of developing organically."
+      },
+      "thirdSlide": {
+        "h2": "Grow",
+        "h3": "Using your business strategy as guidance, we will develop a framework that allows your product to evolve without any obstacles, taking all the caseload and stages into account beforehand."
+      },
+      "fourthSlide": {
+        "h2": "Synchronise",
+        "h3": "Keep your product team aligned. We draw the rules to be followed, eliminating design doubts and facilitating workflow, from an appropriate nomenclature to improved communication between teams."
+      }
+    },
+    "PRODUCT": {
+      "firstSlide": {
+        "h2": "Digital Product Design",
+        "h3": "We connect the idea with the final product, adapting solutions to the target users and testing each phase of the product development."
+      },
+      "secondSlide": {
+        "h2": "Evaluate",
+        "h3": "No matter whether your digital product is already on the market or if it is still in the initial phase, with the use of UX tools we can measure its success and impact on users, as well as determine the opportunities for its improvement and growth."
+      },
+      "thirdSlide": {
+        "h2": "Test",
+        "h3": "We analyse users´ reactions and decision-making while they interact with the product. By applying design thinking principles, we are able to validate design improvements and detect errors before the development phase, which saves time and money."
+      },
+      "fourthSlide": {
+        "h2": "Evolve",
+        "h3": "Grow organically and fine-tune your product to the user´s needs. Connect your business decisions to consistent design choices that can be upscaled in different stages of development."
+      }
+    },
+    "TEAMS": {
+      "firstSlide": {
+        "h2": "Coaching equipos  de diseño",
+        "h3": "Sistematizamos y estructuramos los workflows para que los procesos fluyan. Resolvemos problemas a través de metodologías ágiles."
+      },
+      "secondSlide": {
+        "h2": "Optimise",
+        "h3": "We assist you in improving team communication by implementing analytics tools to obtain data crucial to understanding and optimizing workflows."
+      },
+      "thirdSlide": {
+        "h2": "Identify",
+        "h3": "We work closely with your team to determine the points of friction and analyse their possible solutions in sessions where everyone participates, contributes and learns."
+      },
+      "fourthSlide": {
+        "h2": "Organise",
+        "h3": "We generate workflows for your teams through the application of agile methodologies (including Sprints). We optimize the timeline of your project and generate smoother processes."
+      }
+    }
+  }
