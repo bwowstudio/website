@@ -11,6 +11,17 @@ export class HeaderMobileComponent implements OnInit {
   isMenuHidden =  true;
   langEs = true;
   langEn = false;
+  isSecondary = false;
+  pageActive = {
+    home: false,
+    contact: false,
+    bwowers: false,
+    digitalProduct: false,
+    branding: false,
+    businessDesign: false,
+    designSystem: false,
+    designTeams: false,
+  };
   constructor(
     public translateService: TranslateService,
     public languageService: LanguageService
@@ -38,7 +49,115 @@ export class HeaderMobileComponent implements OnInit {
     this.isMenuHidden = !this.isMenuHidden;
   }
   ngOnInit() {
+    this.setActivePage();
   }
-
+  setActivePage() {
+    switch (window.location.hash.split('#/')[1]) {
+      case 'home':
+      this.isSecondary = false;
+        this.pageActive = {
+          home: true,
+          bwowers: false,
+          contact: false,
+          digitalProduct: false,
+          branding: false,
+          businessDesign: false,
+          designSystem: false,
+          designTeams: false,
+        };
+        break;
+      case 'bwowers':
+      this.isSecondary = false;
+        this.pageActive = {
+          home: false,
+          bwowers: true,
+          contact: false,
+          digitalProduct: false,
+          branding: false,
+          businessDesign: false,
+          designSystem: false,
+          designTeams: false,
+        };
+        break;
+      case 'contact':
+      this.isSecondary = false;
+        this.pageActive = {
+          home: false,
+          bwowers: false,
+          contact: true,
+          digitalProduct: false,
+          branding: false,
+          businessDesign: false,
+          designSystem: false,
+          designTeams: false,
+        };
+        break;
+      case 'digital-product':
+      this.isSecondary = true;
+        this.pageActive = {
+          home: false,
+          bwowers: false,
+          contact: false,
+          digitalProduct: true,
+          branding: false,
+          businessDesign: false,
+          designSystem: false,
+          designTeams: false,
+        };
+        break;
+      case 'branding':
+      this.isSecondary = true;
+        this.pageActive = {
+          home: false,
+          bwowers: false,
+          contact: false,
+          digitalProduct: false,
+          branding: true,
+          businessDesign: false,
+          designSystem: false,
+          designTeams: false,
+        };
+        break;
+      case 'business-design':
+      this.isSecondary = true;
+        this.pageActive = {
+          home: false,
+          bwowers: false,
+          contact: false,
+          digitalProduct: false,
+          branding: false,
+          businessDesign: true,
+          designSystem: false,
+          designTeams: false,
+        };
+        break;
+      case 'design-system':
+      this.isSecondary = true;
+        this.pageActive = {
+          home: false,
+          bwowers: false,
+          contact: false,
+          digitalProduct: false,
+          branding: false,
+          businessDesign: false,
+          designSystem: true,
+          designTeams: false,
+        };
+        break;
+      case 'design-teams':
+      this.isSecondary = true;
+        this.pageActive = {
+          home: false,
+          bwowers: false,
+          contact: false,
+          digitalProduct: false,
+          branding: false,
+          businessDesign: false,
+          designSystem: false,
+          designTeams: true,
+        };
+        break;
+    }
+  }
 }
 
