@@ -1,7 +1,84 @@
+@import '../../../../styles/fonts.scss';
+@import '../../../../styles/mixins.scss';
+@import '../../../../styles/palette.scss';
+@import '../../../../styles/variables.scss';
+@import '../../../../styles/fonts.scss';
+.fixed-input-container{
+  width: 100%;
+  bottom: 8px;
+  position: fixed;
+}
 .business-container{
-  background-image: url('/assets/images/320Background.svg');
+  background-image: url('/assets/images/businessBackgroundmobile.svg');
   background-repeat: no-repeat;
+  background-position-y: -75px;
   padding: 0 16px;
+
+  .first-slide {
+    height: 630px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #ffffff;
+    a {
+      margin-top: 10px;
+      width: 100%;
+      text-align: left;
+      font-size: 18px;
+      line-height: 1.24;
+      letter-spacing: 0.3px;
+      cursor: pointer;
+      margin-bottom: 20px;
+      img {
+        width: 16px;
+      }
+    }
+  }
+  .second-slide{
+    height: 550px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: #ffffff;
+    img{
+      margin-top: 20px;
+      width: 280px;
+    }
+    h2{
+      margin-top: 40px;
+    }
+  }
+  .third-slide{
+    height: 650px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: black;
+    img{
+      margin-top: 20px;
+      width: 150px;
+    }
+    h2{
+      margin-top: 40px;
+    }
+  }
+  .fourth-slide{
+    height: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: black;
+    img{
+      margin-top: 20px;
+      width: 150px;
+    }
+    h2{
+      margin-top: 40px;
+    }
+  }
 }
 
 img{
@@ -15,14 +92,13 @@ h2{
   font-stretch: normal;
   line-height: 1.1;
   letter-spacing: 0.6px;
-  color: #ffffff;
 }
 h3{
+  margin-top: 8px;
   font-size: 17px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.88;
   letter-spacing: 0.3px;
-  color: #ffffff;
 }

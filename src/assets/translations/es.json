@@ -112,7 +112,8 @@
   "BUSINESS": {
     "firstSlide": {
       "h2": "Business Design",
-      "h3": "Conectamos los objetivos de negocio con las necesidades de tus usuarios, creando productos donde ambos puedan crecer. "
+      "h3": "Conectamos los objetivos de negocio con las necesidades de tus usuarios, creando productos donde ambos puedan crecer. ",
+      "seeSolutions": "Ver soluciones"
     },
     "secondSlide": {
       "h2": "Decide",
