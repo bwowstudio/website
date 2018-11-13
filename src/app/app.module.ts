@@ -37,6 +37,16 @@ import { BrandingComponent } from './components/branding/branding.component';
 import { BusinessComponent } from './components/business/business.component';
 import { SystemComponent } from './components/system/system.component';
 import { TeamsComponent } from './components/teams/teams.component';
+import { BrandingDesktopComponent } from './components/branding/branding-desktop/branding-desktop.component';
+import { BrandingMobileComponent } from './components/branding/branding-mobile/branding-mobile.component';
+import { BusinessDesktopComponent } from './components/business/business-desktop/business-desktop.component';
+import { BusinessMobileComponent } from './components/business/business-mobile/business-mobile.component';
+import { ProductDesktopComponent } from './components/product/product-desktop/product-desktop.component';
+import { ProductMobileComponent } from './components/product/product-mobile/product-mobile.component';
+import { SystemDesktopComponent } from './components/system/system-desktop/system-desktop.component';
+import { SystemMobileComponent } from './components/system/system-mobile/system-mobile.component';
+import { TeamsDesktopComponent } from './components/teams/teams-desktop/teams-desktop.component';
+import { TeamsMobileComponent } from './components/teams/teams-mobile/teams-mobile.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/translations/', '.json');
@@ -72,6 +82,16 @@ export function createTranslateLoader(http: HttpClient) {
     BusinessComponent,
     SystemComponent,
     TeamsComponent,
+    BrandingDesktopComponent,
+    BrandingMobileComponent,
+    BusinessDesktopComponent,
+    BusinessMobileComponent,
+    ProductDesktopComponent,
+    ProductMobileComponent,
+    SystemDesktopComponent,
+    SystemMobileComponent,
+    TeamsDesktopComponent,
+    TeamsMobileComponent,
 
   ],
   imports: [

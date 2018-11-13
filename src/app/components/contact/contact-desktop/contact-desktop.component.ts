@@ -18,10 +18,14 @@ export class ContactDesktopComponent implements OnInit {
   ) {
     this.translateService.use(this.languageService.language);
     this.languageService.langUpdated.subscribe(e => {
+      this.setPlaceholders();
       this.translateService.use(e);
     });
   }
   ngOnInit() {
+    this.setPlaceholders();
+  }
+  setPlaceholders() {
     forkJoin([
       this.translateService.get(`CONTACT.placeholder1`),
       this.translateService.get(`CONTACT.placeholder2`),
