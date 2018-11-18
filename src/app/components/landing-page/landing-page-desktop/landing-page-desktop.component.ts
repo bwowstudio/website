@@ -12,13 +12,13 @@ export class LandingPageDesktopComponent implements OnInit {
   displayOval = 'block';
   displayOvalWhite = 'none';
   transitionIsOn = false;
+  timeOut = setTimeout(() => this.nextPage('/home'), 10000);
   displayNet = '';
   constructor(
     public router: Router,
   ) { }
 
   ngOnInit() {
-    setTimeout(() => this.nextPage('/home'), 10000);
   }
   mouseEnter() {
     this.displayArrow = 'none';
@@ -31,6 +31,7 @@ export class LandingPageDesktopComponent implements OnInit {
     this.displayOvalWhite = 'none';
   }
   nextPage(page = '/home') {
+    clearTimeout(this.timeOut);
     if (this.transitionIsOn) {
       return;
     }
