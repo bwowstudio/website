@@ -1,0 +1,35 @@
+@import '../../../../styles/fonts.scss';
+@import '../../../../styles/mixins.scss';
+@import '../../../../styles/palette.scss';
+@import '../../../../styles/variables.scss';
+@import '../../../../styles/fonts.scss';
+.teams-mobile-container{
+  width: 100%;
+  .first-slide{
+    margin-top: -1px;
+    width: 100%;
+    height: calc(90vh - 74px);
+    background-color: #FC4E74;
+  }
+  .second-slide{
+    margin-top: -1px;
+    width: 100%;
+    height: 50vh;
+    background-image: url('/assets/images/0501Background.svg');
+    background-position: -70vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .third-slide{
+    width: 100%;
+    height: 50vh;
+  }
+  .fourth-slide{
+    width: 100%;
+    height: 80vh;
+    background-image: url('/assets/images/0501Background2.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}

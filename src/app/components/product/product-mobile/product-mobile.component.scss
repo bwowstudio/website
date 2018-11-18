@@ -1,0 +1,27 @@
+.product-mobile-container{
+  width: 100%;
+  .first-slide{
+    margin-top: -1px;
+    width: 100%;
+    height: calc(100vh - 74px);
+    background-color: #FC4E74;
+  }
+  .second-slide{
+    width: 100%;
+    height: 80vh;
+    background: aqua;
+  }
+  .third-slide{
+    background-image: url('/assets/images/0101Background.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 80vh;
+  }
+  .fourth-slide{
+    width: 100%;
+    height: 60vh;
+    background: aqua;
+  }
+}
