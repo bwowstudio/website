@@ -1,7 +1,7 @@
 <div [ngClass]="{'header-desktop-container': true, 'secondaryPage': isSecondary, 'landing': pageActive.landing}">
   <div class="container-left">
-      <img *ngIf="!isSecondary && !pageActive.landing" src="assets/images/logoBlack.svg" routerLink="/">
-      <img *ngIf="isSecondary || pageActive.landing" src="assets/images/logoWhite.svg" routerLink="/">
+      <img *ngIf="!isSecondary && !pageActive.landing" src="assets/images/logoBlack.svg" (click)="navigate('')">
+      <img *ngIf="isSecondary || pageActive.landing" src="assets/images/logoWhite.svg" (click)="navigate('')">
 
   </div>
   <div class="container-right">
@@ -19,15 +19,15 @@
     <div class="menu-left" (click)="menuHandler()"></div>
     <div class="menu-right">
       <img src="assets/images/closeIcon.svg" (click)="menuHandler()">
-      <p class="anchor" routerLink="/home">{{ 'HEADER.anchor1' | translate }}</p>
-      <p class="secondary-text" routerLink="/digital-product">{{ 'HEADER.secondary.secondary1' | translate }}</p>
-      <p class="secondary-text" routerLink="/branding">{{ 'HEADER.secondary.secondary2' | translate }}</p>
-      <p class="secondary-text" routerLink="/business-design">{{ 'HEADER.secondary.secondary3' | translate }}</p>
-      <p class="secondary-text" routerLink="/design-system">{{ 'HEADER.secondary.secondary4' | translate }}</p>
-      <p class="secondary-text" routerLink="/design-teams">{{ 'HEADER.secondary.secondary5' | translate }}</p>
+      <p class="anchor" (click)="navigate('home')">{{ 'HEADER.anchor1' | translate }}</p>
+      <p class="secondary-text" (click)="navigate('digital-product')">{{ 'HEADER.secondary.secondary1' | translate }}</p>
+      <p class="secondary-text" (click)="navigate('branding')">{{ 'HEADER.secondary.secondary2' | translate }}</p>
+      <p class="secondary-text" (click)="navigate('business-design')">{{ 'HEADER.secondary.secondary3' | translate }}</p>
+      <p class="secondary-text" (click)="navigate('design-system')">{{ 'HEADER.secondary.secondary4' | translate }}</p>
+      <p class="secondary-text" (click)="navigate('design-teams')">{{ 'HEADER.secondary.secondary5' | translate }}</p>
 
-      <p class="anchor" routerLink="/bwowers">{{ 'HEADER.anchor2' | translate }}</p>
-      <p class="anchor" routerLink="/contact">{{ 'HEADER.anchor3' | translate }}</p>
+      <p class="anchor" (click)="navigate('bwowers')">{{ 'HEADER.anchor2' | translate }}</p>
+      <p class="anchor" (click)="navigate('contact')">{{ 'HEADER.anchor3' | translate }}</p>
       <p class="copyright">2018 Copyright</p>
     </div>
   </div>

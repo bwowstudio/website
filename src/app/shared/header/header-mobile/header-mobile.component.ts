@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { LanguageService } from 'src/app/services/language.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header-mobile',
@@ -25,13 +26,18 @@ export class HeaderMobileComponent implements OnInit {
   };
   constructor(
     public translateService: TranslateService,
-    public languageService: LanguageService
+    public languageService: LanguageService,
+    public router: Router,
   ) {
     this.translateService.use(this.languageService.language);
     this.languageService.langUpdated.subscribe(e => {
       this.translateService.use(e);
       this.setLanguage(e);
     });
+  }
+  navigate(route) {
+    this.router.navigate([route]);
+    this.isMenuHidden = true;
   }
   setLanguage(language) {
     this.translateService.use(language);
