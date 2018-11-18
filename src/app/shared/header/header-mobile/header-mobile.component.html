@@ -1,7 +1,8 @@
-<div [ngClass]="{'header-desktop-container': true, 'secondaryPage': isSecondary}">
+<div [ngClass]="{'header-desktop-container': true, 'secondaryPage': isSecondary, 'landing': pageActive.landing}">
   <div class="container-left">
-      <img *ngIf="!isSecondary" src="assets/images/logoBlack.svg" routerLink="/">
-      <img *ngIf="isSecondary" src="assets/images/logoWhite.svg" routerLink="/">
+      <img *ngIf="!isSecondary && !pageActive.landing" src="assets/images/logoBlack.svg" routerLink="/">
+      <img *ngIf="isSecondary || pageActive.landing" src="assets/images/logoWhite.svg" routerLink="/">
+
   </div>
   <div class="container-right">
     <div class="right-languages">
@@ -9,8 +10,8 @@
       <div class="right-span" [ngClass]="{'active': langEs}" (click)="languageService.setLanguage('es')">ES</div>
     </div>
     <div class="burger">
-      <img *ngIf="!isSecondary" src="assets/images/burger.svg" (click)="menuHandler()">
-      <img *ngIf="isSecondary" src="assets/images/burgerWhite.svg" (click)="menuHandler()">
+      <img *ngIf="!isSecondary && !pageActive.landing" src="assets/images/burger.svg" (click)="menuHandler()">
+      <img *ngIf="isSecondary || pageActive.landing" src="assets/images/burgerWhite.svg" (click)="menuHandler()">
 
     </div>
   </div>

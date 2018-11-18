@@ -13,6 +13,7 @@ export class HeaderMobileComponent implements OnInit {
   langEn = false;
   isSecondary = false;
   pageActive = {
+    landing: false,
     home: false,
     contact: false,
     bwowers: false,
@@ -53,9 +54,24 @@ export class HeaderMobileComponent implements OnInit {
   }
   setActivePage() {
     switch (window.location.hash.split('#/')[1]) {
+      case '':
+      this.isSecondary = false;
+        this.pageActive = {
+          landing: true,
+          home: false,
+          bwowers: false,
+          contact: false,
+          digitalProduct: false,
+          branding: false,
+          businessDesign: false,
+          designSystem: false,
+          designTeams: false,
+        };
+        break;
       case 'home':
       this.isSecondary = false;
         this.pageActive = {
+          landing: false,
           home: true,
           bwowers: false,
           contact: false,
@@ -69,6 +85,7 @@ export class HeaderMobileComponent implements OnInit {
       case 'bwowers':
       this.isSecondary = false;
         this.pageActive = {
+          landing: false,
           home: false,
           bwowers: true,
           contact: false,
@@ -82,6 +99,7 @@ export class HeaderMobileComponent implements OnInit {
       case 'contact':
       this.isSecondary = false;
         this.pageActive = {
+          landing: false,
           home: false,
           bwowers: false,
           contact: true,
@@ -95,6 +113,7 @@ export class HeaderMobileComponent implements OnInit {
       case 'digital-product':
       this.isSecondary = true;
         this.pageActive = {
+          landing: false,
           home: false,
           bwowers: false,
           contact: false,
@@ -108,6 +127,7 @@ export class HeaderMobileComponent implements OnInit {
       case 'branding':
       this.isSecondary = true;
         this.pageActive = {
+          landing: false,
           home: false,
           bwowers: false,
           contact: false,
@@ -121,6 +141,7 @@ export class HeaderMobileComponent implements OnInit {
       case 'business-design':
       this.isSecondary = true;
         this.pageActive = {
+          landing: false,
           home: false,
           bwowers: false,
           contact: false,
@@ -134,6 +155,7 @@ export class HeaderMobileComponent implements OnInit {
       case 'design-system':
       this.isSecondary = true;
         this.pageActive = {
+          landing: false,
           home: false,
           bwowers: false,
           contact: false,
@@ -147,6 +169,7 @@ export class HeaderMobileComponent implements OnInit {
       case 'design-teams':
       this.isSecondary = true;
         this.pageActive = {
+          landing: false,
           home: false,
           bwowers: false,
           contact: false,

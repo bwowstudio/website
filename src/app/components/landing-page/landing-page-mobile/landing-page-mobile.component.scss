@@ -1,0 +1,24 @@
+@import '../../../../styles/mixins.scss';
+@import '../../../../styles/fonts.scss';
+@import '../../../../styles/variables.scss';
+
+.landing-mobile-container{
+    width: 100%;
+    height: calc(100vh - 74px);
+    background-color: black;
+    padding-top: 25%;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+    h2{
+        color: white;
+        font-size: 62px;
+    }
+    .oval-container{
+        width: calc(100% - 32px);
+        position: fixed;
+        bottom: -4px;
+        display: flex;
+        justify-content: center;
+    }
+}
