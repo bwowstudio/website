@@ -10,7 +10,6 @@
   display: flex;
   align-items: center;
   box-sizing: border-box;
-  padding: $header-resolution-less-than-1024-padding-top $header-resolution-less-than-1024-padding-left-right $header-resolution-less-than-1024-padding-bottom;
   @include no-select;
   .container-left {
     width: 20%;
