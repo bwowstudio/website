@@ -6,11 +6,17 @@
   <div class="text-container">
     <h3 (click)="navigate()">{{ home.h3TextFirstLine }} <br> {{ home.h3TextSecondLine }}</h3>
     <h4>{{ home.h4Text }}</h4>
-    <a (click)="navigate()">{{ home.aTextMobile }} <img src="assets/images/arrow.svg"></a>
+    <a (click)="navigate()">{{ home.aTextMobile }} 
+      <img src="assets/images/arrow.svg">
+    </a>
     <br>
   </div>
   <div class="image-container">
-    <img class="homeImg" src="{{imageUrl}}">
+    <img *ngIf="page===1" class="homeImg fadeIn" src="{{imageUrl}}">
+    <img *ngIf="page===2"class="homeImg fadeIn" src="{{imageUrl}}">
+    <img *ngIf="page===3"class="homeImg fadeIn" src="{{imageUrl}}">
+    <img *ngIf="page===4"class="homeImg fadeIn" src="{{imageUrl}}">
+    <img *ngIf="page===5" class="homeImg fadeIn" src="{{imageUrl}}">
   </div>
   <div class="fakediv">
     
