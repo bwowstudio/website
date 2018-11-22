@@ -56,30 +56,8 @@ $fixed-input-768-left-input-margin-right: $resolution-768-width*0.025;
         padding-left: 10px;
       }
       ::placeholder{
-        font-size: 18px;
-        color: #AEA3A4;
-        letter-spacing: 0.26px;
-        line-height: 18px;
-      }
-      ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-        font-size: 18px;
-        color: #AEA3A4;
-        letter-spacing: 0.26px;
-        line-height: 18px;
-      }
-      ::-moz-placeholder { /* Firefox 19+ */
-        font-size: 18px;
-        color: #AEA3A4;
-        letter-spacing: 0.26px;
-        line-height: 18px;
-      }
-      :-ms-input-placeholder { /* IE 10+ */
-        font-size: 18px;
-        color: #AEA3A4;
-        letter-spacing: 0.26px;
-        line-height: 18px;
-      }
-      :-moz-placeholder { /* Firefox 18- */
+        display: flex;
+        align-items: center;
         font-size: 18px;
         color: #AEA3A4;
         letter-spacing: 0.26px;
