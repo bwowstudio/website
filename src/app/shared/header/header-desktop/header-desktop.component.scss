@@ -144,9 +144,13 @@
     }
   }
 }
-.secondaryPage{
+.secondary-container{
+  width: 100%;
   background-color: #FC4E74;
-  color: white;
+  .secondaryPage{
+    background-color: #FC4E74;
+    color: white;
+  }
 }
 @media only screen and (min-width: 1024px) {
   .header-desktop-container {

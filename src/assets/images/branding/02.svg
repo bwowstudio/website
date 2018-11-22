@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="3478px" height="722px" viewBox="0 0 3478 722" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="91" cy="91" r="91"></circle>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="182" height="182" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Section-4" transform="translate(570.000000, 14.000000)">
+            <path d="M1980.35122,962.345659 C1726.66699,832.542091 1453.62883,766.740678 1168.78735,766.740678 C884.032671,766.740678 610.994503,832.542091 357.31028,962.345659 L0,281.455261 C365.208078,94.6752095 758.449,0 1168.78735,0 C1579.2125,0 1972.45342,94.6752095 2337.6615,281.455261 L1980.35122,962.345659 Z" id="bg-section" fill-opacity="0.03" fill="#0F0506" transform="translate(1168.830748, 481.172829) scale(1, -1) translate(-1168.830748, -481.172829) "></path>
+            <g id="Illustration" transform="translate(1078.000000, 364.000000)" fill-rule="nonzero">
+                <circle id="Oval-2" fill="#0F0506" cx="60.5" cy="54.5" r="36.5"></circle>
+                <use id="Oval-2-Copy" stroke="#000000" mask="url(#mask-2)" stroke-width="2" stroke-dasharray="4,8" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

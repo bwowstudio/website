@@ -1,30 +1,32 @@
-<div class="header-desktop-container" [ngClass]="{'secondaryPage': isSecondary}">
-  <div class="container-left">
-    <img *ngIf="!isSecondary" src="assets/images/logoBlack.svg" routerLink="/">
-    <img *ngIf="isSecondary" src="assets/images/logoWhite.svg" routerLink="/">
-  </div>
-  <div class="container-right">
-    <div class="right-anchors">
-      <div [ngClass]="{'anchor1': true, 'active': pageActive.home}" class="anchor1" routerLink="/what-we-do" (mouseenter)="mouseEnter()" (mouseleave)="mouseLeave()">
-        <a >{{ 'HEADER.anchor1' | translate }}</a>
-        <div class="dropdownContainer">
-          <div class="anchor1Triangle" [hidden]="dropdownHide"></div>
-          <div class="anchor1Dropdown" [hidden]="dropdownHide">
-              <p [ngClass]="{'secondary-text': true, 'active': pageActive.digitalProduct}" routerLink="/digital-product">{{ 'HEADER.secondary.secondary1' | translate }}</p>
-              <p [ngClass]="{'secondary-text': true, 'active': pageActive.branding}" routerLink="/branding">{{ 'HEADER.secondary.secondary2' | translate }}</p>
-              <p [ngClass]="{'secondary-text': true, 'active': pageActive.businessDesign}" routerLink="/business-design">{{ 'HEADER.secondary.secondary3' | translate }}</p>
-              <p [ngClass]="{'secondary-text': true, 'active': pageActive.designSystem}" routerLink="/design-system">{{ 'HEADER.secondary.secondary4' | translate }}</p>
-              <p [ngClass]="{'secondary-text': true, 'active': pageActive.designTeams}" routerLink="/design-teams">{{ 'HEADER.secondary.secondary5' | translate }}</p>
+<div [ngClass]="{'secondary-container': isSecondary}">
+  <div class="header-desktop-container" [ngClass]="{'secondaryPage': isSecondary}">
+    <div class="container-left">
+      <img *ngIf="!isSecondary" src="assets/images/logoBlack.svg" routerLink="/">
+      <img *ngIf="isSecondary" src="assets/images/logoWhite.svg" routerLink="/">
+    </div>
+    <div class="container-right">
+      <div class="right-anchors">
+        <div [ngClass]="{'anchor1': true, 'active': pageActive.home}" class="anchor1" routerLink="/what-we-do" (mouseenter)="mouseEnter()" (mouseleave)="mouseLeave()">
+          <a >{{ 'HEADER.anchor1' | translate }}</a>
+          <div class="dropdownContainer">
+            <div class="anchor1Triangle" [hidden]="dropdownHide"></div>
+            <div class="anchor1Dropdown" [hidden]="dropdownHide">
+                <p [ngClass]="{'secondary-text': true, 'active': pageActive.digitalProduct}" routerLink="/digital-product">{{ 'HEADER.secondary.secondary1' | translate }}</p>
+                <p [ngClass]="{'secondary-text': true, 'active': pageActive.branding}" routerLink="/branding">{{ 'HEADER.secondary.secondary2' | translate }}</p>
+                <p [ngClass]="{'secondary-text': true, 'active': pageActive.businessDesign}" routerLink="/business-design">{{ 'HEADER.secondary.secondary3' | translate }}</p>
+                <p [ngClass]="{'secondary-text': true, 'active': pageActive.designSystem}" routerLink="/design-system">{{ 'HEADER.secondary.secondary4' | translate }}</p>
+                <p [ngClass]="{'secondary-text': true, 'active': pageActive.designTeams}" routerLink="/design-teams">{{ 'HEADER.secondary.secondary5' | translate }}</p>
+            </div>
           </div>
         </div>
+        <div [ngClass]="{'anchor2': true, 'active': pageActive.bwowers}" routerLink="/bwowers"><a>{{ 'HEADER.anchor2' | translate }}</a></div>
+        <div [ngClass]="{'anchor3': true, 'active': pageActive.contact}" routerLink="/contact"><a>{{ 'HEADER.anchor3' | translate }}</a></div>
       </div>
-      <div [ngClass]="{'anchor2': true, 'active': pageActive.bwowers}" routerLink="/bwowers"><a>{{ 'HEADER.anchor2' | translate }}</a></div>
-      <div [ngClass]="{'anchor3': true, 'active': pageActive.contact}" routerLink="/contact"><a>{{ 'HEADER.anchor3' | translate }}</a></div>
-    </div>
-    <div class="right-divider"></div>
-    <div class="right-languages">
-      <div class="left-span" [ngClass]="{'active': langEn}" (click)="languageService.setLanguage('en')">EN</div>
-      <div class="right-span" [ngClass]="{'active': langEs}" (click)="languageService.setLanguage('es')">ES</div>
+      <div class="right-divider"></div>
+      <div class="right-languages">
+        <div class="left-span" [ngClass]="{'active': langEn}" (click)="languageService.setLanguage('en')">EN</div>
+        <div class="right-span" [ngClass]="{'active': langEs}" (click)="languageService.setLanguage('es')">ES</div>
+      </div>
     </div>
   </div>
 </div>

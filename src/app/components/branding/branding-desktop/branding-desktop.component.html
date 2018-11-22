@@ -1,41 +1,32 @@
 <app-header></app-header>
 <div class="branding-container" detect-scroll (onScroll)="handleScroll($event)">
-  <div class="first-slide">
-    <div class="left">
-      <h2>{{ 'BRANDING.firstSlide.h2' | translate }}</h2>
-      <h3>{{ 'BRANDING.firstSlide.h3' | translate }}</h3>
+  <div class="first-slide-background">
+    <div class="first-slide">
+      <div class="left">
+        <h2>{{ 'BRANDING.firstSlide.h2' | translate }}</h2>
+        <h3>{{ 'BRANDING.firstSlide.h3' | translate }}</h3>
+      </div>
+      <div class="right">
+        <img src="assets/images/branding1.svg">
+      </div>
     </div>
-    <div class="right">
-      <img src="assets/images/branding1.svg">
-    </div>
-  </div>
-  <div class="second-slide">
-    <div class="up">
-      <img src="assets/images/branding2.svg">
-    </div>
-    <div class="down">
-        <h2>{{ 'BRANDING.secondSlide.h2' | translate }}</h2>
-        <h3>{{ 'BRANDING.secondSlide.h3' | translate }}</h3>
+    <div class="first-slide-down">
+      <h2>{{ 'BRANDING.secondSlide.h2' | translate }}</h2>
+      <h3>{{ 'BRANDING.secondSlide.h3' | translate }}</h3>
     </div>
   </div>
   <div class="third-slide">
     <div class="left">
-        <h2>{{ 'BRANDING.thirdSlide.h2' | translate }}</h2>
-        <h3>{{ 'BRANDING.thirdSlide.h3' | translate }}</h3>
+      <h2>{{ 'BRANDING.thirdSlide.h2' | translate }}</h2>
+      <h3>{{ 'BRANDING.thirdSlide.h3' | translate }}</h3>
     </div>
     <div class="right">
       <img src="assets/images/branding3.svg">
     </div>
   </div>
   <div class="fourth-slide">
-    <div class="up">
-        <h2>{{ 'BRANDING.fourthSlide.h2' | translate }}</h2>
-        <h3>{{ 'BRANDING.fourthSlide.h3' | translate }}</h3>
-    </div>
-    <div class="down">
-      <img src="assets/images/branding4.svg">
-
-    </div>
+      <h2>{{ 'BRANDING.fourthSlide.h2' | translate }}</h2>
+      <h3>{{ 'BRANDING.fourthSlide.h3' | translate }}</h3>
   </div>
 </div>
 <div class="fixed-input-container" [hidden]="isHideFixedInput">

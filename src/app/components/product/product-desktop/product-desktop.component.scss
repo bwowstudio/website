@@ -3,20 +3,6 @@
 @import '../../../../styles/palette.scss';
 @import '../../../../styles/variables.scss';
 @import '../../../../styles/fonts.scss';
-$product-resolution-less-than-1024-padding-left-right: 56px;
-$product-resolution-1024-padding-left-right: 80px;
-$product-resolution-1280-padding-left-right: 80px;
-$product-resolution-1440-padding-left-right: 56px;
-
-$product-resolution-less-than-1024-padding-top: 0;
-$product-resolution-1024-padding-top: 0;
-$product-resolution-1280-padding-top: 0;
-$product-resolution-1440-padding-top: 0;
-
-$product-resolution-less-than-1024-padding-bottom: 100px;
-$product-resolution-1024-padding-bottom: 70px;
-$product-resolution-1280-padding-bottom: 70px;
-$product-resolution-1440-padding-bottom: 135px;
 
 h2  {
   font-family: $font-family-bold;
@@ -33,102 +19,97 @@ h3{
   margin-top: 32px;
 }
 .product-container {
-  background-image: url('/assets/images/productBackground.svg');
-  background-repeat: no-repeat;
-  background-size: 1024px;
   width: 100%;
-  background-position-y: -40px;
-  box-sizing: border-box;
-  .first-slide {
+  .first-slide-background{
     width: 100%;
     display: flex;
+    background-color: $background-color-line-button;
+    justify-content: center;
     height: 550px;
-    .left {
+    .first-slide {
+      padding: 0 80px;
+      box-sizing: border-box;
+      max-width: 1440px;
+      height: 100%;
       display: flex;
       justify-content: center;
-      flex-direction: column;
-      width: 50%;
-      height: 100%;
-      h2,h3{
-        position: relative;
-        top: -60px;
+      align-items: center;
+      .left {
+        width: 50%;
       }
-    }
-    .right {
-      @include flex-center;
-      width: 50%;
-      img{
-        width: 400px;
-        position: relative;
-        top: -60px;
+      .right {
+        width: 50%;
+        display: flex;
+        justify-content: center;
       }
     }
   }
   .second-slide {
-    width: 100%;
+    width: 745px;
+    margin: 0 auto;
     height: 530px;
     .up {
-      margin: auto;
-      height: 30%;
+      height: 50%;
       width: 100%;
       @include flex-center;
-      img{
-        width: 347px;
-      }
     }
     .down {
+      height: 50%;
+      width: 100%;
       @include flex-center;
       flex-direction: column;
-      height: 50%;
-      width: 729px;
-      margin: auto;
-      h2,h3{
-        color: #0f0506;
+      h2, h3{
+        color: black;
       }
     }
   }
-  .third-slide {
+  .third-slide-background{
     width: 100%;
     display: flex;
-    height: 400px;
-    .left {
-      width: 50%;
+    background-image: url('/assets/images/product/01.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    height: 773px;
+    .third-slide {
+      display: flex;
+      max-width: 1440px;
+      padding: 0 80px;
       height: 100%;
-      @include flex-center;
-      flex-direction: column;
-    }
-    .right {
-      @include flex-center;
-      width: 50%;
-      img{
-        width: 250px;
+      box-sizing: border-box;
+      .left {
+        width: 50%;
+        margin-top: 200px;
+      }
+      .right {
+        width: 50%;
+        margin-top: 200px;
+        display: flex;
+        justify-content: center;
+        img {
+          width: 200px;
+          height: 200px;
+        }
       }
     }
   }
   .fourth-slide {
-    color: #0f0506;
-    width: 100%;
-    height: 550px;
-    padding-top: 50px;
-    box-sizing: border-box;
-
+    width: 745px;
+    margin: 0 auto;
+    height: 500px;
     .up {
-      width: 729px;
-      margin: auto;
       height: 50%;
-      @include flex-center;
-      flex-direction: column;
-      h2, h3 {
-        color: #0f0506;
+      width: 100%;
+      h2, h3{
+        color: black;
+        text-align: center;
       }
     }
     .down {
-      @include flex-center;
-      width: 100%;
       height: 50%;
-      img{
-        width: 400px;
-      }
+      width: 100%;
+      display: flex;
+      justify-content: center;
     }
   }
 }
@@ -142,57 +123,17 @@ h3{
   width: 100%;
   background-color: black;
 }
-
-@media only screen and (min-width: 1024px) {
-  .product-container {
-    padding: $product-resolution-1024-padding-top $product-resolution-1024-padding-left-right $product-resolution-1024-padding-bottom;
-  }
-}
 @media only screen and (min-width: 1280px) {
-  .product-container {
-    padding: $product-resolution-1280-padding-top $product-resolution-1280-padding-left-right $product-resolution-1280-padding-bottom;
-    background-size: 1280px;
+  .first-slide-background{
     .first-slide {
-      height: 600px;
-    }
-    .second-slide {
-      height: 700px;
-      padding-top: 100px;
-      box-sizing: border-box;
-    }
-    .third-slide {
-      height: 600px;
-      box-sizing: border-box;
-    }
-    .fourth-slide {
-      padding-top: 50px;
-      height: 580px;
-      box-sizing: border-box;
+      padding: 0 56px;
     }
   }
 }
 @media only screen and (min-width: 1440px) {
-  .product-container {
-    width: $resolution-1440-width;
-    margin: auto;
-    background-size: 1440px;
-    padding: $product-resolution-1440-padding-top $product-resolution-1440-padding-left-right $product-resolution-1440-padding-bottom;
+  .first-slide-background{
     .first-slide {
-      height: 600px;
-    }
-    .second-slide {
-      height: 800px;
-      padding-top: 100px;
-      box-sizing: border-box;
-    }
-    .third-slide {
-      height: 600px;
-      box-sizing: border-box;
-    }
-    .fourth-slide {
-      padding-top: 200px;
-      height: 600px;
-      box-sizing: border-box;
+      padding: 0 56px;
     }
   }
 }
