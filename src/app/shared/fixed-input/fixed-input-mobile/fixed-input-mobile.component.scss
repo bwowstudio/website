@@ -56,11 +56,10 @@ $fixed-input-768-left-input-margin-right: $resolution-768-width*0.025;
         padding-left: 10px;
       }
       ::placeholder{
-        display: flex;
-        align-items: center;
         font-size: 18px;
         color: #AEA3A4;
         letter-spacing: 0.26px;
+        padding-top: 8px;
         line-height: 18px;
       }
       .right-input{
