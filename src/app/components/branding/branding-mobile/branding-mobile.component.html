@@ -1,16 +1,35 @@
 <app-header></app-header>
 <div class="branding-mobile-container">
   <div class="first-slide">
-
+    <h2>{{ 'BRANDING.firstSlide.h2' | translate }}</h2>
+    <h3>{{ 'BRANDING.firstSlide.h3' | translate }}</h3>
+    <div class="img-container">
+      <img src="assets/images/branding1.svg">
+    </div>
   </div>
   <div class="second-slide">
-
+    <div class="img-container">
+      <img src="assets/images/branding2.svg">
+    </div>
+    <h2>{{ 'BRANDING.secondSlide.h2' | translate }}</h2>
+    <h3>{{ 'BRANDING.secondSlide.h3' | translate }}</h3>
   </div>
   <div class="third-slide">
-
+    <div class="img-container">
+      <img src="assets/images/branding3.svg">
+    </div>
+    <h2>{{ 'BRANDING.thirdSlide.h2' | translate }}</h2>
+    <h3>{{ 'BRANDING.thirdSlide.h3' | translate }}</h3>
   </div>
   <div class="fourth-slide">
-
-  </div>
+      <div class="img-container">
+        <img src="assets/images/branding4.svg">
+      </div>
+      <h2>{{ 'BRANDING.fourthSlide.h2' | translate }}</h2>
+      <h3>{{ 'BRANDING.fourthSlide.h3' | translate }}</h3>
+    </div>
+</div>
+<div class="fixed-input-container" [hidden]="isHideFixedInput">
+  <app-fixed-input></app-fixed-input>
 </div>
 <app-footer></app-footer>
