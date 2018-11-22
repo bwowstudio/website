@@ -4,9 +4,9 @@
         <hr class="menu-line">
         <img src="assets/images/buttonDown.png" (click)="menuUp()">
     </div>
-    <p class="number">0{{number}}</p>
+    <p (click)="navigate()" class="number">0{{number}}</p>
 </div>
-<div class="controls-container">
+<div class="controls-container" >
     <div [ngClass]="{'square': true, 'one': true, 'activeOne': isActive[0], 'lastActiveOne': lastActive[0]}">01</div>
     <div [ngClass]="{'square': true, 'two': true, 'activeTwo': isActive[1], 'lastActiveTwo': lastActive[1]}">02</div>
     <div [ngClass]="{'square': true, 'three': true, 'activeThree': isActive[2], 'lastActiveThree': lastActive[2]}">03</div>

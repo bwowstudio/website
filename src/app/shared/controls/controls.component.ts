@@ -1,4 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-controls',
@@ -10,8 +11,11 @@ export class ControlsComponent implements OnInit {
   number = 1;
   isActive = [false, false, false, false, false];
   lastActive = [false, false, false, false, false];
-  constructor() { }
-
+  constructor(public router: Router) { }
+  navigate() {
+    const routes = ['digital-product', 'branding', 'business-design', 'design-system', 'design-teams'];
+    this.router.navigate([routes[this.number - 1]]);
+  }
   ngOnInit() {
     const number = localStorage.getItem('bwowPage');
     if (!Number(number)) {

@@ -3,6 +3,7 @@ import { TranslateService } from '@ngx-translate/core';
 import { LanguageService } from 'src/app/services/language.service';
 import { forkJoin } from 'rxjs';
 import { ResolutionService } from 'src/app/services/resolution.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -22,6 +23,7 @@ export class HomeComponent implements OnInit {
     public resolutionService: ResolutionService,
     public translateService: TranslateService,
     public languageService: LanguageService,
+    public router: Router,
   ) {
     this.translateService.use(this.languageService.language);
     this.languageService.langUpdated.subscribe(e => {
@@ -58,5 +60,9 @@ export class HomeComponent implements OnInit {
     } else if (number) {
       this.setText(page);
     }
+  }
+  navigate() {
+    const routes = ['digital-product', 'branding', 'business-design', 'design-system', 'design-teams'];
+    this.router.navigate([routes[this.page - 1]]);
   }
 }
