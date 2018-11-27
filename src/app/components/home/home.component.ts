@@ -8,9 +8,10 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
+
   page = 1;
   imageUrl = `assets/images/homeImg${this.page - 1}.png`;
   home = {
@@ -19,6 +20,7 @@ export class HomeComponent implements OnInit {
     h4Text: '',
     aTextMobile: ''
   };
+  finalText = '';
   constructor(
     public resolutionService: ResolutionService,
     public translateService: TranslateService,
@@ -49,6 +51,13 @@ export class HomeComponent implements OnInit {
           h4Text: results[2],
           aTextMobile: results[3]
         };
+        this.finalText = `<h3 (click)="navigate()" class="fadeIn" style="margin-top: 24px;font-family: $font-family-bold;font-size: 32px;color: #0F0506;letter-spacing: 0.45px;line-height: 40px;"> 
+        ${this.home.h3TextFirstLine} <br> ${this.home.h3TextSecondLine}</h3>
+          <h4 class="fadeIn">${this.home.h4Text}</h4>
+          <a (click)="navigate()" class="fadeIn">${this.home.aTextMobile} 
+            <img src="assets/images/arrow.svg">
+          </a>
+          <br> `
     });
   }
   ngOnInit() {
