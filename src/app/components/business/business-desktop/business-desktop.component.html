@@ -1,27 +1,24 @@
 <app-header></app-header>
 <div class="business-container" detect-scroll (onScroll)="handleScroll($event)">
   <div class="first-slide">
-    <div class="left">
-      <h2>{{ 'BUSINESS.firstSlide.h2' | translate }}</h2>
-      <h3>{{ 'BUSINESS.firstSlide.h3' | translate }}</h3>
+    <div class="first-slide-up">
+      <div class="left">
+        <h2>{{ 'BUSINESS.firstSlide.h2' | translate }}</h2>
+        <h3>{{ 'BUSINESS.firstSlide.h3' | translate }}</h3>
+      </div>
+      <div class="right">
+        <img src="assets/images/business1.svg">
+      </div>
     </div>
-    <div class="right">
-      <img src="assets/images/business1.svg">
-    </div>
-  </div>
-  <div class="second-slide">
-    <div class="up">
-      <img src="assets/images/business2.svg">
-    </div>
-    <div class="down">
-        <h2>{{ 'BUSINESS.secondSlide.h2' | translate }}</h2>
-        <h3>{{ 'BUSINESS.secondSlide.h3' | translate }}</h3>
+    <div class="first-slide-down">
+      <h2>{{ 'BUSINESS.secondSlide.h2' | translate }}</h2>
+      <h3>{{ 'BUSINESS.secondSlide.h3' | translate }}</h3>
     </div>
   </div>
   <div class="third-slide">
     <div class="left">
-        <h2>{{ 'BUSINESS.thirdSlide.h2' | translate }}</h2>
-        <h3>{{ 'BUSINESS.thirdSlide.h3' | translate }}</h3>
+      <h2>{{ 'BUSINESS.thirdSlide.h2' | translate }}</h2>
+      <h3>{{ 'BUSINESS.thirdSlide.h3' | translate }}</h3>
     </div>
     <div class="right">
       <img src="assets/images/business3.svg">
@@ -29,12 +26,11 @@
   </div>
   <div class="fourth-slide">
     <div class="up">
-        <h2>{{ 'BUSINESS.fourthSlide.h2' | translate }}</h2>
-        <h3>{{ 'BUSINESS.fourthSlide.h3' | translate }}</h3>
+      <h2>{{ 'BUSINESS.fourthSlide.h2' | translate }}</h2>
+      <h3>{{ 'BUSINESS.fourthSlide.h3' | translate }}</h3>
     </div>
     <div class="down">
       <img src="assets/images/business4.svg">
-
     </div>
   </div>
 </div>

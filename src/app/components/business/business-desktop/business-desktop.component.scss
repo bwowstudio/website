@@ -3,20 +3,6 @@
 @import '../../../../styles/palette.scss';
 @import '../../../../styles/variables.scss';
 @import '../../../../styles/fonts.scss';
-$business-resolution-less-than-1024-padding-left-right: 56px;
-$business-resolution-1024-padding-left-right: 80px;
-$business-resolution-1280-padding-left-right: 80px;
-$business-resolution-1440-padding-left-right: 56px;
-
-$business-resolution-less-than-1024-padding-top: 0;
-$business-resolution-1024-padding-top: 0;
-$business-resolution-1280-padding-top: 0;
-$business-resolution-1440-padding-top: 0;
-
-$business-resolution-less-than-1024-padding-bottom: 100px;
-$business-resolution-1024-padding-bottom: 70px;
-$business-resolution-1280-padding-bottom: 70px;
-$business-resolution-1440-padding-bottom: 135px;
 
 h2  {
   font-family: $font-family-bold;
@@ -33,100 +19,92 @@ h3{
   margin-top: 32px;
 }
 .business-container {
-  background-image: url('/assets/images/businessBackground.svg');
-  background-repeat: no-repeat;
-  background-size: 1024px;
   width: 100%;
-  background-position-y: -40px;
-  box-sizing: border-box;
-  .first-slide {
+  margin-top: -1px;
+  .first-slide{
     width: 100%;
+    height: 1249px;
+    background-image: url('/assets/images/business/01.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    .first-slide-up{
+      padding: 0 80px;
+      box-sizing: border-box;
+      max-width: 1440px;
+      margin: 0 auto;
+      height: 40%;
+      display: flex;
+      .left {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 50%;
+      }
+      .right {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+    .first-slide-down{
+      h2, h3{
+        width: 745px;
+        margin: 0 auto;
+      }
+      h2{
+        margin-top: 450px;
+        text-align:center;
+      }
+      h3{
+        margin-top: 16px;
+      }
+    }
+  }
+  .third-slide{
+    padding: 0 80px;
+    box-sizing: border-box;
+    max-width: 1440px;
+    margin: 80px auto;
+    height: 40%;
     display: flex;
-    height: 470px;
     .left {
       display: flex;
       justify-content: center;
       flex-direction: column;
       width: 50%;
-      height: 100%;
-      h2,h3{
-        position: relative;
-        top: -60px;
+      h2, h3{
+        color: black;
       }
     }
     .right {
-      @include flex-center;
       width: 50%;
-      img{
-        width: 400px;
-        position: relative;
-        top: -60px;
-      }
+      display: flex;
+      justify-content: flex-end;
     }
   }
-  .second-slide {
-    width: 100%;
-    height: 440px;
-    .up {
-      margin: auto;
-      height: 30%;
-      width: 100%;
-      @include flex-center;
-      img{
-        width: 347px;
-      }
-    }
-    .down {
-      @include flex-center;
-      flex-direction: column;
+  .fourth-slide{
+    height: 668px;
+    margin: 80px auto 0;
+    background-image: url('/assets/images/business/02.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    .up{
+      max-width: 1440px;
+      margin: 0 auto;
       height: 50%;
-      width: 729px;
-      margin: auto;
-    }
-  }
-  .third-slide {
-    width: 100%;
-    display: flex;
-    height: 550px;
-    .left {
-      width: 50%;
-      height: 100%;
-      @include flex-center;
-      flex-direction: column;
-      h2, h3 {
-        color: #0f0506;
+      text-align: center;
+      padding-top: 200px;
+      box-sizing: border-box;
+      h2, h3{
+        color: black;
+        width: 745px;
+        margin: 0 auto;
       }
     }
-    .right {
-      @include flex-center;
-      width: 50%;
-      img{
-        width: 400px;
-      }
-    }
-  }
-  .fourth-slide {
-    color: #0f0506;
-    width: 100%;
-    height: 421px;
-
-    .up {
-      width: 729px;
-      margin: auto;
+    .down{
+      display: flex;
+      justify-content: center;
       height: 50%;
-      @include flex-center;
-      flex-direction: column;
-      h2, h3 {
-        color: #0f0506;
-      }
-    }
-    .down {
-      @include flex-center;
-      width: 100%;
-      height: 50%;
-      img{
-        width: 400px;
-      }
     }
   }
 }
@@ -141,56 +119,12 @@ h3{
   background-color: black;
 }
 
-@media only screen and (min-width: 1024px) {
-  .business-container {
-    padding: $business-resolution-1024-padding-top $business-resolution-1024-padding-left-right $business-resolution-1024-padding-bottom;
-  }
-}
 @media only screen and (min-width: 1280px) {
-  .business-container {
-    padding: $business-resolution-1280-padding-top $business-resolution-1280-padding-left-right $business-resolution-1280-padding-bottom;
-    background-size: 1280px;
-    .first-slide {
-      height: 500px;
-    }
-    .second-slide {
-      height: 700px;
-      padding-top: 100px;
-      box-sizing: border-box;
-    }
-    .third-slide {
-      height: 600px;
-      box-sizing: border-box;
-    }
-    .fourth-slide {
-      padding-top: 50px;
-      height: 580px;
-      box-sizing: border-box;
-    }
-  }
-}
-@media only screen and (min-width: 1440px) {
-  .business-container {
-    width: $resolution-1440-width;
-    margin: auto;
-    background-size: 1440px;
-    padding: $business-resolution-1440-padding-top $business-resolution-1440-padding-left-right $business-resolution-1440-padding-bottom;
-    .first-slide {
-      height: 600px;
-    }
-    .second-slide {
-      height: 800px;
-      padding-top: 100px;
-      box-sizing: border-box;
-    }
-    .third-slide {
-      height: 600px;
-      box-sizing: border-box;
-    }
-    .fourth-slide {
-      padding-top: 200px;
-      height: 600px;
-      box-sizing: border-box;
+  .business-container{
+    .first-slide{
+      .first-slide-up{
+        padding: 0 56px;
+      }
     }
   }
 }
