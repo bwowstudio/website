@@ -4,7 +4,6 @@ import { LanguageService } from 'src/app/services/language.service';
 import { MailService } from 'src/app/services/mail.service';
 import { FormControl, FormGroup } from '@angular/forms';
 
-// TODO: ver los margenes de los input que no están puestos.
 @Component({
   selector: 'app-fixed-input-desktop',
   templateUrl: './fixed-input-desktop.component.html',
