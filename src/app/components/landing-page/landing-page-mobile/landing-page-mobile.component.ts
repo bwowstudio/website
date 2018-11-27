@@ -8,15 +8,26 @@ import { Router } from '@angular/router';
 })
 export class LandingPageMobileComponent implements OnInit {
   ovalRoute = 'assets/images/oval.svg';
+  backgroundPosition = '100vh';
   timeOut = setTimeout(() => {
     this.router.navigate(['/home']);
   }, 10000);
+  transitionIsOn = false;
+
   constructor(
     public router: Router,
   ) { }
-  nextPage() {
-    this.router.navigate(['/home']);
+  nextPage(page = '/home') {
     clearTimeout(this.timeOut);
+    if (this.transitionIsOn) {
+      return;
+    }
+    this.transitionIsOn = true;
+    setInterval(() => {
+      const positionY = Number(this.backgroundPosition.split('vh')[0]);
+      this.backgroundPosition = `${positionY - 2}vh`;
+    }, 1000 / 120);
+    setTimeout(() => this.router.navigate([page]), 500);
   }
   ngOnInit() {
   }
