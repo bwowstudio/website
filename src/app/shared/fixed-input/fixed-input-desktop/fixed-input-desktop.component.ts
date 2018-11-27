@@ -42,6 +42,7 @@ export class FixedInputDesktopComponent implements OnInit {
   }
   sendEmail() {
     const { email, name } = this.emailForm.value;
-    this.mailService.sendmail(email, name ).subscribe(e => console.log('Email mandado!'), error => console.log(error));
-  }
+    this.mailService.sendmail(email, name ).subscribe(e => {
+      this.emailForm.setValue({email: '', name: ''});
+    }, () => this.emailForm.setValue({email: '', name: ''}));  }
 }
