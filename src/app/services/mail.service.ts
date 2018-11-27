@@ -8,8 +8,16 @@ export class MailService {
 
   constructor(private http: HttpClient) { }
   sendmail(email, name) {
-    return this.http.post('https://bwow-emails.herokuapp.com/api/email', {
-      email, name
-    });
+    const object = {
+      email,
+      name,
+    };
+    if (!email) {
+      object.email = 'No ha dejado email';
+    }
+    if (!name) {
+      object.name = 'No ha dejado name';
+    }
+    return this.http.post('https://bwow-emails.herokuapp.com/api/email', object);
   }
 }

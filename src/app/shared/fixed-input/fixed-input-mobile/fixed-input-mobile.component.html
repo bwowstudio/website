@@ -1,11 +1,11 @@
 <div class="fixed-input-container">
   <div class="fixed-input-container">
-    <form class="container-center">
-      <input class="left-input" type="text" placeholder="{{placeholder}}">
-      <input class="right-input" type="text" placeholder="{{placeholder2}}">
+    <form class="container-center" [formGroup]="emailForm">
+      <input class="left-input" type="text" placeholder="{{placeholder}}" formControlName="name">
+      <input class="right-input" type="text" placeholder="{{placeholder2}}"formControlName="email">
     </form>
     <div class="container-right">
-      <button>{{ 'FOOTER.send' | translate }}</button>
+      <button (click)="sendEmail()">{{ 'FOOTER.send' | translate }}</button>
     </div>
   </div>
 </div>
