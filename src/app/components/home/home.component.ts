@@ -4,6 +4,7 @@ import { LanguageService } from 'src/app/services/language.service';
 import { forkJoin } from 'rxjs';
 import { ResolutionService } from 'src/app/services/resolution.service';
 import { Router } from '@angular/router';
+import { text } from '@angular/core/src/render3/instructions';
 
 @Component({
   selector: 'app-home',
@@ -51,7 +52,7 @@ export class HomeComponent implements OnInit {
           h4Text: results[2],
           aTextMobile: results[3]
         };
-        this.finalText = `<h3 (click)="navigate()" class="fadeIn" style="margin-top: 24px;font-family: $font-family-bold;font-size: 32px;color: #0F0506;letter-spacing: 0.45px;line-height: 40px;"> 
+        this.finalText = `<h3 (click)="navigate()" class="fadeIn"> 
         ${this.home.h3TextFirstLine} <br> ${this.home.h3TextSecondLine}</h3>
           <h4 class="fadeIn">${this.home.h4Text}</h4>
           <a (click)="navigate()" class="fadeIn">${this.home.aTextMobile} 
@@ -70,6 +71,7 @@ export class HomeComponent implements OnInit {
       this.setText(page);
     }
   }
+
   navigate() {
     const routes = ['digital-product', 'branding', 'business-design', 'design-system', 'design-teams'];
     this.router.navigate([routes[this.page - 1]]);

@@ -3,14 +3,7 @@
   <app-controls (page)="setText($event)"></app-controls>
 </div>
 <div class="home-container">
-  <div class="text-container" [innerHTML]="finalText">
-    <!-- <h3 (click)="navigate()">{{ home.h3TextFirstLine }} <br> {{ home.h3TextSecondLine }}</h3>
-    <h4>{{ home.h4Text }}</h4>
-    <a (click)="navigate()">{{ home.aTextMobile }} 
-      <img src="assets/images/arrow.svg">
-    </a>
-    <br> -->
-  </div>
+  <div class="text-container" [innerHTML]="finalText" (click)="navigate()"></div>
   <div class="image-container">
     <img *ngIf="page===1" class="homeImg fadeIn" src="{{imageUrl}}">
     <img *ngIf="page===2"class="homeImg fadeIn" src="{{imageUrl}}">
