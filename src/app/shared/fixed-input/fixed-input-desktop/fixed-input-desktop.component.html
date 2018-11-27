@@ -3,12 +3,12 @@
     <div class="container-left">
       {{ 'FOOTER.text' | translate }}
     </div>
-    <form class="container-center">
-        <input class="left-input"type="text" placeholder="{{placeholder}}">
-        <input type="text" placeholder="{{placeholder2}}">
+    <form [formGroup]="emailForm" class="container-center">
+      <input class="left-input" type="text" placeholder="{{placeholder}}" formControlName="name">
+      <input type="text" placeholder="{{placeholder2}}" formControlName="email">
     </form>
     <div class="container-right">
-      <button>{{ 'FOOTER.send' | translate }}</button>
+      <button (click)="sendEmail()">{{ 'FOOTER.send' | translate }}</button>
     </div>
   </div>
 </div>

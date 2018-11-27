@@ -47,6 +47,8 @@ import { SystemDesktopComponent } from './components/system/system-desktop/syste
 import { SystemMobileComponent } from './components/system/system-mobile/system-mobile.component';
 import { TeamsDesktopComponent } from './components/teams/teams-desktop/teams-desktop.component';
 import { TeamsMobileComponent } from './components/teams/teams-mobile/teams-mobile.component';
+import { MailService } from './services/mail.service';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/translations/', '.json');
@@ -99,6 +101,8 @@ export function createTranslateLoader(http: HttpClient) {
     AppRoutingModule,
     HttpClientModule,
     ScrollEventModule,
+    ReactiveFormsModule,
+    FormsModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
@@ -109,6 +113,7 @@ export function createTranslateLoader(http: HttpClient) {
   ],
   providers: [
     LanguageService,
+    MailService
   ],
   bootstrap: [AppComponent]
 })
