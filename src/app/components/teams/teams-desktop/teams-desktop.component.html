@@ -1,30 +1,34 @@
 <app-header></app-header>
 <div class="teams-container" detect-scroll (onScroll)="handleScroll($event)">
-  <div class="first-slide">
-    <div class="left">
-      <h2>{{ 'TEAMS.firstSlide.h2' | translate }}</h2>
-      <h3>{{ 'TEAMS.firstSlide.h3' | translate }}</h3>
-    </div>
-    <div class="right">
-      <img src="assets/images/teams1.svg">
+  <div class="first-slide-background">
+    <div class="first-slide">
+      <div class="left">
+        <h2>{{ 'TEAMS.firstSlide.h2' | translate }}</h2>
+        <h3>{{ 'TEAMS.firstSlide.h3' | translate }}</h3>
+      </div>
+      <div class="right">
+        <img src="assets/images/teams1.svg">
+      </div>
     </div>
   </div>
   <div class="second-slide">
     <div class="up">
-      <h2>{{ 'TEAMS.secondSlide.h2' | translate }}</h2>
-      <h3>{{ 'TEAMS.secondSlide.h3' | translate }}</h3>
-    </div>
-    <div class="down">
       <img src="assets/images/teams2.svg">
     </div>
-  </div>
-  <div class="third-slide">
-    <div class="left">
-        <h2>{{ 'TEAMS.thirdSlide.h2' | translate }}</h2>
-        <h3>{{ 'TEAMS.thirdSlide.h3' | translate }}</h3>
+    <div class="down">
+        <h2>{{ 'TEAMS.secondSlide.h2' | translate }}</h2>
+        <h3>{{ 'TEAMS.secondSlide.h3' | translate }}</h3>
     </div>
-    <div class="right">
-      <img src="assets/images/teams3.svg">
+  </div>
+  <div class="third-slide-background">
+    <div class="third-slide">
+      <div class="left">
+          <h2>{{ 'TEAMS.thirdSlide.h2' | translate }}</h2>
+          <h3>{{ 'TEAMS.thirdSlide.h3' | translate }}</h3>
+      </div>
+      <div class="right">
+        <img src="assets/images/teams3.svg">
+      </div>
     </div>
   </div>
   <div class="fourth-slide">
@@ -34,7 +38,6 @@
     </div>
     <div class="down">
       <img src="assets/images/teams4.svg">
-
     </div>
   </div>
 </div>

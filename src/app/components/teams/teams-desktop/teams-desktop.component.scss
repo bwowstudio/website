@@ -3,20 +3,6 @@
 @import '../../../../styles/palette.scss';
 @import '../../../../styles/variables.scss';
 @import '../../../../styles/fonts.scss';
-$teams-resolution-less-than-1024-padding-left-right: 56px;
-$teams-resolution-1024-padding-left-right: 80px;
-$teams-resolution-1280-padding-left-right: 80px;
-$teams-resolution-1440-padding-left-right: 56px;
-
-$teams-resolution-less-than-1024-padding-top: 0;
-$teams-resolution-1024-padding-top: 0;
-$teams-resolution-1280-padding-top: 0;
-$teams-resolution-1440-padding-top: 0;
-
-$teams-resolution-less-than-1024-padding-bottom: 100px;
-$teams-resolution-1024-padding-bottom: 70px;
-$teams-resolution-1280-padding-bottom: 70px;
-$teams-resolution-1440-padding-bottom: 135px;
 
 h2  {
   font-family: $font-family-bold;
@@ -33,103 +19,116 @@ h3{
   margin-top: 32px;
 }
 .teams-container {
-  background-image: url('/assets/images/teamsBackground.svg');
-  background-repeat: no-repeat;
-  background-size: 1024px;
   width: 100%;
-  background-position-y: -40px;
-  box-sizing: border-box;
-  .first-slide {
+  .first-slide-background{
     width: 100%;
     display: flex;
-    height: 600px;
-    .left {
+    background-color: $background-color-line-button;
+    justify-content: center;
+    height: 550px;
+    .first-slide {
+      padding: 0 80px;
+      box-sizing: border-box;
+      max-width: 1440px;
+      height: 100%;
       display: flex;
       justify-content: center;
-      flex-direction: column;
-      width: 50%;
-      height: 100%;
-      h2,h3{
-        position: relative;
-        top: -60px;
-        
+      align-items: center;
+      .left {
+        width: 50%;
       }
-    }
-    .right {
-      @include flex-center;
-      width: 50%;
-      img{
-        width: 400px;
-        position: relative;
-        top: -60px;
+      .right {
+        width: 50%;
+        display: flex;
+        justify-content: center;
       }
     }
   }
   .second-slide {
     width: 100%;
-    height: 500px;
+    margin: 0 auto;
+    height: 773px;
+    background-image: url('/assets/images/teams/03.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
     .up {
-      @include flex-center;
-      flex-direction: column;
       height: 50%;
-      width: 729px;
-      margin: auto;
-      img{
-        width: 182px;
-      }
-    }
-    .down {
-      margin: auto;
-      height: 30%;
       width: 100%;
       @include flex-center;
+      align-items: flex-end;
     }
-  }
-  .third-slide {
-    width: 100%;
-    display: flex;
-    height: 400px;
-    .left {
-      width: 50%;
-      height: 100%;
+    .down {
+      height: 50%;
+      width: 100%;
       @include flex-center;
       flex-direction: column;
-      h2,h3{
-        color: #0f0506;
+      justify-content: flex-start;
+      h2, h3{
+        color: white;
+        width: 745px;
+        margin: 20px auto 0;
+      }
+      h3{
+        margin-top: 20px;
       }
     }
-    .right {
-      @include flex-center;
-      width: 50%;
-      img{
-        width: 250px;
+  }
+  .third-slide-background{
+    width: 100%;
+    display: flex;
+    .third-slide {
+      display: flex;
+      max-width: 1440px;
+      padding: 0 80px;
+      height: 600px;
+      box-sizing: border-box;
+      .left {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        h2, h3{
+          color: black;
+        }
+      }
+      .right {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 200px;
+          height: 200px;
+        }
       }
     }
   }
   .fourth-slide {
-    color: #0f0506;
     width: 100%;
-    height: 540px;
-    padding-top: 100px;
-    box-sizing: border-box;
-
+    margin: 0 auto;
+    height: 500px;
     .up {
-      width: 729px;
-      margin: auto;
-      height: 50%;
-      @include flex-center;
-      flex-direction: column;
-      h2, h3 {
-        color: #0f0506;
+      height: 40%;
+      width: 100%;
+      h2, h3{
+        width: 745px;
+        margin: 0 auto;
+        color: black;
+        text-align: center;
+      }
+      h3{
+        margin-top: 20px;
       }
     }
     .down {
-      @include flex-center;
+      height: 60%;
       width: 100%;
-      height: 50%;
-      img{
-        width: 250px;
-      }
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
     }
   }
 }
@@ -143,56 +142,12 @@ h3{
   width: 100%;
   background-color: black;
 }
-
-@media only screen and (min-width: 1024px) {
-  .teams-container {
-    padding: $teams-resolution-1024-padding-top $teams-resolution-1024-padding-left-right $teams-resolution-1024-padding-bottom;
-  }
-}
 @media only screen and (min-width: 1280px) {
-  .teams-container {
-    padding: $teams-resolution-1280-padding-top $teams-resolution-1280-padding-left-right $teams-resolution-1280-padding-bottom;
-    background-size: 1280px;
-    .first-slide {
-      height: 700px;
-    }
-    .second-slide {
-      height: 700px;
-      padding-top: 100px;
-      box-sizing: border-box;
-    }
-    .third-slide {
-      height: 600px;
-      box-sizing: border-box;
-    }
-    .fourth-slide {
-      padding-top: 50px;
-      height: 580px;
-      box-sizing: border-box;
-    }
-  }
-}
-@media only screen and (min-width: 1440px) {
-  .teams-container {
-    width: $resolution-1440-width;
-    margin: auto;
-    background-size: 1440px;
-    padding: $teams-resolution-1440-padding-top $teams-resolution-1440-padding-left-right $teams-resolution-1440-padding-bottom;
-    .first-slide {
-      height: 800px;
-    }
-    .second-slide {
-      height: 800px;
-      padding-top: 100px;
-      box-sizing: border-box;
-    }
-    .third-slide {
-      height: 650px;
-      box-sizing: border-box;
-    }
-    .fourth-slide {
-      height: 500px;
-      box-sizing: border-box;
+  .teams-container{
+    .first-slide-background{
+      .first-slide {
+        padding: 0 56px;
+      }
     }
   }
 }
