@@ -124,16 +124,11 @@ h3{
   background-color: black;
 }
 @media only screen and (min-width: 1280px) {
-  .first-slide-background{
-    .first-slide {
-      padding: 0 56px;
-    }
-  }
-}
-@media only screen and (min-width: 1440px) {
-  .first-slide-background{
-    .first-slide {
-      padding: 0 56px;
+  .product-container{
+    .first-slide-background{
+      .first-slide {
+        padding: 0 56px;
+      }
     }
   }
 }
