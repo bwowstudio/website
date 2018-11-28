@@ -17,7 +17,7 @@
   </div>
   <div class="menu" *ngIf="!isMenuHidden">
     <div class="menu-left" (click)="menuHandler()"></div>
-    <div class="menu-right">
+    <div class="menu-right slideInRight">
       <img src="assets/images/closeIcon.svg" (click)="menuHandler()">
       <p class="anchor" (click)="navigate('home')">{{ 'HEADER.anchor1' | translate }}</p>
       <p class="secondary-text" (click)="navigate('digital-product')">{{ 'HEADER.secondary.secondary1' | translate }}</p>
