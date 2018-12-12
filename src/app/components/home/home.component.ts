@@ -1,10 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { LanguageService } from 'src/app/services/language.service';
 import { forkJoin } from 'rxjs';
 import { ResolutionService } from 'src/app/services/resolution.service';
 import { Router } from '@angular/router';
 import { text } from '@angular/core/src/render3/instructions';
+import { ControlsComponent } from 'src/app/shared/controls/controls.component';
 
 @Component({
   selector: 'app-home',
@@ -12,8 +13,9 @@ import { text } from '@angular/core/src/render3/instructions';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
-
+  @ViewChild(ControlsComponent) child: ControlsComponent;
   page = 1;
+  moveUpNumber = false;
   imageUrl = `assets/images/homeImg${this.page - 1}.png`;
   home = {
     h3TextFirstLine: '',
@@ -61,6 +63,22 @@ export class HomeComponent implements OnInit {
           <br> `
     });
   }
+
+  onSwipeUp(evt) {
+    if (this.page < 5) {
+      this.setText(this.page+1);
+      this.child.menuUp();
+    }
+  }
+
+  onSwipeDown(evt) {
+    if (this.page > 1) {
+      this.setText(this.page-1);
+      this.child.menuDown();
+    }
+   
+  }
+
   ngOnInit() {
     const number = localStorage.getItem('bwowPage');
     const page = Number(number);

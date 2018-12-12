@@ -7,11 +7,10 @@
     <p (click)="navigate()" class="number">0{{number}}</p>
 </div>
 <div class="controls-container" >
-    <div [ngClass]="{'square': true, 'one': true, 'activeOne': isActive[0], 'lastActiveOne': lastActive[0]}">01</div>
-    <div [ngClass]="{'square': true, 'two': true, 'activeTwo': isActive[1], 'lastActiveTwo': lastActive[1]}">02</div>
-    <div [ngClass]="{'square': true, 'three': true, 'activeThree': isActive[2], 'lastActiveThree': lastActive[2]}">03</div>
-    <div [ngClass]="{'square': true, 'four': true, 'activeFour': isActive[3], 'lastActiveFour': lastActive[3]}">04</div>
-    <div [ngClass]="{'square': true, 'five': true, 'activeFive': isActive[4], 'lastActiveFive': lastActive[4]}">05</div>
+    <div [ngClass]="{'square': true, 'one': true, 'activeOneFromTwo': activeOneFromTwo, 'lastActiveOneUpToTwo': lastActiveOneUpToTwo, 'lastActiveOneUpToOne': lastActiveOneUpToOne, 'lastActiveOneUpToZero': lastActiveOneUpToZero, 'lastActiveOneUpToTwoFromOne': lastActiveOneUpToTwoFromOne, 'lastActiveOneUpToOneFromZero': lastActiveOneUpToOneFromZero, 'keepOneInZero': keepOneInZero}">01</div>
+    <div [ngClass]="{'square': true, 'two': true, 'activeTwoFromTwo': activeTwoFromTwo, 'activeTwoFromFour': activeTwoFromFour, 'lastActiveTwoUpToTwo': lastActiveTwoUpToTwo, 'lastActiveTwoUpToOne': lastActiveTwoUpToOne, 'lastActiveTwoUpToZero': lastActiveTwoUpToZero, 'lastActiveTwoDownToFour': lastActiveTwoDownToFour, 'lastActiveTwoUpToOneFromZero': lastActiveTwoUpToOneFromZero, 'lastActiveTwoUpToTwoFromOne': lastActiveTwoUpToTwoFromOne}">02</div>
+    <div [ngClass]="{'square': true, 'three': true, 'activeThreeFromTwo': activeThreeFromTwo, 'activeThreeFromFour': activeThreeFromFour, 'lastActiveThreeUpToTwo': lastActiveThreeUpToTwo, 'lastActiveThreeUpToOne': lastActiveThreeUpToOne, 'lastActiveThreeDownToFour': lastActiveThreeDownToFour, 'lastActiveThreeDownToFive': lastActiveThreeDownToFive, 'lastActiveThreeDownToFourFromFive': lastActiveThreeDownToFourFromFive, 'lastActiveThreeUpToTwoFromOne': lastActiveThreeUpToTwoFromOne }">03</div>
+    <div [ngClass]="{'square': true, 'four': true, 'activeFourFromTwo': activeFourFromTwo, 'activeFourFromFour': activeFourFromFour, 'lastActiveFourUpToTwo': lastActiveFourUpToTwo, 'lastActiveFourDownToFour': lastActiveFourDownToFour, 'lastActiveFourDownToFive': lastActiveFourDownToFive, 'lastActiveFourDownToSix': lastActiveFourDownToSix, 'lastActiveFourDownToFiveFromSix': lastActiveFourDownToFiveFromSix, 'lastActiveFourDownToFourFromFive': lastActiveFourDownToFourFromFive}">04</div>
+    <div [ngClass]="{'square': true, 'five': true, 'activeFiveFromFour': activeFiveFromFour, 'lastActiveFiveDownToFour': lastActiveFiveDownToFour, 'lastActiveFiveDownToFive': lastActiveFiveDownToFive, 'lastActiveFiveDownToSix': lastActiveFiveDownToSix, 'keepFiveInSix': keepFiveInSix, 'lastActiveFiveDownToFourFromFive': lastActiveFiveDownToFourFromFive, 'lastActiveFiveDownToFiveFromSix': lastActiveFiveDownToFiveFromSix}">05</div>
 </div>
-
 

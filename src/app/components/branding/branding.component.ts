@@ -8,5 +8,7 @@ import { ResolutionService } from 'src/app/services/resolution.service';
 })
 export class BrandingComponent implements OnInit {
   constructor(public resolutionService: ResolutionService) {}
+  
+
   ngOnInit() {}
 }

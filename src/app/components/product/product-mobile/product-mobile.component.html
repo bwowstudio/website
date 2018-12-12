@@ -1,32 +1,32 @@
 <app-header></app-header>
 <div class="product-mobile-container">
   <div class="first-slide">
-    <h2>{{ 'PRODUCT.firstSlide.h2' | translate }}</h2>
-    <h3>{{ 'PRODUCT.firstSlide.h3' | translate }}</h3>
+    <h2 class="fadeIn">{{ 'PRODUCT.firstSlide.h2' | translate }}</h2>
+    <h3 class="fadeIn">{{ 'PRODUCT.firstSlide.h3' | translate }}</h3>
     <div class="img-container">
-      <img src="assets/images/product1.svg">
+      <img src="assets/images/product1.svg"  class="fadeIn">
     </div>
   </div>
   <div class="second-slide">
-    <div class="img-container">
+    <div class="img-container" [@scrollAnimation]="firstImage" item="animation" data="firstImage">
       <img src="assets/images/product2.svg">
     </div>
-    <h2>{{ 'PRODUCT.secondSlide.h2' | translate }}</h2>
-    <h3>{{ 'PRODUCT.secondSlide.h3' | translate }}</h3>
+    <h2 [@scrollAnimation]="firstTitle" item="animation" data="firstTitle">{{ 'PRODUCT.secondSlide.h2' | translate }}</h2>
+    <h3 [@scrollAnimation]="firstSubtitle" item="animation" data="firstSubtitle">{{ 'PRODUCT.secondSlide.h3' | translate }}</h3>
   </div>
   <div class="third-slide">
     <div class="img-container">
-      <img src="assets/images/product3.svg">
+      <img src="assets/images/product3.svg" [@scrollAnimation]="secondImage" item="animation" data="secondImage">
     </div>
-    <h2>{{ 'PRODUCT.thirdSlide.h2' | translate }}</h2>
-    <h3>{{ 'PRODUCT.thirdSlide.h3' | translate }}</h3>
+    <h2 [@scrollAnimation]="secondTitle" item="animation" data="secondTitle">{{ 'PRODUCT.thirdSlide.h2' | translate }}</h2>
+    <h3 [@scrollAnimation]="secondSubtitle" item="animation" data="secondSubtitle">{{ 'PRODUCT.thirdSlide.h3' | translate }}</h3>
   </div>
   <div class="fourth-slide">
     <div class="img-container">
-      <img src="assets/images/product4.svg">
+      <img src="assets/images/product4.svg" [@scrollAnimation]="thirdImage" item="animation" data="thirdImage">
     </div>
-    <h2>{{ 'PRODUCT.fourthSlide.h2' | translate }}</h2>
-    <h3>{{ 'PRODUCT.fourthSlide.h3' | translate }}</h3>
+    <h2 [@scrollAnimation]="thirdTitle" item="animation" data="thirdTitle">{{ 'PRODUCT.fourthSlide.h2' | translate }}</h2>
+    <h3 [@scrollAnimation]="thirdSubtitle" item="animation" data="thirdSubtitle">{{ 'PRODUCT.fourthSlide.h3' | translate }}</h3>
   </div>
 </div>
 <div class="fixed-input-container">

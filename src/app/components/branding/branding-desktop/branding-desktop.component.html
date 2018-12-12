@@ -3,11 +3,11 @@
   <div class="first-slide-background">
     <div class="first-slide">
       <div class="left">
-        <h2>{{ 'BRANDING.firstSlide.h2' | translate }}</h2>
-        <h3>{{ 'BRANDING.firstSlide.h3' | translate }}</h3>
+        <h2 class="fadeIn">{{ 'BRANDING.firstSlide.h2' | translate }}</h2>
+        <h3 class="fadeIn">{{ 'BRANDING.firstSlide.h3' | translate }}</h3>
       </div>
       <div class="right">
-        <img src="assets/images/branding1.svg">
+        <img src="assets/images/branding1.svg" class="fadeIn">
       </div>
     </div>
     <div class="first-slide-down">
@@ -21,7 +21,7 @@
       <h3 [@scrollAnimation]="secondSubtitle" item="animation" data="secondSubtitle">{{ 'BRANDING.thirdSlide.h3' | translate }}</h3>
     </div>
     <div class="right">
-      <img src="assets/images/branding3.svg" [@scrollAnimation]="rowImage" item="animation" data="rowImage">
+      <img src="assets/images/branding3.svg" [@scrollAnimation]="thirdImage" item="animation" data="thirdImage">
     </div>
   </div>
   <div class="fourth-slide">

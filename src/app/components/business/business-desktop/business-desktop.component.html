@@ -3,34 +3,34 @@
   <div class="first-slide">
     <div class="first-slide-up">
       <div class="left">
-        <h2>{{ 'BUSINESS.firstSlide.h2' | translate }}</h2>
-        <h3>{{ 'BUSINESS.firstSlide.h3' | translate }}</h3>
+        <h2 class="fadeIn">{{ 'BUSINESS.firstSlide.h2' | translate }}</h2>
+        <h3 class="fadeIn">{{ 'BUSINESS.firstSlide.h3' | translate }}</h3>
       </div>
       <div class="right">
-        <img src="assets/images/business1.svg">
+        <img src="assets/images/business1.svg" class="fadeIn">
       </div>
     </div>
     <div class="first-slide-down">
-      <h2>{{ 'BUSINESS.secondSlide.h2' | translate }}</h2>
-      <h3>{{ 'BUSINESS.secondSlide.h3' | translate }}</h3>
+      <h2 [@scrollAnimation]="firstTitle" item="animation" data="firstTitle">{{ 'BUSINESS.secondSlide.h2' | translate }}</h2>
+      <h3 [@scrollAnimation]="firstSubtitle" item="animation" data="firstSubtitle">{{ 'BUSINESS.secondSlide.h3' | translate }}</h3>
     </div>
   </div>
   <div class="third-slide">
     <div class="left">
-      <h2>{{ 'BUSINESS.thirdSlide.h2' | translate }}</h2>
-      <h3>{{ 'BUSINESS.thirdSlide.h3' | translate }}</h3>
+      <h2 [@scrollAnimation]="secondTitle" item="animation" data="secondTitle">{{ 'BUSINESS.thirdSlide.h2' | translate }}</h2>
+      <h3 [@scrollAnimation]="secondSubtitle" item="animation" data="secondSubtitle">{{ 'BUSINESS.thirdSlide.h3' | translate }}</h3>
     </div>
     <div class="right">
-      <img src="assets/images/business3.svg">
+      <img src="assets/images/business3.svg" [@scrollAnimation]="secondImage" item="animation" data="secondImage">
     </div>
   </div>
   <div class="fourth-slide">
     <div class="up">
-      <h2>{{ 'BUSINESS.fourthSlide.h2' | translate }}</h2>
-      <h3>{{ 'BUSINESS.fourthSlide.h3' | translate }}</h3>
+      <h2 [@scrollAnimation]="thirdTitle" item="animation" data="thirdTitle">{{ 'BUSINESS.fourthSlide.h2' | translate }}</h2>
+      <h3 [@scrollAnimation]="thirdSubtitle" item="animation" data="thirdSubtitle">{{ 'BUSINESS.fourthSlide.h3' | translate }}</h3>
     </div>
     <div class="down">
-      <img src="assets/images/business4.svg">
+      <img src="assets/images/business4.svg" [@scrollAnimation]="thirdImage" item="animation" data="thirdImage">
     </div>
   </div>
 </div>

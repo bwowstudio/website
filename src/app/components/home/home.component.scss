@@ -3,7 +3,7 @@
 .fixed-input-container {
   width: 100%;
   position: fixed;
-  bottom: 8px;
+  bottom: 16px;
 }
 
 .home-container {
@@ -81,10 +81,11 @@
   .home-container {
     .text-container::ng-deep {
       h3 {
-        margin-top: 32px;
+        margin-top: 14px;
       }
       h4 {
-        margin-top: 32px;
+        margin-top: 4px;
+        margin-bottom: 10px;
       }
       a {
         img {
@@ -111,18 +112,18 @@
 
 @media only screen and (min-width: 1024px) {
   .controls-container {
-    margin-top: 0px;
+    margin-top: 49px;
   }
   .home-container {
     display: flex;
     justify-content: flex-end;
-    padding-left: 80px;
+    padding-left: 89px;
     .text-container::ng-deep {
       width: 100%;
       h3 {
-        font-size: 40px;
+        font-size: 54px;
         letter-spacing: 0.57px;
-        line-height: 44px;
+        line-height: 54px;
       }
       h4 {
         letter-spacing: 0.31px;
@@ -163,7 +164,7 @@
   .home-container {
     width: 1440px;
     margin: auto;
-    padding-left: 88px;
+    padding-left: 89px;
     .text-container::ng-deep {
       h3 {
         font-size: 54px;

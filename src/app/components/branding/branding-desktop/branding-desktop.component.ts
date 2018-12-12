@@ -21,11 +21,13 @@ import { Router } from '@angular/router';
 export class BrandingDesktopComponent implements OnInit {
   firstTitle = 'hide';
   firstSubtitle = 'hide';
+  firstImage = 'hide';
   secondTitle = 'hide';
   secondSubtitle = 'hide';
+  secondImage = 'hide';
   thirdTitle = 'hide';
   thirdSubtitle = 'hide';
-  rowImage = 'hide';
+  thirdImage = 'hide';
   isHideFixedInput = false;
   public handleScroll(event: ScrollEvent) {
     if (document.body.scrollHeight - window.scrollY < 1133) {
@@ -58,7 +60,6 @@ export class BrandingDesktopComponent implements OnInit {
           this[item] = 'show';
         } 
       }
-      
     }
 
   ngOnInit() {}

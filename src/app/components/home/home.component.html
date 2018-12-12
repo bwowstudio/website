@@ -1,8 +1,8 @@
 <app-header></app-header>
-<div class="controls-container">
-  <app-controls (page)="setText($event)"></app-controls>
+<div class="controls-container" (swipeup)="onSwipeUp($event)"  (swipedown)="onSwipeDown($event)">
+  <app-controls (page)="setText($event)" [moveUpNumber]="moveUpNumber"></app-controls>
 </div>
-<div class="home-container">
+<div class="home-container" (swipeup)="onSwipeUp($event)"  (swipedown)="onSwipeDown($event)">
   <div class="text-container" [innerHTML]="finalText" (click)="navigate()"></div>
   <div class="image-container">
     <img *ngIf="page===1" class="homeImg fadeIn" src="{{imageUrl}}">
