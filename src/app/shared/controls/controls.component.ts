@@ -132,8 +132,7 @@ export class ControlsComponent implements OnInit {
     this.keepFiveInSix = false;
     this.lastActiveFiveDownToFiveFromSix = false;
     this.lastActiveFiveDownToFourFromFive = false;
-    
-    console.log(this.direction, numberInput);
+  
 
     if(numberInput == 1) {
       this.activeOneFromTwo = true;

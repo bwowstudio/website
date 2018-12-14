@@ -71,6 +71,7 @@ h3{
     background-position: center;
     justify-content: center;
     height: 773px;
+    margin-top: 100px;
     .third-slide {
       display: flex;
       max-width: 1440px;
@@ -121,7 +122,7 @@ h3{
 }
 .footer-container {
   width: 100%;
-  background-color: black;
+  background-color: #0f0506;
 }
 @media only screen and (min-width: 1280px) {
   .product-container{

@@ -12,7 +12,7 @@ export class LandingPageDesktopComponent implements OnInit {
   displayOval = 'block';
   displayOvalWhite = 'none';
   transitionIsOn = false;
-  timeOut = setTimeout(() => this.nextPage('/home'), 10000);
+  timeOut = setTimeout(() => this.nextPage('/home'), 1000);
   displayNet = '';
   constructor(
     public router: Router,
@@ -42,7 +42,7 @@ export class LandingPageDesktopComponent implements OnInit {
     this.displayOvalWhite = 'none';
     setInterval(() => {
       const positionY = Number(this.backgroundPosition.split('vh')[0]);
-      this.backgroundPosition = `${positionY - 2}vh`;
+      this.backgroundPosition = `${positionY - 3}vh`;
     }, 1000 / 120);
     setTimeout(() => this.router.navigate([page]), 500);
   }

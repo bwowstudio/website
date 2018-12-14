@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
+import { trigger, state, style, animate, transition } from '@angular/animations';
 import { ScrollEvent } from 'ngx-scroll-event';
 import { TranslateService } from '@ngx-translate/core';
 import { LanguageService } from 'src/app/services/language.service';
@@ -7,9 +8,34 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-bwowers-desktop',
   templateUrl: './bwowers-desktop.component.html',
-  styleUrls: ['./bwowers-desktop.component.scss']
+  styleUrls: ['./bwowers-desktop.component.scss'],
+  animations: [
+    trigger('scrollAnimation', [
+      state('show', style({ opacity: 1, transform: "translateX(0)"})),
+      state('hide', style({ opacity: 0, transform: "translateX(-5%)"})),
+      transition('show => hide', animate('600ms ease-in')),
+      transition('hide => show', animate('600ms ease-out')),
+    ])
+  ]
 })
 export class BwowersDesktopComponent implements OnInit {
+  firstTitle = 'hide';
+  firstSubtitle = 'hide';
+  secondTitle = 'hide';
+  secondSubtitle = 'hide';
+  secondParag = 'hide';
+  secondImage = 'hide';
+  thirdTitle = 'hide';
+  thirdSubtitle = 'hide';
+  thirdParag = 'hide';
+  thirdImage = 'hide';
+  fourthTitle = 'hide';
+  fourthSubtitle = 'hide';
+  fourthParag = 'hide';
+  fourthImage = 'hide';
+  fifthTitle = 'hide';
+  fifthSubtitle = 'hide';
+  fifthImage = 'hide';
   isHideFixedInput = false;
   public handleScroll(event: ScrollEvent) {
     if (document.body.scrollHeight - window.scrollY < 1467) {
@@ -29,5 +55,22 @@ export class BwowersDesktopComponent implements OnInit {
       this.translateService.use(e);
     });
   }
+
+  @HostListener('window:scroll', ['$event'])
+    checkScroll() {
+      const scrollPosition = window.pageYOffset;
+      const elementsforAnimation = document.querySelectorAll('[item="animation"]');
+      for(let i=0; i<elementsforAnimation.length; i++) {
+        const elementPosition = <HTMLElement> elementsforAnimation[i];
+        const item = elementPosition.getAttribute('data');
+        if(scrollPosition+(window.innerHeight*0.8) >= elementPosition.offsetTop) {
+          this[item] = 'show';
+        } 
+      }
+    }
+
+
   ngOnInit() {}
+
+  
 }

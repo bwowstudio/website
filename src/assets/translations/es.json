@@ -2,7 +2,7 @@
   "HELLO": "hola {{value}}",
   "HEADER": {
     "anchor1": "¿Qué hacemos?",
-    "anchor2": "Bwower",
+    "anchor2": "Bwowers",
     "anchor3": "¿Hablamos?",
     "secondary": {
       "secondary1": "Diseño de producto digital",
@@ -33,8 +33,8 @@
     "h4Text4": "Creamos estructura en las decisiones de diseño para que tu producto pueda escalar de forma orgánica.",
     "aText4": "Crea una estructura de diseño",
 
-    "h3Text5FirstLine": "Coaching de",
-    "h3Text5SecondLine": "equipos diseño",
+    "h3Text5FirstLine": "Design",
+    "h3Text5SecondLine": "Teams",
     "h4Text5": "Diseñamos y sistematizamos los procesos dentro de los equipos para crear un flujo de trabajo adecuado a la empresa. Enseñamos a resolver problemas a través de metodologías ágiles.",
     "aText5": "Optimiza e integra metodologías en tu equipo de diseño",
 

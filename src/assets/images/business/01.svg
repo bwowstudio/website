@@ -1,21 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="4005px" height="1249px" viewBox="0 0 4005 1249" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
-    <title>Artboard</title>
+<svg width="4014px" height="1283px" viewBox="0 0 4014 1283" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>01</title>
     <desc>Created with Sketch.</desc>
-    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="page-01-producto_digital" transform="translate(-3.000000, -41.000000)" fill="#FC4D76">
-            <rect id="Rectangle" x="0" y="0" width="4014" height="688"></rect>
-        </g>
-        <g id="Illustration" transform="translate(1714.000000, 785.000000)" fill-rule="nonzero" stroke="#FFFFFF">
-            <path d="M5,71 L581,71" id="Line-2" stroke-width="2" stroke-linecap="square" stroke-dasharray="4,8"></path>
-            <ellipse id="Oval" stroke-width="3" cx="39.5" cy="35" rx="38" ry="33.5"></ellipse>
-        </g>
-        <g id="Section-2" transform="translate(1070.000000, 473.000000)">
-            <path d="M1582.47722,769 C1379.76091,665.275374 1161.57906,612.694177 933.965324,612.694177 C706.420939,612.694177 488.239094,665.275374 285.522777,769 L0,224.907853 C291.833822,75.6539352 606.068387,0 933.965324,0 C1261.93161,0 1576.16618,75.6539352 1868,224.907853 L1582.47722,769 Z" id="bg-section" fill="#0F0506" transform="translate(934.000000, 384.500000) scale(1, -1) translate(-934.000000, -384.500000) "></path>
-            <g id="Illustration" transform="translate(641.000000, 332.000000)" fill-rule="nonzero" stroke="#FFFFFF">
-                <path d="M5,71 L581,71" id="Line-2" stroke-width="2" stroke-linecap="square" stroke-dasharray="4,8"></path>
-                <ellipse id="Oval" stroke-width="3" cx="39.5" cy="35" rx="38" ry="33.5"></ellipse>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01">
+            <g id="page-01-producto_digital" fill="#FC4D76" fill-rule="nonzero">
+                <rect id="Rectangle" x="0" y="0" width="4014" height="688"></rect>
+            </g>
+            <g id="Illustration" transform="translate(1718.000000, 827.000000)" stroke="#FFFFFF">
+                <path d="M4,70 L580,70" id="Line-2" stroke-width="2" stroke-linecap="square" stroke-dasharray="4,8"></path>
+                <ellipse id="Oval" stroke-width="3" cx="38.5" cy="34" rx="38" ry="33.5"></ellipse>
+            </g>
+            <g id="Section-2" transform="translate(1073.000000, 514.000000)">
+                <path d="M1582.47722,769 C1379.76091,665.275374 1161.57906,612.694177 933.965324,612.694177 C706.420939,612.694177 488.239094,665.275374 285.522777,769 L0,224.907853 C291.833822,75.6539352 606.068387,0 933.965324,0 C1261.93161,0 1576.16618,75.6539352 1868,224.907853 L1582.47722,769 Z" id="bg-section" fill="#0F0506" fill-rule="nonzero" transform="translate(934.000000, 384.500000) scale(-1, 1) rotate(-180.000000) translate(-934.000000, -384.500000) "></path>
+                <g id="Illustration" transform="translate(642.000000, 324.000000)" stroke="#FFFFFF">
+                    <path d="M4,79 L580,79" id="Line-2" stroke-width="2" stroke-linecap="square" stroke-dasharray="4,8"></path>
+                    <circle id="Oval" stroke-width="3" cx="38.5" cy="38.5" r="38"></circle>
+                </g>
             </g>
         </g>
     </g>

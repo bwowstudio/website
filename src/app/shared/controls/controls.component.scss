@@ -98,7 +98,7 @@ $position-six: 60px;
 .lastActiveOneUpToOne { animation: lastActiveOneUpToOne 0.5s steps(59) forwards; }
 @keyframes lastActiveOneUpToOne {
   from { width: $square-size; height: $square-size; top: $position-two; left: $square-margin-left; font-size: 24px;}
-  to { width: $square-size; height: $square-size; top: $position-one; left: $square-margin-left; font-size: 24px;}
+  to { opacity: 0.5; width: $square-size; height: $square-size; top: $position-one; left: $square-margin-left; font-size: 24px;}
 }
 
 .lastActiveOneUpToZero { animation: lastActiveOneUpToZero 0.5s steps(59) forwards; }
@@ -109,14 +109,14 @@ $position-six: 60px;
 
 .lastActiveOneUpToTwoFromOne { animation: lastActiveOneUpToTwoFromOne 0.5s steps(59) forwards; }
   @keyframes lastActiveOneUpToTwoFromOne {
-    from { width: $square-size; height: $square-size; top: $position-one; left: $square-margin-left; font-size: 24px;}
+    from { opacity: 0.5; width: $square-size; height: $square-size; top: $position-one; left: $square-margin-left; font-size: 24px;}
     to { width: $square-size; height: $square-size; top: $position-two; left: $square-margin-left; font-size: 24px;}
   }
 
 .lastActiveOneUpToOneFromZero { animation: lastActiveOneUpToOneFromZero 0.5s steps(59) forwards; }
   @keyframes lastActiveOneUpToOneFromZero {
     from { width: $square-size; height: $square-size; top: $position-zero; left: $square-margin-left; font-size: 24px;}
-    to { width: $square-size; height: $square-size; top: $position-one; left: $square-margin-left; font-size: 24px; opacity: 1;}
+    to { width: $square-size; height: $square-size; top: $position-one; left: $square-margin-left; font-size: 24px; opacity: 0.5}
   }
 
 .keepOneInZero { animation: keepOneInZero 0.5s steps(59) forwards; }
@@ -154,7 +154,7 @@ $position-six: 60px;
 .lastActiveTwoUpToOne{ animation: lastActiveTwoUpToOne 0.5s steps(59) forwards; }
 @keyframes lastActiveTwoUpToOne {
   from { width: $square-size; height: $square-size; top: $position-two; left: $square-margin-left; font-size: 24px;}
-  to { width: $square-size; height: $square-size; top: $position-one; left: $square-margin-left; font-size: 24px;}
+  to { opacity: 0.5; width: $square-size; height: $square-size; top: $position-one; left: $square-margin-left; font-size: 24px;}
 }
 
 .lastActiveTwoUpToZero{ animation: lastActiveTwoUpToZero 0.5s steps(59) forwards; }
@@ -166,12 +166,12 @@ $position-six: 60px;
 .lastActiveTwoUpToOneFromZero { animation: lastActiveTwoUpToOneFromZero 0.5s steps(59) forwards; }
 @keyframes lastActiveTwoUpToOneFromZero {
   from { width: $square-size; height: $square-size; top: $position-zero; left: $square-margin-left; font-size: 24px;}
-  to { width: $square-size; height: $square-size; top: $position-one; left: $square-margin-left; font-size: 24px; opacity: 1;}
+  to { width: $square-size; height: $square-size; top: $position-one; left: $square-margin-left; font-size: 24px; opacity: 0.5;}
 }
 
 .lastActiveTwoUpToTwoFromOne{ animation: lastActiveTwoUpToTwoFromOne 0.5s steps(59) forwards; }
 @keyframes lastActiveTwoUpToTwoFromOne {
-  from { width: $square-size; height: $square-size; top: $position-one; left: $square-margin-left; font-size: 24px;}
+  from { opacity: 0.5; width: $square-size; height: $square-size; top: $position-one; left: $square-margin-left; font-size: 24px;}
   to { width: $square-size; height: $square-size; top: $position-two; left: $square-margin-left; font-size: 24px;}
 }
 
@@ -180,12 +180,12 @@ $position-six: 60px;
 .lastActiveThreeDownToFive{ animation: lastActiveThreeDownToFive 0.5s steps(59) forwards; }
 @keyframes lastActiveThreeDownToFive {
   from { width: $square-size; height: $square-size; top: $position-four; left: $square-margin-left; font-size: 24px;}
-  to { width: $square-size; height: $square-size; top: $position-five; left: $square-margin-left; font-size: 24px;}
+  to { opacity: 0.5; width: $square-size; height: $square-size; top: $position-five; left: $square-margin-left; font-size: 24px;}
 }
 
 .lastActiveThreeDownToFourFromFive{ animation: lastActiveThreeDownToFourFromFive 0.5s steps(59) forwards; }
 @keyframes lastActiveThreeDownToFourFromFive {
-  from { width: $square-size; height: $square-size; top: $position-five; left: $square-margin-left; font-size: 24px;}
+  from { opacity: 0.5; width: $square-size; height: $square-size; top: $position-five; left: $square-margin-left; font-size: 24px;}
   to { width: $square-size; height: $square-size; top: $position-four; left: $square-margin-left; font-size: 24px;}
 }
 
@@ -216,12 +216,12 @@ $position-six: 60px;
 .lastActiveThreeUpToOne{ animation: lastActiveThreeUpToOne 0.5s steps(59) forwards; }
 @keyframes lastActiveThreeUpToOne {
   from { width: $square-size; height: $square-size; top: $position-two; left: $square-margin-left; font-size: 24px;}
-  to { width: $square-size; height: $square-size; top: $position-one; left: $square-margin-left; font-size: 24px;}
+  to { opacity: 0.5; width: $square-size; height: $square-size; top: $position-one; left: $square-margin-left; font-size: 24px;}
 }
 
 .lastActiveThreeUpToTwoFromOne{ animation: lastActiveThreeUpToTwoFromOne 0.5s steps(59) forwards; }
 @keyframes lastActiveThreeUpToTwoFromOne {
-  from { width: $square-size; height: $square-size; top: $position-one; left: $square-margin-left; font-size: 24px;}
+  from { opacity: 0.5; width: $square-size; height: $square-size; top: $position-one; left: $square-margin-left; font-size: 24px;}
   to { width: $square-size; height: $square-size; top: $position-two; left: $square-margin-left; font-size: 24px;}
 }
 
@@ -254,24 +254,24 @@ $position-six: 60px;
 .lastActiveFourDownToFive{ animation: lastActiveFourDownToFive 0.5s steps(59) forwards; }
 @keyframes lastActiveFourDownToFive {
   from { width: $square-size; height: $square-size; top: $position-four; left: $square-margin-left; font-size: 24px;}
-  to { width: $square-size; height: $square-size; top: $position-five; left: $square-margin-left; font-size: 24px;}
+  to { opacity: 0.5; width: $square-size; height: $square-size; top: $position-five; left: $square-margin-left; font-size: 24px;}
 }
 
 .lastActiveFourDownToSix{ animation: lastActiveFourDownToSix 0.5s steps(59) forwards; }
 @keyframes lastActiveFourDownToSix {
-  from { width: $square-size; height: $square-size; top: $position-five; left: $square-margin-left; font-size: 24px;}
+  from { opacity: 0.5; width: $square-size; height: $square-size; top: $position-five; left: $square-margin-left; font-size: 24px;}
   to { width: $square-size; height: $square-size; top: $position-six; left: $square-margin-left; font-size: 24px; opacity: 0;}
 }
 
 .lastActiveFourDownToFiveFromSix{ animation: lastActiveFourDownToFiveFromSix 0.5s steps(59) forwards; }
 @keyframes lastActiveFourDownToFiveFromSix {
   from { width: $square-size; height: $square-size; top: $position-six; left: $square-margin-left; font-size: 24px;}
-  to { width: $square-size; height: $square-size; top: $position-five; left: $square-margin-left; font-size: 24px; opacity: 1;}
+  to { width: $square-size; height: $square-size; top: $position-five; left: $square-margin-left; font-size: 24px; opacity: 0.5}
 }
 
 .lastActiveFourDownToFourFromFive{ animation: lastActiveFourDownToFourFromFive 0.5s steps(59) forwards; }
 @keyframes lastActiveFourDownToFourFromFive {
-  from { width: $square-size; height: $square-size; top: $position-five; left: $square-margin-left; font-size: 24px;}
+  from { opacity: 0.5; width: $square-size; height: $square-size; top: $position-five; left: $square-margin-left; font-size: 24px;}
   to { width: $square-size; height: $square-size; top: $position-four; left: $square-margin-left; font-size: 24px;}
 }
 
@@ -292,12 +292,12 @@ $position-six: 60px;
 .lastActiveFiveDownToFive { animation: lastActiveFiveDownToFive 0.5s steps(59) forwards; }
 @keyframes lastActiveFiveDownToFive {
   from { width: $square-size; height: $square-size; top: $position-four; left: $square-margin-left; font-size: 24px;}
-  to { width: $square-size; height: $square-size; top: $position-five; left: $square-margin-left; font-size: 24px;}
+  to { opacity: 0.5; width: $square-size; height: $square-size; top: $position-five; left: $square-margin-left; font-size: 24px;}
 }
 
 .lastActiveFiveDownToSix { animation: lastActiveFiveDownToSix 0.5s steps(59) forwards; }
 @keyframes lastActiveFiveDownToSix {
-  from { width: $square-size; height: $square-size; top: $position-five; left: $square-margin-left; font-size: 24px;}
+  from { opacity: 0.5; width: $square-size; height: $square-size; top: $position-five; left: $square-margin-left; font-size: 24px;}
   to { width: $square-size; height: $square-size; top: $position-six; left: $square-margin-left; font-size: 24px; opacity: 0;}
 }
 
@@ -310,12 +310,12 @@ $position-six: 60px;
 .lastActiveFiveDownToFiveFromSix { animation: lastActiveFiveDownToFiveFromSix 0.5s steps(59) forwards; }
 @keyframes lastActiveFiveDownToFiveFromSix {
   from { width: $square-size; height: $square-size; top: $position-six; left: $square-margin-left; font-size: 24px; }
-  to { width: $square-size; height: $square-size; top: $position-five; left: $square-margin-left; font-size: 24px; opacity: 1;}
+  to { opacity: 0.5; width: $square-size; height: $square-size; top: $position-five; left: $square-margin-left; font-size: 24px;}
 }
 
 .lastActiveFiveDownToFourFromFive { animation: lastActiveFiveDownToFourFromFive 0.5s steps(59) forwards; }
 @keyframes lastActiveFiveDownToFourFromFive {
-  from { width: $square-size; height: $square-size; top: $position-five; left: $square-margin-left; font-size: 24px; }
+  from { opacity: 0.5; width: $square-size; height: $square-size; top: $position-five; left: $square-margin-left; font-size: 24px; }
   to { width: $square-size; height: $square-size; top: $position-four; left: $square-margin-left; font-size: 24px; opacity: 1;}
 }
 

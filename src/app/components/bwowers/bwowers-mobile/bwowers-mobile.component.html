@@ -12,49 +12,49 @@
     <app-fixed-input></app-fixed-input>
   </div>
   <div class="container-title">
-    <h2>{{ 'BWOWERS.title.header' | translate }}</h2>
-    <h3>{{ 'BWOWERS.title.text' | translate }}</h3>
+    <h2 [@scrollAnimation]="firstTitle" item="animation" data="firstTitle">{{ 'BWOWERS.title.header' | translate }}</h2>
+    <h3 [@scrollAnimation]="firstSubtitle" item="animation" data="firstSubtitle">{{ 'BWOWERS.title.text' | translate }}</h3>
   </div>
   <div class="container-second-slide">
-    <div class="second-slide-left">
+    <div class="second-slide-left" [@scrollAnimation]="secondImage" item="animation" data="secondImage">
       <img src="assets/images/fabio.svg">
     </div>
     <div class="second-slide-right">
       <div class="right-content">
-        <h2>{{ 'BWOWERS.secondSlide.title' | translate }}</h2>
-        <h3>{{ 'BWOWERS.secondSlide.subtitle' | translate }}</h3>
-        <p>{{ 'BWOWERS.secondSlide.text' | translate }}</p>
+        <h2 [@scrollAnimation]="secondTitle" item="animation" data="secondTitle">{{ 'BWOWERS.secondSlide.title' | translate }}</h2>
+        <h3 [@scrollAnimation]="secondSubtitle" item="animation" data="secondSubtitle">{{ 'BWOWERS.secondSlide.subtitle' | translate }}</h3>
+        <p [@scrollAnimation]="secondParag" item="animation" data="secondParag">{{ 'BWOWERS.secondSlide.text' | translate }}</p>
       </div>
     </div>
   </div>
   <div class="container-third-slide">
-    <div class="third-slide-left">
+    <div class="third-slide-left" [@scrollAnimation]="thirdImage" item="animation" data="thirdImage">
       <img src="assets/images/lia.svg">
     </div>
     <div class="third-slide-right">
       <div class="right-content">
-        <h2>{{ 'BWOWERS.thirdSlide.title' | translate }}</h2>
-        <h3>{{ 'BWOWERS.thirdSlide.subtitle' | translate }}</h3>
-        <p>{{ 'BWOWERS.thirdSlide.text' | translate }}</p>
+        <h2 [@scrollAnimation]="thirdTitle" item="animation" data="thirdTitle">{{ 'BWOWERS.thirdSlide.title' | translate }}</h2>
+        <h3 [@scrollAnimation]="thirdSubtitle" item="animation" data="thirdSubtitle">{{ 'BWOWERS.thirdSlide.subtitle' | translate }}</h3>
+        <p [@scrollAnimation]="thirdParag" item="animation" data="thirdParag">{{ 'BWOWERS.thirdSlide.text' | translate }}</p>
       </div>
     </div>
   </div>
   <div class="container-fourth-slide">
-    <div class="fourth-slide-left">
+    <div class="fourth-slide-left" [@scrollAnimation]="fourthImage" item="animation" data="fourthImage">
       <img src="assets/images/papu.svg">
     </div>
     <div class="fourth-slide-right">
       <div class="right-content">
-        <h2>{{ 'BWOWERS.fourthSlide.title' | translate }}</h2>
-        <h3>{{ 'BWOWERS.fourthSlide.subtitle' | translate }}</h3>
-        <p>{{ 'BWOWERS.fourthSlide.text' | translate }}</p>
+        <h2 [@scrollAnimation]="fourthTitle" item="animation" data="fourthTitle">{{ 'BWOWERS.fourthSlide.title' | translate }}</h2>
+        <h3 [@scrollAnimation]="fourthSubtitle" item="animation" data="fourthSubtitle">{{ 'BWOWERS.fourthSlide.subtitle' | translate }}</h3>
+        <p [@scrollAnimation]="fourthParag" item="animation" data="fourthParag">{{ 'BWOWERS.fourthSlide.text' | translate }}</p>
       </div>
     </div>
   </div>
   <div class="container-fifth-slide">
-    <h2>{{ 'BWOWERS.fifthSlide.header' | translate }}</h2>
-    <h3>{{ 'BWOWERS.fifthSlide.text' | translate }}</h3>
-    <div class="logos-container">
+    <h2 [@scrollAnimation]="fifthTitle" item="animation" data="fifthTitle">{{ 'BWOWERS.fifthSlide.header' | translate }}</h2>
+    <h3 [@scrollAnimation]="fifthSubtitle" item="animation" data="fifthSubtitle">{{ 'BWOWERS.fifthSlide.text' | translate }}</h3>
+    <div class="logos-container" [@scrollAnimation]="fifthImage" item="animation" data="fifthImage">
       <img class="arrowLeft" src="assets/images/arrowLeft.svg" (click)="previousImg()">
       <img class="logo" src="{{imgUrls[imgUrlNumber]}}">
       <img class="arrowRight" src="assets/images/arrowRight.svg" (click)="nextImg()">

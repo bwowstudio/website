@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="1290px" height="2514px" viewBox="0 0 1290 2514" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
-    <title>Combined Shape</title>
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>homeTransition</title>
     <desc>Created with Sketch.</desc>
+    <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path d="M1290,0.773415657 L1290,2514 L-2.27373675e-13,2514 L0,0.773417129 C201.733317,103.323935 418.721407,155.305823 644.965324,155.305823 C871.278197,155.305823 1088.26669,103.323935 1290,0.773415657 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+        <g id="homeTransition" fill="#FFFFFF">
+            <path d="M4.14486815,1.34166621e-05 C213.158346,31.6114324 427.165296,48 645,48 C862.834704,48 1076.84165,31.6114324 1285.85513,1.34166621e-05 L1290,0 L1290,2514 L0,2514 L0,0 L4.14477944,0 Z" id="Combined-Shape"></path>
+        </g>
     </g>
 </svg>
