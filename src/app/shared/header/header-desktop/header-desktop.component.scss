@@ -173,3 +173,9 @@
     padding: $header-resolution-1440-padding-top $header-resolution-1440-padding-left-right $header-resolution-1440-padding-bottom;
   }
 }
+
+@media only screen and (min-width: 1900px) {
+  .header-desktop-container .container-left img {
+    padding-left: 38px;
+  }
+}
