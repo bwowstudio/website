@@ -137,3 +137,11 @@ h3{
     } 
   }
 }
+
+@media only screen and (min-width: 1920px) {
+  .system-container{
+    .third-slide-background {
+      height: 820px;
+    }
+  }
+}

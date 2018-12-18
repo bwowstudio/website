@@ -133,3 +133,33 @@ h3{
     }
   }
 }
+
+@media only screen and (min-width: 1920px) {
+  .product-container {
+    .third-slide-background{
+      background-image: url('/assets/images/product/03.svg');
+      height: 1660px;
+      .third-slide {
+        .right, .left {
+          margin-top: 600px;
+        }
+      }
+        
+    }
+  } 
+}
+
+@media only screen and (min-width: 2500px) {
+  .product-container {
+    .third-slide-background{
+      background-image: url('/assets/images/product/02.svg');
+      height: 2040px;
+      .third-slide {
+        .right, .left {
+          margin-top: 800px;
+        }
+      }
+        
+    }
+  } 
+}

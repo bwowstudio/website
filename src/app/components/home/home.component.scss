@@ -193,7 +193,7 @@
   }
 }
 
-@media only screen and (min-width: 1960px) {
+@media only screen and (min-width: 1920px) {
   .controls-container {
     margin-top: 80px;
     margin-bottom: 80px;
@@ -208,6 +208,7 @@
       align-items: center;
         img {
           margin-top: 50px;
+          height: auto;
         }
     }
     .text-container::ng-deep {
@@ -223,4 +224,5 @@
   .fixed-input-container {
     bottom: 50px;
   }
+
 }
