@@ -110,10 +110,14 @@ h3{
   .fourth-slide {
     width: 100%;
     margin: 0 auto;
-    height: 500px;
+    height: 650px;
+    background-image: url('/assets/images/0501Background2.svg');
+    background-repeat: no-repeat;
+    background-position: center;
     .up {
       height: 40%;
       width: 100%;
+      padding-top: 125px;
       h2, h3{
         width: 745px;
         margin: 0 auto;

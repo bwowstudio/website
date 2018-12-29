@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="9421px" height="856px" viewBox="0 0 9421 856" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="6405px" height="852px" viewBox="0 0 6405 852" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
-    <title>02</title>
+    <title>Section-3</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="02" fill-rule="nonzero">
-            <rect id="Rectangle" fill="#FFFFFF" x="0" y="0" width="9421" height="856"></rect>
-            <g id="Section-3" transform="translate(1508.000000, 4.000000)" fill="#0F0506">
+        <g id="02" transform="translate(-1508.000000, -4.000000)" fill="#0F0506" fill-rule="nonzero">
+            <g id="Section-3" transform="translate(1508.000000, 4.000000)">
                 <path d="M5425.99925,852 C4730.92539,737.080128 3982.82328,678.823718 3202.3811,678.823718 C2422.17672,678.823718 1674.07463,737.080128 979.000743,852 L0,249.182693 C1000.64006,83.8194445 2078.08781,0 3202.3811,0 C4326.91219,0 5404.35995,83.8194445 6405,249.182693 L5425.99925,852 Z" id="bg-section"></path>
             </g>
         </g>
