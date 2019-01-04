@@ -227,3 +227,17 @@
   }
 
 }
+
+@media only screen and (min-width: 2800px) {
+  .controls-container {
+    margin-bottom: 40px;
+  }
+
+  .home-container, .home-container .image-container {
+    align-items: flex-start;
+  }
+
+  .home-container .image-container img {
+    margin-top: 0px;
+  }
+}
