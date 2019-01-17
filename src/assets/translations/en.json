@@ -199,5 +199,28 @@
         "h2": "Organise",
         "h3": "We generate workflows for your teams through the application of agile methodologies (including Sprints). We optimize the timeline of your project and generate smoother processes."
       }
+    },
+    "COOKIES": {
+      "popUp": {
+        "message": "Cookies help us improve your experience in our web. We use cookies for analytical and commercial purposes. By using our services, you agree to our use of cookies.",
+        "buttonMessage": "OK"
+      },
+      "firstParagraph": {
+        "title": "About our cookies",
+        "description": "To make this site work properly, we sometimes place small data files called cookies on your device. Most big websites do this too."
+      },
+      "secondParagraph": {
+        "title": "What are cookies?",
+        "description": "The website https://factorialhr.com is owned by EVERYDAY SOFTWARE, S.L. uses cookies for different purposes: user experience with software, analytics and commercial purposes. Cookies are files that are downloaded to your computer when you access certain web pages. Cookies allow a web page, among other things, to store and retrieve information about the browsing habits of a user or their team and, depending on the information they contain and the way they use their equipment. In addition, they improve their browsing process, since they allow the website to offer the user information that may be of interest depending on the use made, the content of it. In case you do not want to receive cookies, please configure your internet browser, so that you erase them from your computer's hard drive, block them or notify you when they are installed. To continue without changes in the configuration of cookies, simply continue on the web page."
+      },
+      "thirdParagraph": {
+        "title": "Consent",
+        "description": "The cookies we use do not store any personal data, nor any type of information that can identify you, unless you want to register voluntarily in order to use the services we provide or receive information about promotions and content of interest. By browsing and continuing on our website you indicate that you are consenting to the use of the aforementioned cookies, and in the conditions contained in this cookie policy. If you do not agree, send an email to hi@bwowstudio.com"
+      },
+      "fourthParagraph": {
+        "title": "How to block or delete installed cookies",
+        "description": "You can allow, block or delete the cookies installed on your computer by configuring the options of your browser. You can find information on how to do it, in relation to the most common browsers in the links that are included below: Explorer: https://support.microsoft.com/es-es/kb/278835 Chrome: http://support.google.com/chrome/bin/answer.py?hl=en&answer=95647 Firefox: http://support.mozilla.org/en/kb/Delete%20cookies Safari: http://support.apple.com/kb/ph5042 We inform you, however, of the possibility that the deactivation of any cookie prevents or hinders navigation or the provision of the services offered on the website. Modifications The website https://bwowstudio.com is owned by BWOWSTUDIO, S.C. You can modify this cookie policy according to legal requirements. Or in order to adapt this policy to the instructions issued by the Spanish Agency for Data Protection. For this reason, we advise users to visit it periodically. When significant changes occur in this cookie policy, users will be informed, either through the web or through email to registered users.",
+        "extraInfo": "By using our services, you agree to our use of cookies."
+      }
     }
   }

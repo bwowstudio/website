@@ -1,0 +1,7 @@
+<app-header></app-header>
+<div *ngIf="!resolutionService.getIsMobileResolution()" class="landing-page-desktop-container">
+  <app-cookies-desktop></app-cookies-desktop>
+</div>
+<div *ngIf="resolutionService.getIsMobileResolution()">
+  <app-cookies-mobile></app-cookies-mobile>
+</div>

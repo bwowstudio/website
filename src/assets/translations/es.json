@@ -199,5 +199,28 @@
       "h2": "Organiza",
       "h3": "Generamos workflows para tus equipos, aplicando metodologías ágiles (LEAN, Sprints). Optimizamos los timings de tus proyectos y generamos procesos más fluídos."
     }
+  },
+  "COOKIES": {
+    "popUp": {
+      "message": "Utilizamos cookies propias y de terceros con fines de mejora, análisis y promoción. Al continuar navegando, aceptas el uso de cookies. ",
+      "buttonMessage": "OK"
+    },
+    "firstParagraph": {
+      "title": "Sobre nuestras cookies",
+      "description": "Para que este sitio funcione adecuadamente, a veces instalamos en los dispositivos de los usuarios pequeños ficheros de datos, conocidos como cookies. La mayoría de webs también lo hacen."
+    },
+    "secondParagraph": {
+      "title": "Uso de cookies",
+      "description": "La página web www.bwowstudio.com de BWOWSTUDIO, S.C. usa cookies para diferentes finalidades: experiencia de usuario con el software, analítica y finalidades comerciales. Las cookies son ficheros que se descargan en su ordenador al acceder a determinadas páginas web. Las cookies permiten a una página web, entre otras cosas, almacenar y recuperar información sobre los hábitos de navegación de un usuario o de su equipo y, dependiendo de la información que contengan y de la forma en que utilice su equipo. Además, mejoran su proceso de navegación, ya que permiten que la página web ofrezca al usuario información que puede ser de su interés en función del uso que realice, del contenido de la misma. En caso de no querer recibir cookies, por favor, configure su navegador de internet, para que las borre del disco duro de su ordenador, las bloquee o le avise en su caso de instalación de las mismas. Para continuar sin cambios en la configuración de las cookies, simplemente, continúe en la página web."
+    },
+    "thirdParagraph": {
+      "title": "Consentimiento",
+      "description": "Las cookies que utilizamos no almacenan dato personal alguno, ni ningún tipo de información que pueda identificarle, salvo que quieran registrarse de forma voluntaria con el fin de utilizar los servicios que ponemos a su disposición o de recibir información sobre promociones y de su interés. Al navegar y continuar en nuestra web nos indica que está consintiendo el uso de las cookies antes enunciadas, y en las condiciones contenidas en la presente política de cookies. En caso de no estar de acuerdo envíe un correo electrónico a hi@bwowstudio.com"
+    },
+    "fourthParagraph": {
+      "title": "Cómo bloquear o eliminar las cookies instaladas",
+      "description": "Puede usted permitir, bloquear o eliminar las cookies instaladas en su equipo mediante la configuración de las opciones de su navegador. Puede encontrar información sobre cómo hacerlo, en relación con los navegadores más comunes en los links que se incluyen a continuación: Explorer: https://support.microsoft.com/es-es/kb/278835 Chrome: http://support.google.com/chrome/bin/answer.py?hl=es&answer=95647 Firefox: http://support.mozilla.org/es/kb/Borrar%20cookies Safari: http://support.apple.com/kb/ph5042 Le informamos, no obstante, de la posibilidad de que la desactivación de alguna cookie impida o dificulte la navegación o la prestación de los servicios ofrecidos en la página web. Modificaciones La página web https://bwowstudio.com titularidad de BWOWSTUDIO, S.C. puede modificar esta política de cookies en función de las exigencias legales. O con la finalidad de adaptar dicha política a las instrucciones dictadas por la Agencia Española de Protección de Datos. Por esta razón, aconsejamos a los usuarios que la visiten periódicamente. Cuando se produzcan cambios significativos en esta política de cookies, se comunicarán a los usuarios, bien mediante la web o a través de correo electrónico a los usuarios registrados.",
+      "extraInfo": "Al utilizar nuestros servicios, aceptas el uso de cookies."
+    }
   }
 }

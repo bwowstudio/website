@@ -52,6 +52,10 @@ import { TeamsDesktopComponent } from './components/teams/teams-desktop/teams-de
 import { TeamsMobileComponent } from './components/teams/teams-mobile/teams-mobile.component';
 import { MailService } from './services/mail.service';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { CookiePopUpComponent } from './components/cookie-pop-up/cookie-pop-up.component';
+import { CookiesComponent } from './components/cookies/cookies.component';
+import { CookiesDesktopComponent } from './components/cookies/cookies-desktop/cookies-desktop.component';
+import { CookiesMobileComponent } from './components/cookies/cookies-mobile/cookies-mobile.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/translations/', '.json');
@@ -103,6 +107,10 @@ export class HammerConfig extends HammerGestureConfig {
     SystemMobileComponent,
     TeamsDesktopComponent,
     TeamsMobileComponent,
+    CookiePopUpComponent,
+    CookiesComponent,
+    CookiesDesktopComponent,
+    CookiesMobileComponent,
 
   ],
   imports: [

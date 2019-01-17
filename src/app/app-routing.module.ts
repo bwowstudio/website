@@ -11,6 +11,7 @@ import { BrandingComponent } from './components/branding/branding.component';
 import { BusinessComponent } from './components/business/business.component';
 import { SystemComponent } from './components/system/system.component';
 import { TeamsComponent } from './components/teams/teams.component';
+import { CookiesComponent } from './components/cookies/cookies.component';
 
 const routes: Routes = [
   { path: '', component: LandingPageComponent },
@@ -23,6 +24,7 @@ const routes: Routes = [
   { path: 'business-design', component: BusinessComponent },
   { path: 'design-system', component: SystemComponent },
   { path: 'design-teams', component: TeamsComponent },
+  { path: 'cookies', component: CookiesComponent },
   { path: '404', component: UnderConstructionComponent },
   { path: '**', redirectTo: 'home' }
 
