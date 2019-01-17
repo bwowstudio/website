@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="4848px" height="1283px" viewBox="0 0 4848 1283" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>01</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01">
+            <g id="page-01-producto_digital" transform="translate(417.000000, 0.000000)" fill="#FC4D76">
+                <rect id="Rectangle" x="0" y="0" width="4014" height="688"></rect>
+            </g>
+            <g id="Illustration" transform="translate(2135.000000, 827.000000)" stroke="#FFFFFF">
+                <path d="M4,70 L580,70" id="Line-2" stroke-width="2" stroke-linecap="square" stroke-dasharray="4,8"></path>
+                <ellipse id="Oval" stroke-width="3" cx="38.5" cy="34" rx="38" ry="33.5"></ellipse>
+            </g>
+            <g id="Section-2" transform="translate(0.000000, 514.000000)">
+                <path d="M4106.98585,769 C3580.87842,665.275374 3014.63345,612.694177 2423.91001,612.694177 C1833.36655,612.694177 1267.12159,665.275374 741.014145,769 L0,224.907853 C757.393131,75.6539352 1572.92267,0 2423.91001,0 C3275.07733,0 4090.60687,75.6539352 4848,224.907853 L4106.98585,769 Z" id="bg-section" fill="#0F0506" transform="translate(2424.000000, 384.500000) scale(-1, 1) rotate(-180.000000) translate(-2424.000000, -384.500000) "></path>
+                <g id="Illustration" transform="translate(1974.000000, 324.000000)" stroke="#FFFFFF">
+                    <path d="M6.15862069,79 L893,79" id="Line-2" stroke-width="2" stroke-linecap="square" stroke-dasharray="4,8"></path>
+                    <circle id="Oval" stroke-width="3" cx="38.7698276" cy="38.5" r="38"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

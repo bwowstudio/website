@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="4366px" height="963px" viewBox="0 0 4366 963" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>02</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="91" cy="91" r="91"></circle>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="02">
+            <path d="M3698.37253,962.345658 C3224.6087,832.54209 2714.70075,766.740677 2182.7497,766.740677 C1650.96076,766.740677 1141.05279,832.54209 667.288969,962.345658 L0,281.45526 C682.038373,94.6752085 1416.42902,-9.99999941e-07 2182.7497,-9.99999941e-07 C2949.23248,-9.99999941e-07 3683.62312,94.6752085 4365.6615,281.45526 L3698.37253,962.345658 Z" id="bg-section" fill-opacity="0.03" fill="#0F0506" transform="translate(2182.830750, 481.172829) scale(-1, 1) rotate(-180.000000) translate(-2182.830750, -481.172829) "></path>
+            <g id="Illustration" transform="translate(2092.000000, 364.000000)">
+                <circle id="Oval-2" fill="#0F0506" cx="60.5" cy="54.5" r="36.5"></circle>
+                <g id="Oval-2-Copy" stroke-dasharray="4,8">
+                    <g id="path-1-Clipped">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="path-1"></g>
+                        <path d="M91,182 C141.257912,182 182,141.257912 182,91 C182,40.7420878 141.257912,0 91,0 C40.7420878,0 0,40.7420878 0,91 C0,141.257912 40.7420878,182 91,182 Z" id="path-1" stroke="#000000" stroke-width="2" mask="url(#mask-2)"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
