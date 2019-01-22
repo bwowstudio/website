@@ -133,10 +133,42 @@ h3 {
     }
   }
 }
-@media only screen and (min-width: $resolution-1440-width) {
+
+@media only screen and (min-width: 1800px) {
   .home-container {
-    // width: $resolution-1440-width;
-    // margin: auto;
+    .first-row {
+      .cell-1, .cell-10 {
+        flex: 4;
+      }
+      .cell-2 {
+        width: 37%;
+        padding-left: 30px;
+      }
+    }
+    .second-row {
+      .cell-1, .cell-10 {
+        flex: 4;
+      }
+      .cell-2 {
+        width: 37%;
+      }
+    }
+    .third-row {
+      .cell-1, .cell-10 {
+        flex: 4;
+      }
+      .cell-2 {
+        width: 37%;
+      }
+    }
+    .fourth-row {
+      .cell-1, .cell-10 {
+        flex: 4;
+      }
+      .cell-2 {
+        width: 37%;
+      }
+    }
   }
 }
 

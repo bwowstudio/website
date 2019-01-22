@@ -1,20 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="3478px" height="722px" viewBox="0 0 3478 722" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
-    <title>Artboard</title>
+<svg width="2338px" height="963px" viewBox="0 0 2338 963" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>02</title>
     <desc>Created with Sketch.</desc>
     <defs>
         <circle id="path-1" cx="91" cy="91" r="91"></circle>
-        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="182" height="182" fill="white">
-            <use xlink:href="#path-1"></use>
-        </mask>
     </defs>
-    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Section-4" transform="translate(570.000000, 14.000000)">
-            <path d="M1980.35122,962.345659 C1726.66699,832.542091 1453.62883,766.740678 1168.78735,766.740678 C884.032671,766.740678 610.994503,832.542091 357.31028,962.345659 L0,281.455261 C365.208078,94.6752095 758.449,0 1168.78735,0 C1579.2125,0 1972.45342,94.6752095 2337.6615,281.455261 L1980.35122,962.345659 Z" id="bg-section" fill-opacity="0.03" fill="#0F0506" transform="translate(1168.830748, 481.172829) scale(1, -1) translate(-1168.830748, -481.172829) "></path>
-            <g id="Illustration" transform="translate(1078.000000, 364.000000)" fill-rule="nonzero">
-                <circle id="Oval-2" fill="#0F0506" cx="60.5" cy="54.5" r="36.5"></circle>
-                <use id="Oval-2-Copy" stroke="#000000" mask="url(#mask-2)" stroke-width="2" stroke-dasharray="4,8" xlink:href="#path-1"></use>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="02">
+            <path d="M1980.35122,962.345658 C1726.66699,832.54209 1453.62883,766.740677 1168.78735,766.740677 C884.032671,766.740677 610.994503,832.54209 357.31028,962.345658 L0,281.45526 C365.208078,94.6752085 758.449,-9.99999997e-07 1168.78735,-9.99999997e-07 C1579.2125,-9.99999997e-07 1972.45342,94.6752085 2337.6615,281.45526 L1980.35122,962.345658 Z" id="bg-section" fill-opacity="0.03" fill="#171717" fill-rule="nonzero" transform="translate(1168.830750, 481.172828) scale(-1, 1) rotate(-180.000000) translate(-1168.830750, -481.172828) "></path>
+            <g id="Illustration" transform="translate(1078.000000, 501.000000)">
+                <circle id="Oval-2" fill="#171717" fill-rule="nonzero" cx="60.5" cy="54.5" r="36.5"></circle>
+                <g id="Oval-2-Copy" stroke-dasharray="4,8">
+                    <g id="path-1-Clipped">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="path-1"></g>
+                        <path d="M91,182 C141.257912,182 182,141.257912 182,91 C182,40.7420878 141.257912,0 91,0 C40.7420878,0 0,40.7420878 0,91 C0,141.257912 40.7420878,182 91,182 Z" id="path-1" stroke="#000000" stroke-width="2" mask="url(#mask-2)"></path>
+                    </g>
+                </g>
             </g>
         </g>
     </g>

@@ -33,8 +33,8 @@
     "h4Text4": "Creamos estructura en las decisiones de diseño para que tu producto pueda escalar de forma orgánica.",
     "aText4": "Crea una estructura de diseño",
 
-    "h3Text5FirstLine": "Design",
-    "h3Text5SecondLine": "Teams",
+    "h3Text5FirstLine": "Design Teams",
+    "h3Text5SecondLine": "",
     "h4Text5": "Diseñamos y sistematizamos los procesos dentro de los equipos para crear un flujo de trabajo adecuado a la empresa. Enseñamos a resolver problemas a través de metodologías ágiles.",
     "aText5": "Optimiza e integra metodologías en tu equipo de diseño",
 
@@ -52,14 +52,14 @@
     "placeholder4": "Cargo",
     "placeholder5": "Email*",
     "placeholder6": "Móvil*",
-    "placeholder7": "País*",
+    "placeholder7": "País",
     "placeholder8": "Mensaje"
   },
   "FOOTER": {
     "text": "Te contactamos",
     "send": "Enviar",
     "placeholder": "Nombre",
-    "placeholder2": "Número o Correo",
+    "placeholder2": "Teléfono o Correo",
     "anchor2": "Te contamos más cosas en",
     "leftContainer": {
       "anchorItem1": "Diseño de producto digital",

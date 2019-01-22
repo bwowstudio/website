@@ -29,12 +29,12 @@
         <g id="Page-0501-Coaching-equipos-de-diseño" transform="translate(-521.000000, -2378.000000)" fill-rule="nonzero">
             <g id="Section-4" transform="translate(-529.000000, 1989.000000)">
                 <g id="Illustration" transform="translate(1050.000000, 389.000000)">
-                    <use id="Rectangle-2" stroke="#0F0506" mask="url(#mask-2)" stroke-width="2" stroke-dasharray="4,8" xlink:href="#path-1"></use>
-                    <use id="Rectangle-2-Copy-3" stroke="#0F0506" mask="url(#mask-4)" stroke-width="2" stroke-dasharray="4,8" xlink:href="#path-3"></use>
-                    <use id="Rectangle-2-Copy" stroke="#0F0506" mask="url(#mask-6)" stroke-width="2" stroke-dasharray="4,8" xlink:href="#path-5"></use>
-                    <use id="Rectangle-2-Copy-4" stroke="#0F0506" mask="url(#mask-8)" stroke-width="2" stroke-dasharray="4,8" xlink:href="#path-7"></use>
-                    <use id="Rectangle-2-Copy-2" stroke="#0F0506" mask="url(#mask-10)" stroke-width="2" stroke-dasharray="4,8" xlink:href="#path-9"></use>
-                    <path d="M170,83 L239,83 L239,152 L170,152 L170,83 Z" id="Rectangle-2-Copy-5" fill="#0F0506"></path>
+                    <use id="Rectangle-2" stroke="#171717" mask="url(#mask-2)" stroke-width="2" stroke-dasharray="4,8" xlink:href="#path-1"></use>
+                    <use id="Rectangle-2-Copy-3" stroke="#171717" mask="url(#mask-4)" stroke-width="2" stroke-dasharray="4,8" xlink:href="#path-3"></use>
+                    <use id="Rectangle-2-Copy" stroke="#171717" mask="url(#mask-6)" stroke-width="2" stroke-dasharray="4,8" xlink:href="#path-5"></use>
+                    <use id="Rectangle-2-Copy-4" stroke="#171717" mask="url(#mask-8)" stroke-width="2" stroke-dasharray="4,8" xlink:href="#path-7"></use>
+                    <use id="Rectangle-2-Copy-2" stroke="#171717" mask="url(#mask-10)" stroke-width="2" stroke-dasharray="4,8" xlink:href="#path-9"></use>
+                    <path d="M170,83 L239,83 L239,152 L170,152 L170,83 Z" id="Rectangle-2-Copy-5" fill="#171717"></path>
                 </g>
             </g>
         </g>

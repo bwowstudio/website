@@ -10,7 +10,7 @@ $footer-resolution-1440-padding-left-right: 56px;
 
 .footer-container{
   width: 100%;
-  background-color: #0f0506;
+  background-color: #171717;
   padding:  128px 0 76px 76px;
   color: #fff;
   letter-spacing: 0.3px;
@@ -42,6 +42,13 @@ $footer-resolution-1440-padding-left-right: 56px;
 .anchor {
   margin-bottom: 24px;
   cursor: pointer;
+}
+a div.anchor-item {
+  font-family: $font-family-regular;
+  margin-bottom: 16px;
+  margin-left: 17px;
+  cursor: pointer;
+  color: #fff;
 }
 .anchor-item{
   font-family: $font-family-regular;

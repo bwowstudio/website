@@ -70,7 +70,8 @@ h3{
     background-repeat: no-repeat;
     background-position: center;
     justify-content: center;
-    height: 799px;
+    height: 600px;
+    background-size: cover;
     .third-slide {
       display: flex;
       max-width: 1440px;
@@ -98,8 +99,8 @@ h3{
   }
   .fourth-slide {
     width: 745px;
-    margin: 120px auto 0;
-    height: 400px;
+    margin: 50px auto 0;
+    height: 500px;
     .up {
       height: 50%;
       width: 100%;
@@ -113,6 +114,7 @@ h3{
       width: 100%;
       display: flex;
       justify-content: center;
+      margin-bottom: 30px;
     }
   }
 }
@@ -124,7 +126,7 @@ h3{
 }
 .footer-container {
   width: 100%;
-  background-color: #0f0506;
+  background-color: #171717;
 }
 
 @media only screen and (min-width: 1280px) {
@@ -141,7 +143,8 @@ h3{
 @media only screen and (min-width: 1920px) {
   .system-container{
     .third-slide-background {
-      height: 820px;
+      height: 650px;
+      background-size: cover;
     }
   }
 }

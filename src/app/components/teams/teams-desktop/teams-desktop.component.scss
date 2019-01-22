@@ -54,9 +54,11 @@ h3{
     justify-content: center;
     .up {
       height: 50%;
-      width: 100%;
+      width: 745px;
+      margin: auto auto 32px;
       @include flex-center;
       align-items: flex-end;
+      justify-content: flex-start;
     }
     .down {
       height: 50%;

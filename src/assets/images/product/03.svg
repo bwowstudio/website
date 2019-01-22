@@ -7,7 +7,7 @@
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="03" fill-rule="nonzero">
             <rect id="Rectangle" fill="#FFFFFF" x="0" y="0" width="8608" height="856"></rect>
-            <g id="Section-3" transform="translate(2300.000000, 3.000000)" fill="#0F0506">
+            <g id="Section-3" transform="translate(2300.000000, 3.000000)" fill="#171717">
                 <path d="M3392.83794,852 C2958.2133,737.080128 2490.43048,678.823718 2002.42565,678.823718 C1514.56952,678.823718 1046.78671,737.080128 612.162057,852 L0,249.182693 C625.692964,83.8194445 1299.41322,0 2002.42565,0 C2705.58678,0 3379.30704,83.8194445 4005,249.182693 L3392.83794,852 Z" id="bg-section"></path>
             </g>
         </g>

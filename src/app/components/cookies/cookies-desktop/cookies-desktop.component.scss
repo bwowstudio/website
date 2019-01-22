@@ -1,7 +1,7 @@
 .cookies-text-wrapper {
-  max-width: 1440px;
   width:100%;
   box-sizing: border-box;
+  margin: auto;
   .first-paragraph {
     text-align: center;
     display: flex;
@@ -10,6 +10,8 @@
     justify-content: center;
     padding: 46px 80px;
     padding-bottom: 96px;
+    max-width: 1440px;
+    margin: auto;
     h3 {
       font-size: 54px;
       line-height: 64px;
@@ -31,6 +33,7 @@
     flex-direction: column;
     justify-content: center;
     padding: 94px 80px 89px 80px;
+    margin: auto;
     background-color: #F8F8F8;
     h3 {
       font-size: 54px;
@@ -51,6 +54,8 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    max-width: 1440px;
+    margin: auto;
     justify-content: center;
     padding: 94px 80px 89px 80px;
     h3 {
@@ -70,6 +75,8 @@
   .fourth-paragraph {
     text-align: center;
     display: flex;
+    max-width: 1440px;
+    margin: auto;
     align-items: center;
     flex-direction: column;
     justify-content: center;
@@ -88,4 +95,8 @@
       line-height: 32px;
     }
   }
+}
+
+.footer-container {
+  background-color: #171717;
 }

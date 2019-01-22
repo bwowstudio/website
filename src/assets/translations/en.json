@@ -3,7 +3,7 @@
     "HEADER": {
       "anchor1": "Our work",
       "anchor2": "About us",
-      "anchor3": "Contact",
+      "anchor3": "Contact Us",
       "secondary": {
         "secondary1": "Digital Product Design",
         "secondary2": "Branding",
@@ -52,7 +52,7 @@
       "placeholder4": "Position",
       "placeholder5": "Email*",
       "placeholder6": "Mobile Phone*",
-      "placeholder7": "Country*",
+      "placeholder7": "Country",
       "placeholder8": "Message"
     },
     "FOOTER": {

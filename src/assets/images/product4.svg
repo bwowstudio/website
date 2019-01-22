@@ -13,9 +13,9 @@
         <g id="Page-0101-Diseño-Producto-Digital" transform="translate(-365.000000, -2432.000000)" fill-rule="nonzero">
             <g id="Section-4" transform="translate(267.000000, 2160.000000)">
                 <g id="Ilustracion" transform="translate(98.000000, 272.000000)">
-                    <use id="Rectangle" stroke="#0F0506" mask="url(#mask-2)" stroke-width="2" stroke-dasharray="4,8" xlink:href="#path-1"></use>
-                    <rect id="Rectangle-Copy" stroke="#0F0506" x="202.5" y="0.5" width="145" height="145"></rect>
-                    <rect id="Rectangle-Copy-2" fill="#0F0506" x="404" y="0" width="146" height="146"></rect>
+                    <use id="Rectangle" stroke="#171717" mask="url(#mask-2)" stroke-width="2" stroke-dasharray="4,8" xlink:href="#path-1"></use>
+                    <rect id="Rectangle-Copy" stroke="#171717" x="202.5" y="0.5" width="145" height="145"></rect>
+                    <rect id="Rectangle-Copy-2" fill="#171717" x="404" y="0" width="146" height="146"></rect>
                 </g>
             </g>
         </g>

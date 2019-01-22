@@ -1,6 +1,6 @@
 .cookie-message-wrapper {
   position: fixed;
-  background-color: #0F0506;
+  background-color: #171717;
   height: 74px;
   width: 100%; 
   bottom: 0;
@@ -35,3 +35,18 @@
   }
 }
 
+
+@media only screen and (max-width: 600px) {
+  .cookie-message-wrapper {
+    height: auto;
+    padding: 20px 0;
+    .message-container {
+      flex-direction: column;
+      padding: 0 16px;
+      p {
+        margin-right: 0;
+        margin-bottom: 2 ske 5px;
+      }
+    }
+  }
+}
