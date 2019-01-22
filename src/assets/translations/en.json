@@ -202,7 +202,8 @@
     },
     "COOKIES": {
       "popUp": {
-        "message": "Cookies help us improve your experience in our web. We use cookies for analytical and commercial purposes. By using our services, you agree to our use of cookies.",
+        "message": "Cookies help us improve your experience in our web. We use cookies for analytical and commercial purposes. By using our services, you agree to our ",
+        "link": "use of cookies.",
         "buttonMessage": "OK"
       },
       "firstParagraph": {

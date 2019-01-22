@@ -202,7 +202,8 @@
   },
   "COOKIES": {
     "popUp": {
-      "message": "Utilizamos cookies propias y de terceros con fines de mejora, análisis y promoción. Al continuar navegando, aceptas el uso de cookies. ",
+      "message": "Utilizamos cookies propias y de terceros con fines de mejora, análisis y promoción. Al continuar navegando, aceptas el ",
+      "link": "uso de cookies.",
       "buttonMessage": "OK"
     },
     "firstParagraph": {
