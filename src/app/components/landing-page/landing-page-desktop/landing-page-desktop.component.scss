@@ -38,6 +38,11 @@ h3 {
     line-height: 54px;
     font-size: 54px;
     color: #ffffff;
+    .cell-2 {
+      h2 {
+        max-width: 500px;
+      }
+    }
   }
   .fourth-row {
     width: 100%;

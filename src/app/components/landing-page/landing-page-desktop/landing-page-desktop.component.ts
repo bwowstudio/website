@@ -12,7 +12,7 @@ export class LandingPageDesktopComponent implements OnInit {
   displayOval = 'block';
   displayOvalWhite = 'none';
   transitionIsOn = false;
-  timeOut = setTimeout(() => this.nextPage('/home'), 1000000);
+  timeOut = setTimeout(() => this.nextPage('/home'), 10000);
   displayNet = '';
   constructor(
     public router: Router,

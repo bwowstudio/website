@@ -43,6 +43,7 @@ $fixed-input-768-left-input-margin-right: $resolution-768-width*0.025;
       display: flex;
       align-items: center;
       .left-input {
+        display: none;
         box-sizing: border-box;
         width: 139px;
         height: 38px;
@@ -63,17 +64,24 @@ $fixed-input-768-left-input-margin-right: $resolution-768-width*0.025;
         line-height: 18px;
       }
       .right-input{
-        display: none;
         box-sizing: border-box;
         width: 139px;
         height: 38px;
         background: rgba(106, 43, 58, 0.02);
         box-shadow: inset 0 0 0 1px rgba(33, 34, 64, 0.06);
         border-radius: 8px;
+        margin-right: 12px;
         font-size: 18px;
         letter-spacing: 0.26px;
         line-height: 18px;
         padding-left: 10px;
+      }
+      ::placeholder{
+        font-size: 14px;
+        color: #AEA3A4;
+        letter-spacing: 0.26px;
+        padding-top: 8px;
+        line-height: 18px;
       }
     }
     .container-right {

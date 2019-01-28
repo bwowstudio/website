@@ -124,6 +124,7 @@
         font-size: 54px;
         letter-spacing: 0.57px;
         line-height: 54px;
+        margin-bottom: 25px;
       }
       h4 {
         letter-spacing: 0.31px;
@@ -238,24 +239,5 @@
 
   .home-container .image-container img {
     margin-top: 0px;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .home-container {
-    .text-container::ng-deep {
-      h3 {
-        font-size: 50px;
-        line-height: 60px;
-        margin-bottom: 40px;
-        margin-top: 40px;
-      }
-      h4 {
-        display: none;
-      }
-      a {
-        font-size: 25px;
-      }
-    }
   }
 }
