@@ -53,7 +53,10 @@
       "placeholder5": "Email*",
       "placeholder6": "Mobile Phone*",
       "placeholder7": "Country",
-      "placeholder8": "Message"
+      "placeholder8": "Message",
+      "confirmHeader": "Hello Bwower!",
+      "confirmMessage": "We've received the information, we will contact you as soon as possible and so you can tell us about your product.",
+      "confirmButton": "Got it"
     },
     "FOOTER": {
       "text": "We contact you",

@@ -34,6 +34,9 @@ $footer-resolution-1440-padding-left-right: 56px;
   .footer-container-bottom{
     margin-top: 112px;
     font-family: $font-family-regular;
+    a {
+      color: #fff;
+    }
     .email{
       margin-top: 16px;
     }

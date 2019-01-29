@@ -56,6 +56,7 @@ import { CookiePopUpComponent } from './components/cookie-pop-up/cookie-pop-up.c
 import { CookiesComponent } from './components/cookies/cookies.component';
 import { CookiesDesktopComponent } from './components/cookies/cookies-desktop/cookies-desktop.component';
 import { CookiesMobileComponent } from './components/cookies/cookies-mobile/cookies-mobile.component';
+import { MessageConfirmComponent } from './shared/message-confirm/message-confirm.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/translations/', '.json');
@@ -111,6 +112,7 @@ export class HammerConfig extends HammerGestureConfig {
     CookiesComponent,
     CookiesDesktopComponent,
     CookiesMobileComponent,
+    MessageConfirmComponent,
 
   ],
   imports: [

@@ -7,10 +7,10 @@
   width: 100%;
   background: #171717;
   color: white;
-  padding: 67px 16px 63px;
+  padding: 67px 16px 103px;
   box-sizing: border-box;
   font-family: $font-family-bold;
-
+  min-height: 780px;
   .container-left{
     .anchor-item{
       font-family: $font-family-regular;
@@ -26,6 +26,9 @@
   .footer-container-bottom{
     font-family: $font-family-regular;
     margin-top: 76px;
+      a {
+        color: #fff;
+      }
       .email{
         margin-top: 16px;
       }

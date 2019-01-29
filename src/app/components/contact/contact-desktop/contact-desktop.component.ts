@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { LanguageService } from 'src/app/services/language.service';
+import { trigger, state, style, animate, transition } from '@angular/animations';
 import { Router } from '@angular/router';
 import { forkJoin } from 'rxjs';
 import { MailService } from 'src/app/services/mail.service';
@@ -8,7 +9,15 @@ import { MailService } from 'src/app/services/mail.service';
 @Component({
   selector: 'app-contact-desktop',
   templateUrl: './contact-desktop.component.html',
-  styleUrls: ['./contact-desktop.component.scss']
+  styleUrls: ['./contact-desktop.component.scss'],
+  animations: [
+    trigger('showAnimation', [
+      state('show', style({ opacity: 1, transform: "translateY(0)", display: 'flex', position: 'fixed', top: "0", width: "100%"})),
+      state('hide', style({ opacity: 0, transform: "translateY(-5%)", display: 'none'})),
+      transition('show => hide', animate('600ms ease-in')),
+      transition('hide => show', animate('600ms ease-out')),
+    ])
+  ]
 })
 export class ContactDesktopComponent implements OnInit {
   placeholders: Array<string>;
@@ -20,6 +29,7 @@ export class ContactDesktopComponent implements OnInit {
   phone: string = '';
   country: string = '';
   message: string = '';
+  confirmMessage: string = 'hide';
   constructor(
     public translateService: TranslateService,
     public languageService: LanguageService,
@@ -53,7 +63,7 @@ export class ContactDesktopComponent implements OnInit {
   sendEmail() {
     let completeName = `${this.name} ${this.lastName}. ${this.position} en ${this.company}. ${this.country}`
     this.mailService.sendmail(this.email, completeName, this.message, this.phone).subscribe(e => {
-      console.log('listo')
+      this.confirmMessage = 'show';
     })
   }
 }
