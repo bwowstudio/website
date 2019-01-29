@@ -7,17 +7,28 @@ import { HttpClient } from '@angular/common/http';
 export class MailService {
 
   constructor(private http: HttpClient) { }
-  sendmail(email, name) {
+  sendmail(email, name, message, phone) {
     const object = {
-      email,
       name,
+      provider: 'bwow',
+      from: email,
+      to: 'papu.arza@gmail.com',
+      subject: 'Nuevo mensaje en bwow!',
+      message,
+      phone
     };
     if (!email) {
-      object.email = 'No ha dejado email';
+      object.from = 'No ha dejado email';
     }
     if (!name) {
-      object.name = 'No ha dejado name';
+      object.name = 'No ha dejado nombre';
     }
-    return this.http.post('https://bwow-emails.herokuapp.com/api/email', object);
+    if (!message) {
+      object.message = 'No ha dejado mensaje';
+    }
+    if (!phone) {
+      object.phone = 'No ha dejado teléfono';
+    }
+    return this.http.post('http://emailing-microservice.herokuapp.com/send-email', object);
   }
 }

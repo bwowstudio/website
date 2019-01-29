@@ -40,7 +40,7 @@ export class FixedInputMobileComponent implements OnInit {
   }
   sendEmail() {
     const { email, name } = this.emailForm.value;
-    this.mailService.sendmail(email, name ).subscribe(e => {
+    this.mailService.sendmail(email, name, '', '' ).subscribe(e => {
       this.emailForm.setValue({email: '', name: ''});
     }, () => {
       console.error('Error al mandar el mail!');

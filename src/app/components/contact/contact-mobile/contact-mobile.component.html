@@ -8,24 +8,24 @@
   <div class="container-right">
     <form *ngIf="placeholders">
       <div class="input-first-row">
-        <input type="text" placeholder="{{placeholders[0]}}">
-        <input type="text" placeholder="{{placeholders[1]}}">
+        <input type="text" placeholder="{{placeholders[0]}}" [(ngModel)]="name" [ngModelOptions]="{standalone: true}">
+        <input type="text" placeholder="{{placeholders[1]}}" [(ngModel)]="lastName" [ngModelOptions]="{standalone: true}">
       </div>
       <div class="input-second-row">
-        <input type="text" placeholder="{{placeholders[2]}}">
-        <input type="text" placeholder="{{placeholders[3]}}">
-      </div>
+          <input type="text" placeholder="{{placeholders[2]}}" [(ngModel)]="company" [ngModelOptions]="{standalone: true}">
+          <input type="text" placeholder="{{placeholders[3]}}" [(ngModel)]="position" [ngModelOptions]="{standalone: true}">
+        </div>
       <div class="input-third-row">
-        <input type="email" placeholder="{{placeholders[4]}}">
+        <input type="email" placeholder="{{placeholders[4]}}" [(ngModel)]="email" [ngModelOptions]="{standalone: true}">
       </div>
       <div class="input-fourth-row">
-        <input type="text" placeholder="{{placeholders[5]}}">
-        <input type="text" placeholder="{{placeholders[6]}}">
+        <input type="text" placeholder="{{placeholders[5]}}" [(ngModel)]="phone" [ngModelOptions]="{standalone: true}">
+        <input type="text" placeholder="{{placeholders[6]}}" [(ngModel)]="country" [ngModelOptions]="{standalone: true}">
       </div>
       <div class="input-fifth-row">
-        <textarea placeholder="{{placeholders[7]}}"></textarea>
+        <textarea placeholder="{{placeholders[7]}}" [(ngModel)]="message" [ngModelOptions]="{standalone: true}"></textarea>
       </div>
-      <button>{{ 'CONTACT.button-text' | translate }}</button>
+      <button (click)="sendEmail()">{{ 'CONTACT.button-text' | translate }}</button>
     </form>
   </div>
 </div>
