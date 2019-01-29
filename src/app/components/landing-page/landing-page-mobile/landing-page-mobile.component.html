@@ -1,5 +1,5 @@
 <app-header></app-header>
-<div class="landing-mobile-container" [ngStyle]="{'background-position-y': backgroundPosition}">
+<div class="landing-mobile-container" [ngStyle]="{'background-position-y': backgroundPosition}" (swipeup)="nextPage()">
   <h2>Just <br> designers <br> making <br> design</h2>
   <div class="oval-container">
     <img class="oval text" src="assets/images/ovalWhite.svg" (click)="nextPage()">

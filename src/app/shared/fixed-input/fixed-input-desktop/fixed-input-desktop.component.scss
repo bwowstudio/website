@@ -121,6 +121,7 @@ $fixed-input-1440-input2-width: $resolution-1440-width*0.18;
       width: calc(#{$input-width-percentage} - #{$fixed-input-1024-margin-left-right*2});
       margin: 0 $fixed-input-1024-margin-left-right 0;
       padding: 0 $fixed-input-1024-inner-padding-left-right 0;
+      border-radius: 8px;
       .container-left {
       }
       .container-center {

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { Router } from '@angular/router';
 @Component({
   selector: 'app-landing-page-desktop',
@@ -46,4 +46,8 @@ export class LandingPageDesktopComponent implements OnInit {
     }, 1000 / 120);
     setTimeout(() => this.router.navigate([page]), 500);
   }
+
+  @HostListener('window:wheel', ['$event']) onScrollEvent($event){
+    this.nextPage();
+  } 
 }

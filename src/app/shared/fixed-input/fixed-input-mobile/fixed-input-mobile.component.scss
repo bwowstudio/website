@@ -39,6 +39,7 @@ $fixed-input-768-left-input-margin-right: $resolution-768-width*0.025;
     padding: 0 16px;
     display: flex;
     box-sizing: border-box;
+    border-radius: 8px;
     .container-center {
       display: flex;
       align-items: center;

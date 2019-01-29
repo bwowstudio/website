@@ -11,6 +11,10 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
       state('hide', style({ opacity: 0, transform: "translateX(-5%)"})),
       transition('show => hide', animate('600ms ease-in')),
       transition('hide => show', animate('600ms ease-out')),
+      state('showFixed', style({ opacity: 1, transform: "translateY(0)"})),
+      state('hideFixed', style({ opacity: 0, transform: "translateY(-5%)"})),
+      transition('showFixed => hideFixed', animate('600ms ease-in')),
+      transition('hideFixed => showFixed', animate('600ms ease-out')),
     ])
   ]
 })
@@ -24,11 +28,16 @@ export class SystemMobileComponent implements OnInit {
   thirdTitle = 'hide';
   thirdSubtitle = 'hide';
   thirdImage = 'hide';
-
+  lastScrollTop = 0;
+  currentScrollTop = 0;
+  fixedInput = 'showFixed';
   constructor() { }
 
   @HostListener('window:scroll', ['$event'])
     checkScroll() {
+      this.currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      this.currentScrollTop > this.lastScrollTop ? this.fixedInput = 'hideFixed' : this.fixedInput = 'showFixed';
+      this.lastScrollTop = this.currentScrollTop;
       const scrollPosition = window.pageYOffset;
       const elementsforAnimation = document.querySelectorAll('[item="animation"]');
       for(let i=0; i<elementsforAnimation.length; i++) {

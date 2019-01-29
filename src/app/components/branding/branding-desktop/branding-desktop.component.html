@@ -29,7 +29,7 @@
       <h3 [@scrollAnimation]="thirdSubtitle" item="animation" data="thirdSubtitle">{{ 'BRANDING.fourthSlide.h3' | translate }}</h3>
   </div>
 </div>
-<div class="fixed-input-container" [hidden]="isHideFixedInput">
+<div class="fixed-input-container" [@scrollAnimation]="fixedInput">
   <app-fixed-input></app-fixed-input>
 </div>
 <div class="footer-container">

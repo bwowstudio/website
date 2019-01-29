@@ -15,6 +15,10 @@ import { Router } from '@angular/router';
       state('hide', style({ opacity: 0, transform: "translateX(-5%)"})),
       transition('show => hide', animate('600ms ease-in')),
       transition('hide => show', animate('600ms ease-out')),
+      state('showFixed', style({ opacity: 1, transform: "translateY(0)"})),
+      state('hideFixed', style({ opacity: 0, transform: "translateY(-5%)"})),
+      transition('showFixed => hideFixed', animate('600ms ease-in')),
+      transition('hideFixed => showFixed', animate('600ms ease-out')),
     ])
   ]
 })
@@ -28,14 +32,13 @@ export class BrandingDesktopComponent implements OnInit {
   thirdTitle = 'hide';
   thirdSubtitle = 'hide';
   thirdImage = 'hide';
-  isHideFixedInput = false;
+  lastScrollTop = 0;
+  currentScrollTop = 0;
+  fixedInput = 'showFixed';
   public handleScroll(event: ScrollEvent) {
-    if (document.body.scrollHeight - window.scrollY < 1133) {
-      this.isHideFixedInput = true;
-    }
-    if (document.body.scrollHeight - window.scrollY > 1133) {
-      this.isHideFixedInput = false;
-    }
+    this.currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    this.currentScrollTop > this.lastScrollTop ? this.fixedInput = 'hideFixed' : this.fixedInput = 'showFixed';
+    this.lastScrollTop = this.currentScrollTop;
   }
   constructor(
     public translateService: TranslateService,

@@ -220,9 +220,9 @@ p {
       img{
         margin-right: 40px;
       }
-      .cabifyLogo {
+      .vamosLogo {
         position: relative;
-        top: 4px;
+        object-fit: contain;
       }
       .arrowLeft{
         margin-right: 25px;
@@ -247,7 +247,7 @@ p {
       letter-spacing: 0.4px;
       color: #fff;
       background: transparent;
-      border: solid 3px rgba(255, 255, 255, 0.99);
+      border: solid 1px rgba(255, 255, 255, 0.99);
       border-radius: 10px;
       cursor: pointer;
     }

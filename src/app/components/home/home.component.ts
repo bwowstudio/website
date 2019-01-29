@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild, HostListener } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { LanguageService } from 'src/app/services/language.service';
 import { forkJoin } from 'rxjs';
@@ -23,6 +23,7 @@ export class HomeComponent implements OnInit {
     h4Text: '',
     aTextMobile: ''
   };
+  isScrolling: any;
   finalText = '';
   constructor(
     public resolutionService: ResolutionService,
@@ -93,5 +94,17 @@ export class HomeComponent implements OnInit {
   navigate() {
     const routes = ['digital-product', 'branding', 'business-design', 'design-system', 'design-teams'];
     this.router.navigate([routes[this.page - 1]]);
+  }
+
+  @HostListener('window:wheel', ['$event']) onScrollEvent($event){
+    window.clearTimeout( this.isScrolling );
+	    this.isScrolling = setTimeout(() => {
+        if($event.wheelDelta < 0) {
+          this.onSwipeUp($event);
+        } else {
+          this.onSwipeDown($event);
+        }
+	    }, 66);
+    
   }
 }
