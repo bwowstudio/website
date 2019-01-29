@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { trigger, state, style, animate, transition } from '@angular/animations';
 import { LanguageService } from 'src/app/services/language.service';
 import { MailService } from 'src/app/services/mail.service';
 import { FormControl, FormGroup } from '@angular/forms';
@@ -7,7 +8,15 @@ import { FormControl, FormGroup } from '@angular/forms';
 @Component({
   selector: 'app-fixed-input-desktop',
   templateUrl: './fixed-input-desktop.component.html',
-  styleUrls: ['./fixed-input-desktop.component.scss']
+  styleUrls: ['./fixed-input-desktop.component.scss'],
+  animations: [
+    trigger('showAnimation', [
+      state('show', style({ opacity: 1, transform: "translateY(0)", display: 'flex', position: 'fixed', top: "-85vh", width: "100%"})),
+      state('hide', style({ opacity: 0, transform: "translateY(-5%)", display: 'none'})),
+      transition('show => hide', animate('600ms ease-in')),
+      transition('hide => show', animate('600ms ease-out')),
+    ])
+  ]
 })
 export class FixedInputDesktopComponent implements OnInit {
   placeholder: string;
@@ -16,6 +25,8 @@ export class FixedInputDesktopComponent implements OnInit {
     email: new FormControl(''),
     name: new FormControl('')
   });
+
+  confirmMessage: string = 'hide';
 
   constructor(
     public translateService: TranslateService,
@@ -43,5 +54,14 @@ export class FixedInputDesktopComponent implements OnInit {
     const { email, name } = this.emailForm.value;
     this.mailService.sendmail(email, name, '', '').subscribe(e => {
       this.emailForm.setValue({email: '', name: ''});
-    }, () => this.emailForm.setValue({email: '', name: ''}));  }
+      this.confirmMessage = 'show';
+    }, () => {
+      this.emailForm.setValue({email: '', name: ''})
+      this.confirmMessage = 'show';
+    });
+  }
+
+    closePopUp() {
+      this.confirmMessage = 'hide';
+    }
 }

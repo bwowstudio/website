@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { trigger, state, style, animate, transition } from '@angular/animations';
 import { LanguageService } from 'src/app/services/language.service';
 import { Router } from '@angular/router';
 import { forkJoin } from 'rxjs';
@@ -8,7 +9,15 @@ import { MailService } from 'src/app/services/mail.service';
 @Component({
   selector: 'app-contact-mobile',
   templateUrl: './contact-mobile.component.html',
-  styleUrls: ['./contact-mobile.component.scss']
+  styleUrls: ['./contact-mobile.component.scss'],
+  animations: [
+    trigger('showAnimation', [
+      state('show', style({ opacity: 1, transform: "translateY(0)", display: 'flex', position: 'fixed', top: "0", width: "100%"})),
+      state('hide', style({ opacity: 0, transform: "translateY(-5%)", display: 'none'})),
+      transition('show => hide', animate('600ms ease-in')),
+      transition('hide => show', animate('600ms ease-out')),
+    ])
+  ]
 })
 export class ContactMobileComponent implements OnInit {
   placeholders: Array<string>;
@@ -20,6 +29,7 @@ export class ContactMobileComponent implements OnInit {
   phone: string = '';
   country: string = '';
   message: string = '';
+  confirmMessage: string = 'hide';
   constructor(
     public translateService: TranslateService,
     public languageService: LanguageService,
@@ -53,7 +63,19 @@ export class ContactMobileComponent implements OnInit {
   sendEmail() {
     let completeName = `${this.name} ${this.lastName}. ${this.position} en ${this.company}. ${this.country}`
     this.mailService.sendmail(this.email, completeName, this.message, this.phone).subscribe(e => {
-      console.log('listo')
+      this.confirmMessage = 'show';
+      this.name = '';
+      this.lastName = '';
+      this.company = '';
+      this.position = '';
+      this.email = '';
+      this.phone = '';
+      this.country = '';
+      this.message = '';
     })
+  }
+
+  closePopUp() {
+    this.confirmMessage = 'hide';
   }
 }

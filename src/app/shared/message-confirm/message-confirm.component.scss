@@ -61,3 +61,20 @@ $contact-resolution-1440-padding-left-right: 56px;
     }
   }
 }
+
+@media only screen and (max-width: 400px) {
+  .message-wrapper { 
+    .message-text-container {
+      width: 90%;
+      padding: 35px 5%;
+      h3 {
+        font-size: 36px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+  }
+}

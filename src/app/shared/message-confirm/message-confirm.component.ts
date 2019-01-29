@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-message-confirm',
@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./message-confirm.component.scss']
 })
 export class MessageConfirmComponent implements OnInit {
-
+  @Output() onClose = new EventEmitter<string>();
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onPopUpClose () {
+    this.onClose.emit();
   }
 
 }

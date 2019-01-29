@@ -64,6 +64,18 @@ export class ContactDesktopComponent implements OnInit {
     let completeName = `${this.name} ${this.lastName}. ${this.position} en ${this.company}. ${this.country}`
     this.mailService.sendmail(this.email, completeName, this.message, this.phone).subscribe(e => {
       this.confirmMessage = 'show';
+      this.name = '';
+      this.lastName = '';
+      this.company = '';
+      this.position = '';
+      this.email = '';
+      this.phone = '';
+      this.country = '';
+      this.message = '';
     })
+  }
+
+  closePopUp() {
+    this.confirmMessage = 'hide';
   }
 }
