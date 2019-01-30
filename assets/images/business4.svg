@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="529px" height="128px" viewBox="0 0 529 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Illustration</title>
+    <desc>Created with Sketch.</desc>
+    <g id="04-Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Page-0301-Business-Design" transform="translate(-355.000000, -2204.000000)" fill-rule="nonzero">
+            <g id="Section-4" transform="translate(-529.000000, 1844.000000)">
+                <g id="Illustration" transform="translate(884.000000, 360.000000)">
+                    <circle id="Oval-3" fill="#171717" cx="28" cy="64" r="28"></circle>
+                    <circle id="Oval-3-Copy" fill="#171717" cx="465" cy="64" r="64"></circle>
+                    <path d="M24.5,37.5 L477.5,1.5" id="Line-4" stroke="#171717" stroke-linecap="square" stroke-dasharray="4,8"></path>
+                    <path d="M28.5,91.5 L462,126" id="Line-4-Copy" stroke="#171717" stroke-linecap="square" stroke-dasharray="4,8"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

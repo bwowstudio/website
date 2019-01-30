@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1280px" height="2488px" viewBox="0 0 1280 2488" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Page-0301 Business Design</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-0301-Business-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="1280" height="2488"></rect>
+        <rect id="bg" fill="#FC4E74" fill-rule="nonzero" x="0" y="0" width="1280" height="783"></rect>
+        <g id="Section-2" transform="translate(-294.000000, 460.000000)" fill="#171717">
+            <path d="M1582.47722,769 C1379.76091,665.275374 1161.57906,612.694177 933.965324,612.694177 C706.420939,612.694177 488.239094,665.275374 285.522777,769 L0,224.907853 C291.833822,75.6539352 606.068387,0 933.965324,0 C1261.93161,0 1576.16618,75.6539352 1868,224.907853 L1582.47722,769 Z" id="bg-section" transform="translate(934.000000, 384.500000) scale(1, -1) translate(-934.000000, -384.500000) "></path>
+        </g>
+        <g id="Section-4" transform="translate(-529.000000, 1844.000000)" fill="#FC2154" fill-opacity="0.1">
+            <path d="M1980.35122,962.345659 C1726.66699,832.542091 1453.62883,766.740678 1168.78735,766.740678 C884.032671,766.740678 610.994503,832.542091 357.31028,962.345659 L0,281.455261 C365.208078,94.6752095 758.449,0 1168.78735,0 C1579.2125,0 1972.45342,94.6752095 2337.6615,281.455261 L1980.35122,962.345659 Z" id="bg-section"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="182px" height="182px" viewBox="0 0 182 182" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Illustration</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="91" cy="91" r="91"></circle>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="182" height="182" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="04-Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Page-0201-Branding" transform="translate(-549.000000, -2305.000000)" fill-rule="nonzero">
+            <g id="Section-4" transform="translate(-529.000000, 1941.000000)">
+                <g id="Illustration" transform="translate(1078.000000, 364.000000)">
+                    <circle id="Oval-2" fill="#171717" cx="60.5" cy="54.5" r="36.5"></circle>
+                    <use id="Oval-2-Copy" stroke="#000000" mask="url(#mask-2)" stroke-width="2" stroke-dasharray="4,8" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

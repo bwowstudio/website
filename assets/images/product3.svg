@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="211px" height="182px" viewBox="0 0 211 182" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Ilustration</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <ellipse id="path-1" cx="119.886364" cy="91" rx="91.1136364" ry="91"></ellipse>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="182.227273" height="182" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="182.227273" height="182" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="04-Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Page-0101-Diseño-Producto-Digital" transform="translate(-876.000000, -1537.000000)">
+            <g id="Section-3" transform="translate(-294.000000, 1295.000000)">
+                <g id="Ilustration" transform="translate(1170.000000, 242.000000)">
+                    <ellipse id="Oval" fill="#FFFFFF" fill-rule="nonzero" cx="91.1136364" cy="91" rx="91.1136364" ry="91"></ellipse>
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="circle-copy" stroke="#FFFFFF" mask="url(#mask-2)" stroke-width="4.8" stroke-dasharray="2.4,4.8" fill-rule="nonzero">
+                        <use mask="url(#mask-4)" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
