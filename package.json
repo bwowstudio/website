@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "dev": "ng serve --open",
-    "deploy": "ng b --prod --base-href / && npx ngh --dir=dist/website"
+    "deploy": "ng b --prod --base-href / && ngh"
   },
   "private": true,
   "dependencies": {
