@@ -17,28 +17,32 @@
     "h3Text1SecondLine": "producto digital",
     "h4Text1": "Conectamos la idea con el producto final, orientando soluciones a un usuario potencial y testando cada fase de desarrollo de producto.",
     "aText1": "Crea un producto para tus usuarios",
+    "h4Text1Mobile": "Orientamos soluciones de diseño a tus potenciales usuarios",
 
     "h3Text2FirstLine": "Branding",
     "h3Text2SecondLine": "",
     "h4Text2": "Te ayudamos a construir tu marca a través del valor que le imprimimos. Comunica quién quieres ser y cómo quieres que te perciban.",
+    "h4Text2Mobile": "Te ayudamos a construir tu marca a través del valor que le imprimimos. Comunica quién quieres ser y cómo quieres que te perciban.",
     "aText2": "Empieza a construir quién eres",
 
     "h3Text3FirstLine": "Business Design",
     "h3Text3SecondLine": "",
     "h4Text3": "Conectamos los objetivos de negocio con las necesidades de tus usuarios, creando productos donde ambos puedan crecer.",
+    "h4Text3Mobile": "Conectamos los objetivos de negocio con las necesidades de tus usuarios, creando productos donde ambos puedan crecer.",
     "aText3": "Haz crecer tu idea de negocio",
 
     "h3Text4FirstLine": "Design Systems",
     "h3Text4SecondLine": "",
     "h4Text4": "Creamos estructura en las decisiones de diseño para que tu producto pueda escalar de forma orgánica.",
+    "h4Text4Mobile": "Creamos estructura en las decisiones de diseño para que tu producto pueda escalar de forma orgánica.",
     "aText4": "Crea una estructura de diseño",
 
     "h3Text5FirstLine": "Design Teams",
     "h3Text5SecondLine": "",
     "h4Text5": "Diseñamos y sistematizamos los procesos dentro de los equipos para crear un flujo de trabajo adecuado a la empresa. Enseñamos a resolver problemas a través de metodologías ágiles.",
     "aText5": "Optimiza el trabajo en tu equipo de diseño",
-
-    "aTextMobile": "Ver soluciones"
+    "aTextMobile": "Ver soluciones",
+    "h4Text5Mobile": "Sistematizamos procesos dentro de los equipos para crear flujos de trabajo ágiles."
 
 
   },
@@ -205,6 +209,7 @@
   },
   "COOKIES": {
     "popUp": {
+      "title": "Nuestras Cookies",
       "message": "Utilizamos cookies propias y de terceros con fines de mejora, análisis y promoción. Al continuar navegando, aceptas el ",
       "link": "uso de cookies.",
       "buttonMessage": "OK"
