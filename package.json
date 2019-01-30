@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "dev": "ng serve --open",
-    "deploy": "ng build --prod --base-href '/website/' && rm dist/3rdpartylicenses.txt && npx ngh --no-silent"
+    "deploy": "ng build --prod --base-href './' && rm dist/3rdpartylicenses.txt && npx ngh --no-silent --cname=bwowstudio.com"
   },
   "private": true,
   "dependencies": {
