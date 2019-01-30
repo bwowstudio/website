@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "dev": "ng serve --open",
-    "deploy": "ng b --prod --base-href / && ngh"
+    "deploy": "ng build --prod --base-href '/website/' && rm dist/3rdpartylicenses.txt && npx ngh --no-silent"
   },
   "private": true,
   "dependencies": {

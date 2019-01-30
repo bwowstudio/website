@@ -1,22 +1,22 @@
 @font-face {
   font-family: Regular;
-  src: url("/assets/fonts/regular.otf") format("opentype");
+  src: url("/./assets/fonts/regular.otf") format("opentype");
 }
 @font-face {
   font-family: Thin;
-  src: url("/assets/fonts/thin.otf") format("opentype");
+  src: url("/./assets/fonts/thin.otf") format("opentype");
 }
 @font-face {
   font-family: Bold;
-  src: url("/assets/fonts/extraBold.otf") format("opentype");
+  src: url("/./assets/fonts/extraBold.otf") format("opentype");
 }
 @font-face {
   font-family: Heavy;
-  src: url("/assets/fonts/heavy.otf") format("opentype");
+  src: url("/./assets/fonts/heavy.otf") format("opentype");
 }
 @font-face {
   font-family: Medium;
-  src: url("/assets/fonts/medium.otf") format("opentype");
+  src: url("/./assets/fonts/medium.otf") format("opentype");
 }
 $font-family-thin: 'Thin', serif;
 $font-family-regular: 'Regular', serif;
