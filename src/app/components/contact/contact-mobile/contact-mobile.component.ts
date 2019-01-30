@@ -30,6 +30,10 @@ export class ContactMobileComponent implements OnInit {
   country: string = '';
   message: string = '';
   confirmMessage: string = 'hide';
+  emailError: Boolean = false;
+  nameError: Boolean = false;
+  phoneError: Boolean = false;
+  lastNameError: Boolean = false;
   constructor(
     public translateService: TranslateService,
     public languageService: LanguageService,
@@ -61,18 +65,32 @@ export class ContactMobileComponent implements OnInit {
   }
 
   sendEmail() {
-    let completeName = `${this.name} ${this.lastName}. ${this.position} en ${this.company}. ${this.country}`
-    this.mailService.sendmail(this.email, completeName, this.message, this.phone).subscribe(e => {
-      this.confirmMessage = 'show';
-      this.name = '';
-      this.lastName = '';
-      this.company = '';
-      this.position = '';
-      this.email = '';
-      this.phone = '';
-      this.country = '';
-      this.message = '';
-    })
+    if(this.email == '') {
+      this.emailError = true;
+    }
+    if(this.name == '') {
+      this.nameError = true;
+    }
+    if(this.lastName == '') {
+      this.lastNameError = true;
+    }
+    if(this.phone == '') {
+      this.phoneError = true;
+    }
+    if(this.email !== '' && this.name !== '' && this.lastName !== '' && this.phone !== '') {
+      let completeName = `${this.name} ${this.lastName}. ${this.position} en ${this.company}. ${this.country}`
+      this.mailService.sendmail(this.email, completeName, this.message, this.phone).subscribe(e => {
+        this.confirmMessage = 'show';
+        this.name = '';
+        this.lastName = '';
+        this.company = '';
+        this.position = '';
+        this.email = '';
+        this.phone = '';
+        this.country = '';
+        this.message = '';
+      })
+    }
   }
 
   closePopUp() {

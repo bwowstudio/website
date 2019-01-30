@@ -84,6 +84,12 @@ $fixed-input-768-left-input-margin-right: $resolution-768-width*0.025;
         padding-top: 8px;
         line-height: 18px;
       }
+      .errorInput {
+        background-color: rgba(252, 33, 84, 0.1);
+      }
+      .errorInput::placeholder {
+        color: #FC2150;
+      }
     }
     .container-right {
       display: flex;

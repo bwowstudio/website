@@ -93,6 +93,13 @@ $fixed-input-1440-input2-width: $resolution-1440-width*0.18;
         line-height: 18px;
         box-sizing: border-box;
       }
+      .errorInput {
+        background-color: rgba(252, 33, 84, 0.1);
+      }
+      .errorInput::placeholder {
+        color: #FC2150;
+      }
+      
     }
     .container-right {
       display: flex;

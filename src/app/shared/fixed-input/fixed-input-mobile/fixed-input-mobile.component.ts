@@ -25,6 +25,7 @@ export class FixedInputMobileComponent implements OnInit {
     email: new FormControl(''),
     name: new FormControl('')
   });
+  emailError: Boolean = false;
   confirmMessage: string = 'hide';
   constructor(
     public translateService: TranslateService,
@@ -50,13 +51,19 @@ export class FixedInputMobileComponent implements OnInit {
   }
   sendEmail() {
     const { email, name } = this.emailForm.value;
-    this.mailService.sendmail(email, name, '', '' ).subscribe(e => {
-      this.emailForm.setValue({email: '', name: ''});
-      this.confirmMessage = 'show';
-    }, () => {
-      console.error('Error al mandar el mail!');
-      this.emailForm.setValue({email: '', name: ''});
-    });
+    if(email == '') {
+      this.emailError = true;
+    } else {
+      this.emailError = false;
+      this.mailService.sendmail(email, name, '', '' ).subscribe(e => {
+        this.emailForm.setValue({email: '', name: ''});
+        this.confirmMessage = 'show';
+      }, () => {
+        console.error('Error al mandar el mail!');
+        this.emailForm.setValue({email: '', name: ''});
+      });
+    }
+    
   }
 
   closePopUp() {

@@ -25,7 +25,8 @@ export class FixedInputDesktopComponent implements OnInit {
     email: new FormControl(''),
     name: new FormControl('')
   });
-
+  emailError: Boolean = false;
+  nameError: Boolean = false;
   confirmMessage: string = 'hide';
 
   constructor(
@@ -52,13 +53,25 @@ export class FixedInputDesktopComponent implements OnInit {
   }
   sendEmail() {
     const { email, name } = this.emailForm.value;
-    this.mailService.sendmail(email, name, '', '').subscribe(e => {
-      this.emailForm.setValue({email: '', name: ''});
-      this.confirmMessage = 'show';
-    }, () => {
-      this.emailForm.setValue({email: '', name: ''})
-      this.confirmMessage = 'show';
-    });
+    if(email == '') {
+      this.emailError = true;
+      console.log(email)
+    }
+    if(name == '') {
+      this.nameError = true;
+    }
+    if(email !== '' && name !== '') {
+      this.nameError = false;
+      this.emailError = false;
+      this.mailService.sendmail(email, name, '', '').subscribe(e => {
+        this.emailForm.setValue({email: '', name: ''});
+        this.confirmMessage = 'show';
+      }, () => {
+        this.emailForm.setValue({email: '', name: ''})
+        this.confirmMessage = 'show';
+      });
+    }
+    
   }
 
     closePopUp() {

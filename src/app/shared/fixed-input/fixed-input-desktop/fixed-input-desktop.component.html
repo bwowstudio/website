@@ -4,8 +4,8 @@
       {{ 'FOOTER.text' | translate }}
     </div>
     <form [formGroup]="emailForm" class="container-center">
-      <input class="left-input" type="text" placeholder="{{placeholder}}" formControlName="name">
-      <input type="text" placeholder="{{placeholder2}}" formControlName="email">
+      <input [ngClass]="{'left-input': true, 'errorInput': nameError}" class="" type="text" placeholder="{{placeholder}}" formControlName="name">
+      <input [ngClass]="{'errorInput': emailError}" type="text" placeholder="{{placeholder2}}" formControlName="email">
     </form>
     <div class="container-right">
       <button (click)="sendEmail()">{{ 'FOOTER.send' | translate }}</button>

@@ -44,7 +44,9 @@ export class HomeComponent implements OnInit {
     forkJoin([
         this.translateService.get(`HOME.h3Text${page}FirstLine`),
         this.translateService.get(`HOME.h3Text${page}SecondLine`),
-        this.translateService.get(`HOME.h4Text${page}`),
+        this.resolutionService.getIsMobileResolution() ?
+        this.translateService.get(`HOME.h4Text${page}Mobile`) :
+          this.translateService.get(`HOME.h4Text${page}`),
         this.resolutionService.getIsMobileResolution() ?
           this.translateService.get(`HOME.aTextMobile`) :
           this.translateService.get(`HOME.aText${page}`),

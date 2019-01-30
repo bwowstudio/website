@@ -1,4 +1,5 @@
 <div class="cookie-message-wrapper" *ngIf="showPopUp">
+  <h3>{{ 'COOKIES.popUp.title' | translate }}</h3>
   <div class="message-container">
     <p>{{ 'COOKIES.popUp.message' | translate }} <a routerLink="/cookies">{{ 'COOKIES.popUp.link' | translate }}</a></p>
     <span (click)="acceptCookies()">{{ 'COOKIES.popUp.buttonMessage' | translate }}</span>

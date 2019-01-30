@@ -17,27 +17,31 @@
       "h3Text1SecondLine": "product design",
       "h4Text1": "We connect the idea with the final product, adapting solutions to the target users and testing each phase of the product development.",
       "aText1": "Create a product for your users",
+      "h4Text1Mobile": "We adapting solutions to the target users",
   
       "h3Text2FirstLine": "Branding",
       "h3Text2SecondLine": "",
       "h4Text2": "We help you build your brand by giving it an additional value. Communicate who you want to be and how you wish to be perceived.",
+      "h4Text2Mobile": "We help you build your brand by giving it an additional value. Communicate who you want to be and how you wish to be perceived.",
       "aText2": "Start building your identity",
   
       "h3Text3FirstLine": "Business Design",
       "h3Text3SecondLine": "",
       "h4Text3": "We create products that connect your business goals with user needs and help both grow together.",
+      "h4Text3Mobile": "We create products that connect your business goals with user needs and help both grow together.",
       "aText3": "Develop your business idea",
   
       "h3Text4FirstLine": "Design Systems",
       "h3Text4SecondLine": "",
       "h4Text4": "We create a structure that facilitates design decision-making within your team and enables your product to scale organically.",
+      "h4Text4Mobile": "We create a structure that facilitates design decision-making within your team and enables your product to scale organically.",
       "aText4": "Create a design structure",
   
       "h3Text5FirstLine": "Mentoring",
       "h3Text5SecondLine": "",
       "h4Text5": "We design and improve teamwork processes to optimise workflow within the organisation. We teach you to address potential problems by implementing different agile methodologies.",
       "aText5": "Optimise and integrate methodologies within your design team",
-  
+      "h4Text5Mobile": "We teach you to address potential problems by implementing different agile methodologies.",
       "aTextMobile": "See solutions"
   
   
@@ -205,6 +209,7 @@
     },
     "COOKIES": {
       "popUp": {
+        "title": "Our Cookies",
         "message": "Cookies help us improve your experience in our web. We use cookies for analytical and commercial purposes. By using our services, you agree to our ",
         "link": "use of cookies.",
         "buttonMessage": "OK"

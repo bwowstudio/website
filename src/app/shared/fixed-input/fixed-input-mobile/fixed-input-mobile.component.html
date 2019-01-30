@@ -2,7 +2,7 @@
   <div class="fixed-input-container">
     <form class="container-center" [formGroup]="emailForm">
       <input class="left-input" type="text" placeholder="{{placeholder}}" formControlName="name">
-      <input class="right-input" type="text" placeholder="{{placeholder2}}"formControlName="email">
+      <input [ngClass]="{'right-input': true, 'errorInput': emailError}" type="text" placeholder="{{placeholder2}}"formControlName="email">
     </form>
     <div class="container-right">
       <button (click)="sendEmail()">{{ 'FOOTER.send' | translate }}</button>

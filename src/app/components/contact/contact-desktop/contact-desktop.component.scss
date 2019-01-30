@@ -119,6 +119,12 @@ $contact-resolution-1440-padding-left-right: 56px;
           line-height: 32px;
         }
       }
+      .errorInput {
+        background-color: rgba(252, 33, 84, 0.1) !important;
+      }
+      .errorInput::placeholder {
+        color: #FC2150;
+      }
     }
   }
 }
