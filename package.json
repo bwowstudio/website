@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "dev": "ng serve --open",
-    "deploy": "ng build --prod --base-href 'https://flippitco.github.io/bwow/' && rm dist/3rdpartylicenses.txt && npx ngh --no-silent"
+    "deploy": "ng b --prod --base-href / && npx ngh --dir=dist/website"
   },
   "private": true,
   "dependencies": {
