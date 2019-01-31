@@ -12,7 +12,7 @@ export class MailService {
       name,
       provider: 'bwow',
       from: email,
-      to: 'papu.arza@gmail.com',
+      to: 'hi@bwowstudio.com',
       subject: 'Nuevo mensaje en bwow!',
       message,
       phone
