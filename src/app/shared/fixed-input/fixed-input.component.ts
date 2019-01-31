@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { ResolutionService } from 'src/app/services/resolution.service';
 
 @Component({
@@ -7,7 +7,12 @@ import { ResolutionService } from 'src/app/services/resolution.service';
   styleUrls: ['./fixed-input.component.scss']
 })
 export class FixedInputComponent {
+  @Output() onShowPopUpParent = new EventEmitter<string>();
   constructor(
     public resolutionService: ResolutionService
   ) {}
+
+  showPopUp() {
+    this.onShowPopUpParent.emit();
+  }
 }

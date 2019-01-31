@@ -34,6 +34,7 @@ export class BusinessMobileComponent implements OnInit {
   lastScrollTop = 0;
   currentScrollTop = 0;
   fixedInput = 'showFixed';
+  focusInput: Boolean = false;
   constructor(
     public translateService: TranslateService,
     public languageService: LanguageService,
@@ -48,7 +49,7 @@ export class BusinessMobileComponent implements OnInit {
   @HostListener('window:scroll', ['$event'])
   checkScroll() {
     this.currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      this.currentScrollTop > this.lastScrollTop ? this.fixedInput = 'hideFixed' : this.fixedInput = 'showFixed';
+      this.currentScrollTop > this.lastScrollTop && !this.focusInput ? this.fixedInput = 'hideFixed' : this.fixedInput = 'showFixed';
       this.lastScrollTop = this.currentScrollTop;
     const scrollPosition = window.pageYOffset;
     const elementsforAnimation = document.querySelectorAll('[item="animation"]');
@@ -62,6 +63,10 @@ export class BusinessMobileComponent implements OnInit {
   }
 
   ngOnInit() {
+  }
+
+  showPopUp() {
+    this.focusInput = true;
   }
 
 }

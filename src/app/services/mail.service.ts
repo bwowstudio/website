@@ -5,14 +5,14 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class MailService {
-
+  showPopUp: Boolean = false;
   constructor(private http: HttpClient) { }
   sendmail(email, name, message, phone) {
     const object = {
       name,
       provider: 'bwow',
       from: email,
-      to: 'hi@bwowstudio.com',
+      to: 'papu.arza@gmail.com',
       subject: 'Nuevo mensaje en bwow!',
       message,
       phone

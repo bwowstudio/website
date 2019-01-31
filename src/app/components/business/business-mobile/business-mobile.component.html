@@ -32,6 +32,6 @@
 
 
 <div class="fixed-input-container" [@scrollAnimation]="fixedInput">
-  <app-fixed-input></app-fixed-input>
+    <app-fixed-input (onShowPopUpParent)="showPopUp()"></app-fixed-input>
 </div>
 <app-footer></app-footer>

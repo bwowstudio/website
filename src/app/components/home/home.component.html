@@ -5,7 +5,7 @@
 <div class="home-container" (swipeup)="onSwipeUp($event)"  (swipedown)="onSwipeDown($event)">
   <div class="text-container" [innerHTML]="finalText" (click)="navigate()"></div>
   <div class="image-container">
-    <img *ngIf="page===1" class="homeImg fadeIn" src="{{imageUrl}}">
+    <img *ngIf="page===1" class="homeImg fadeIn digitalProduct" src="{{imageUrl}}">
     <img *ngIf="page===2"class="homeImg fadeIn" src="{{imageUrl}}">
     <img *ngIf="page===3"class="homeImg fadeIn" src="{{imageUrl}}">
     <img *ngIf="page===4"class="homeImg fadeIn" src="{{imageUrl}}">

@@ -52,6 +52,7 @@ export class BwowersMobileComponent implements OnInit {
   lastScrollTop = 0;
   currentScrollTop = 0;
   fixedInput = 'showFixed';
+  focusInput: Boolean = false;
   public handleScroll(event: ScrollEvent) {
     if (document.body.scrollHeight - window.scrollY < 1467) {
       this.isHideFixedInput = true;
@@ -74,7 +75,7 @@ export class BwowersMobileComponent implements OnInit {
   @HostListener('window:scroll', ['$event'])
   checkScroll() {
     this.currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      this.currentScrollTop > this.lastScrollTop ? this.fixedInput = 'hideFixed' : this.fixedInput = 'showFixed';
+      this.currentScrollTop > this.lastScrollTop && !this.focusInput ? this.fixedInput = 'hideFixed' : this.fixedInput = 'showFixed';
       this.lastScrollTop = this.currentScrollTop;
     const scrollPosition = window.pageYOffset;
     const elementsforAnimation = document.querySelectorAll('[item="animation"]');
@@ -97,5 +98,9 @@ export class BwowersMobileComponent implements OnInit {
     if (this.imgUrlNumber > 0) {
       this.imgUrlNumber -= 1;
     }
+  }
+
+  showPopUp() {
+    this.focusInput = true;
   }
 }
