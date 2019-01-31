@@ -78,6 +78,10 @@ export class ContactMobileComponent implements OnInit {
       this.phoneError = true;
     }
     if(this.email !== '' && this.name !== '' && this.lastName !== '' && this.phone !== '') {
+      this.emailError = false;
+      this.nameError = false;
+      this.phoneError = false;
+      this.lastNameError = false;
       let completeName = `${this.name} ${this.lastName}. ${this.position} en ${this.company}. ${this.country}`
       this.mailService.sendmail(this.email, completeName, this.message, this.phone).subscribe(e => {
         this.confirmMessage = 'show';

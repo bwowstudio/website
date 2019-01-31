@@ -206,13 +206,15 @@ p {
       height: 64px;
       width: 100%;
       .logo{
-        width: 250px;
+        width: 200px;
+        height: auto;
+        object-fit: contain;
       }
       .arrowLeft{
-        margin-right: 15px;
+        margin-right: 35px;
       }
       .arrowRight{
-        margin-left: 15px;
+        margin-left: 35px;
         margin-right: 0;
       }
     }
@@ -234,7 +236,7 @@ p {
         letter-spacing: 0.4px;
         color: #fff;
         background: transparent;
-        border: solid 3px rgba(255, 255, 255, 0.99);
+        border: solid 1px rgba(255, 255, 255, 0.99);
         border-radius: 10px;
         cursor: pointer;
       }

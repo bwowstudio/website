@@ -45,7 +45,8 @@ export class BwowersMobileComponent implements OnInit {
     'assets/images/fintonicLogo.svg',
     'assets/images/flippitLogo.svg',
     'assets/images/acompartirLogo.svg',
-    'assets/images/cabifyLogo.svg',
+    'assets/images/vamosLogo.png',
+    'assets/images/rolnikLogo.png',
   ];
   imgUrlNumber = 0;
   lastScrollTop = 0;
@@ -88,7 +89,7 @@ export class BwowersMobileComponent implements OnInit {
 
   ngOnInit() {}
   nextImg() {
-    if (this.imgUrlNumber < 3) {
+    if (this.imgUrlNumber < 4) {
       this.imgUrlNumber += 1;
     }
   }

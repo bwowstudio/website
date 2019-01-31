@@ -4,6 +4,7 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
 import { LanguageService } from 'src/app/services/language.service';
 import { MailService } from 'src/app/services/mail.service';
 import { FormControl, FormGroup } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-fixed-input-desktop',
@@ -12,9 +13,12 @@ import { FormControl, FormGroup } from '@angular/forms';
   animations: [
     trigger('showAnimation', [
       state('show', style({ opacity: 1, transform: "translateY(0)", display: 'flex', position: 'fixed', top: "-85vh", width: "100%"})),
+      state('showHome', style({ opacity: 1, transform: "translateY(0)", display: 'flex', position: 'fixed', top: "0vh", width: "100%"})),
       state('hide', style({ opacity: 0, transform: "translateY(-5%)", display: 'none'})),
       transition('show => hide', animate('600ms ease-in')),
       transition('hide => show', animate('600ms ease-out')),
+      transition('showHome => hide', animate('600ms ease-in')),
+      transition('hide => showHome', animate('600ms ease-out')),
     ])
   ]
 })
@@ -32,7 +36,8 @@ export class FixedInputDesktopComponent implements OnInit {
   constructor(
     public translateService: TranslateService,
     public languageService: LanguageService,
-    public mailService: MailService
+    public mailService: MailService,
+    private router: Router
   ) {
     this.translateService.use(this.languageService.language);
     this.languageService.langUpdated.subscribe(e => {
@@ -55,7 +60,6 @@ export class FixedInputDesktopComponent implements OnInit {
     const { email, name } = this.emailForm.value;
     if(email == '') {
       this.emailError = true;
-      console.log(email)
     }
     if(name == '') {
       this.nameError = true;
@@ -65,9 +69,13 @@ export class FixedInputDesktopComponent implements OnInit {
       this.emailError = false;
       this.mailService.sendmail(email, name, '', '').subscribe(e => {
         this.emailForm.setValue({email: '', name: ''});
+        this.router.url == '/home' ? 
+        this.confirmMessage = 'showHome' :
         this.confirmMessage = 'show';
       }, () => {
         this.emailForm.setValue({email: '', name: ''})
+        this.router.url == '/home' ? 
+        this.confirmMessage = 'showHome' :
         this.confirmMessage = 'show';
       });
     }

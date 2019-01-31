@@ -10,7 +10,7 @@ $contact-resolution-1280-padding-left-right: 80px;
 $contact-resolution-1440-padding-left-right: 56px;
 
 .message-wrapper {
-  background-color: transparent;
+  background-color: rgba(15, 5, 6, 0.1);
   position: fixed;
   width: 100%;
   height: 100vh;
@@ -32,7 +32,16 @@ $contact-resolution-1440-padding-left-right: 56px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
     box-shadow: 0 4px 5px 0 rgba(150, 150, 150, 0.14), 0 1px 10px 0 rgba(150, 150, 150, 0.12), 0 2px 4px -1px rgba(150, 150, 150, 0.3);
+    img {
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      top: 32px;
+      right: 32px;
+      cursor: pointer;
+    }
     h3 {
       width: 495px;
       font-family: $font-family-bold;
