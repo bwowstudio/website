@@ -39,8 +39,11 @@ p {
       }
       h3 {
         margin-top: 32px;
-        line-height: 1.6;
-        letter-spacing: 0.4px;
+      font-family: $font-family-regular;
+      font-size: 18px;
+      color: #171717;
+      letter-spacing: 0.28px;
+      line-height: 25px;
       }
     }
     .first-slide-right {
