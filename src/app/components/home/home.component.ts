@@ -101,12 +101,13 @@ export class HomeComponent implements OnInit {
   @HostListener('window:wheel', ['$event']) onScrollEvent($event){
     window.clearTimeout( this.isScrolling );
 	    this.isScrolling = setTimeout(() => {
+        console.log('aca')
         if($event.wheelDelta < 0) {
           this.onSwipeUp($event);
         } else {
           this.onSwipeDown($event);
         }
-	    }, 66);
+	    }, 30);
     
   }
 }
